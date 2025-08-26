@@ -20,11 +20,13 @@
   },
   "homepage": "",
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "bootstrap": "^5.2.3",
     "gulp-cli": "^2.3.0",
     "mozjpeg": "^8.0.0",
     "normalize.css": "^8.0.1",
-    "sass-migrator": "^2.3.1"
+    "sass-migrator": "^2.3.1",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

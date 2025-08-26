@@ -8,6 +8,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -1550,6 +1552,154 @@ template {
           flex: 0 0 auto;
 }
 
+.main-slider__slide {
+  position: relative;
+  height: 679px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 295px 10px;
+}
+
+.main-slider__content {
+  padding: 25px;
+}
+
+.main-slider__logo {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.main-slider__untitle {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.main-slider__title {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.main-slider__title span {
+  color: #6E079E;
+}
+
+.main-slider__btn {
+  max-width: 494px;
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(110, 7, 158, 0.6);
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-slider__text {
+  display: block;
+  padding: 13px 16px;
+  font-size: 16px;
+}
+
+.main-slider__icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-slider__action {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.main-slider__next,
+.main-slider__prev {
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.main-slider__next::after,
+.main-slider__prev::after {
+  font-size: 30px;
+  color: black;
+}
+
+.main-slider .swiper-pagination {
+  width: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+.main-slider .separator {
+  display: block;
+  margin: 5px 0px;
+  width: 40px;
+  height: 2px;
+  background: #6e079e;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -1591,7 +1741,7 @@ body {
   min-width: 360px;
   overflow-x: hidden;
   font-size: 16px;
-  font-family: HelveticaRegular;
+  font-family: "Montserrat", sans-serif;
 }
 
 body main {
@@ -6406,5 +6556,17 @@ body main {
 
   .d-print-none {
     display: none !important;
+  }
+}
+
+@media (hover: hover) {
+  .main-slider__btn:hover {
+    background: rgb(110, 7, 158);
+  }
+
+  .main-slider__btn:hover .main-slider__icon {
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
 }
