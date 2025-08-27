@@ -69,7 +69,7 @@ const swiper = new Swiper('.swiper', {
 // Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,
-  lerp: 0.1,
+  lerp: 0.3,
 });
 
 // Listen for the scroll event and log the event data
