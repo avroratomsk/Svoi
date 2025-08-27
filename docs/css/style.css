@@ -1736,6 +1736,102 @@ template {
   display: none;
 }
 
+.info-block__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 268px 204px;
+  grid-template-rows: 268px 204px;
+  gap: 15px;
+}
+
+.info-block__title {
+  margin-bottom: 36px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+}
+
+.info-block__text {
+  max-width: 205px;
+  margin: 0 auto 54px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+}
+
+.info-block__item {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.info-block__item:nth-child(1) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+
+.info-block__item:nth-child(2) {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+  padding: 60px 45px 47px 46px;
+  border: 1px solid rgb(110, 7, 158);
+}
+
+.info-block__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info-block__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.info-block__btn {
+  max-width: 205px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 10px 14px 10px 14px;
+  background: none;
+  border: 1px solid rgba(72, 72, 72, 0.5);
+  border-radius: 40px;
+}
+
+.info-block__btn:nth-child(2) {
+  color: rgb(110, 7, 158);
+  background: rgba(110, 7, 158, 0.2);
+}
+
 .video {
   position: relative;
   width: 88px;
