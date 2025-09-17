@@ -4,33 +4,7 @@ import Swiper from 'swiper/bundle';
 functions.isWebp();
 
 
-const linkHeader = document.querySelectorAll('.nav__item');
-
-const addEffect = (e) => {
-  e.preventDefault();
-  const divAnimate = document.createElement('div');
-  const maxValue = Math.max(e.currentTarget.clientWidth, e.currentTarget.clientHeight)
-  const rect = e.currentTarget.getBoundingClientRect();
-  const styleDiv = divAnimate.style;
-  const px = 'px';
-
-  styleDiv.width = styleDiv.height = maxValue + px;
-  styleDiv.left = e.clientX - rect.left - (maxValue / 2) + px;
-  styleDiv.top = e.clientY - rect.top - (maxValue / 2) + px;
-
-  divAnimate.classList.add('pulse');
-  e.currentTarget.appendChild(divAnimate);
-
-  setTimeout(function () {
-    // document.querySelectorAll('.pulse').forEach(el => el.remove());
-  }, 1000)
-}
-
-linkHeader?.forEach(link => {
-  link.addEventListener('click', addEffect)
-})
-
-const swiper = new Swiper('.swiper', {
+const mainSlider = new Swiper('.main-slider__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 20,
@@ -66,16 +40,53 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
+const responsibilitySlider = new Swiper('.responsibility__slider', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 10,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.5,
+    },
+    500: {
+      slidesPerView: 1.8,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2.5,
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 4.2,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  }
+
+});
+
+const housesSaleSlider = new Swiper('.houses-sale__slider', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 38,
+
+});
+
 // Initialize Lenis
-const lenis = new Lenis({
-  autoRaf: true,
-  lerp: 0.3,
-});
-
-// Listen for the scroll event and log the event data
-lenis.on('scroll', (e) => {
-
-});
+// const lenis = new Lenis({
+//   autoRaf: true,
+//   lerp: 0.3,
+// });
+//
+// // Listen for the scroll event and log the event data
+// lenis.on('scroll', (e) => {
+//
+// });
 
 
 

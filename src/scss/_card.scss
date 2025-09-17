@@ -1,0 +1,59 @@
+.card {
+
+  //.card__image
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  //.card__logo
+  &__logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  //.card__content
+  &__content {
+  }
+
+  //.card__title
+  &__title {
+  }
+
+  //.card__size
+  &__size {
+  }
+
+  //.card__list-vertical
+  &__list-vertical {
+
+    li {
+    }
+  }
+
+  //.card__list-horizontal
+  &__list-horizontal {
+
+    li {
+    }
+  }
+
+  //.card__content-bottom
+  &__content-bottom {
+  }
+
+  //.card__price
+  &__price {
+  }
+
+  //.card__link
+  &__link {
+  }
+
+}

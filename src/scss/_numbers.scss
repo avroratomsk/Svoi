@@ -1,0 +1,94 @@
+.numbers {
+
+  //.numbers__row
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (max-width: 992px) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      border-right: 1px solid rgba(83, 83, 83, 0.38);
+      border-left: 1px solid rgba(83, 83, 83, 0.38);
+      border-top: 1px solid rgba(83, 83, 83, 0.38);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 578px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  //.numbers__col
+  &__col {
+    display: grid;
+    justify-items: center;
+    padding: 30px 30px;
+
+    @media screen and (min-width: 992px) {
+      flex: 1 1 25%;
+      padding: 0 30px;
+
+      &:first-child {
+        padding-left: 0;
+        justify-items: start;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        justify-items: end;
+      }
+
+      &:not(:last-child) {
+        border-right: 2px solid rgba(83, 83, 83, 0.38);
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      border-bottom: 1px solid rgba(83, 83, 83, 0.38);
+
+      &:nth-child(odd) {
+        @media (max-width: 992px) and (min-width: 578px) {
+          border-right: 1px solid rgba(83, 83, 83, 0.38);
+        }
+      }
+    }
+
+
+  }
+
+  //.numbers__inner
+  &__inner {
+    max-width: 205px;
+    width: 100%;
+  }
+
+  //.numbers__number
+  &__number {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #6e079e;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 70px;
+    }
+
+  }
+
+  //.numbers__title
+  &__title {
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  //.numbers__text
+  &__text {
+    line-height: 140%;
+  }
+
+
+}
