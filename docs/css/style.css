@@ -1952,6 +1952,10 @@ template {
   color: #ffffff;
 }
 
+.houses-sale__title {
+  margin-bottom: 30px;
+}
+
 .card__image {
   position: relative;
   width: 100%;
@@ -1959,6 +1963,7 @@ template {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .card__logo {
@@ -1966,6 +1971,109 @@ template {
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+.card__content {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(110, 7, 158);
+}
+
+.card__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card__title {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.card__title span {
+  color: #6e079e;
+}
+
+.card__size {
+  font-size: 32px;
+  font-weight: 500;
+  color: #6e079e;
+}
+
+.card__list-vertical {
+  margin-bottom: 20px;
+}
+
+.card__list-vertical li {
+  line-height: 140%;
+  margin-bottom: 5px;
+}
+
+.card__list-horizontal {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.card__list-horizontal li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid rgb(110, 7, 158);
+  border-radius: 5px;
+}
+
+.card__content-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.card__price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  max-width: 194px;
+  padding: 13px 18px;
+  color: rgb(110, 7, 158);
+  background: rgba(110, 7, 158, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 40px;
 }
 
 * {
