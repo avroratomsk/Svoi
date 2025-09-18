@@ -45,14 +45,21 @@ const responsibilitySlider = new Swiper('.responsibility__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 10,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
 
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
+      scrollbar: {
+        enabled: true,
+      }
     },
     500: {
-      slidesPerView: 1.8,
+      slidesPerView: 1.3,
     },
     // when window width is >= 480px
     768: {
@@ -64,6 +71,9 @@ const responsibilitySlider = new Swiper('.responsibility__slider', {
     },
     1200: {
       slidesPerView: 5,
+      scrollbar: {
+        enabled: false,
+      }
     }
   }
 
@@ -72,8 +82,72 @@ const responsibilitySlider = new Swiper('.responsibility__slider', {
 const housesSaleSlider = new Swiper('.houses-sale__slider', {
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3,
   spaceBetween: 38,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.2,
+      scrollbar: {
+        enabled: true,
+      },
+    },
+    500: {
+      slidesPerView: 1.3,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+      scrollbar: {
+        enabled: false,
+      },
+    }
+  }
+
+});
+
+const addedSlider = new Swiper('.added__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      scrollbar: {
+        enabled: true,
+      },
+    },
+    768: {
+      slidesPerView: 1.3,
+    },
+    // when window width is >= 480px
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    1400: {
+      slidesPerView: 3,
+      scrollbar: {
+        enabled: false,
+      },
+    }
+  }
 
 });
 

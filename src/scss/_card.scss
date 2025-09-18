@@ -43,6 +43,10 @@
     span {
       color: #6e079e;
     }
+
+    @media screen and (max-width: 578px) {
+      font-size: 25px;
+    }
   }
 
   //.card__size
@@ -50,6 +54,11 @@
     font-size: 32px;
     font-weight: 500;
     color: #6e079e;
+
+    @media screen and (max-width: 578px) {
+      font-size: 25px;
+    }
+
   }
 
   //.card__list-vertical
@@ -68,7 +77,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-
+    flex-wrap: wrap;
 
     li {
       display: flex;
@@ -86,6 +95,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   //.card__price

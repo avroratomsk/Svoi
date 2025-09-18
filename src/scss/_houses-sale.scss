@@ -1,20 +1,29 @@
 .houses-sale {
 
   //.houses-sale__title
-  &__title{
+  &__title {
     margin-bottom: 30px;
   }
 
   //.houses-sale__slider
-  &__slider{}
+  &__slider {
+  }
+
+  //.houses-sale__wrapper
+  &__wrapper {
+    padding: 0 0 20px;
+  }
 
   //.houses-sale__slide
-  &__slide{}
+  &__slide {
+  }
 
   //.houses-sale__card
-  &__card{}
+  &__card {
+  }
 
   //.card__content-top
-  &__content-top{}
+  &__content-top {
+  }
 
 }
