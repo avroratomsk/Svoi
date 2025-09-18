@@ -92,7 +92,7 @@ const housesSaleSlider = new Swiper('.houses-sale__slider', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
       scrollbar: {
         enabled: true,
       },
@@ -146,6 +146,28 @@ const addedSlider = new Swiper('.added__slider', {
       scrollbar: {
         enabled: false,
       },
+    }
+  }
+
+});
+
+const portfolioSlider = new Swiper('.portfolio__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 27,
+
+  navigation: {
+    nextEl: '.portfolio__next',
+    prevEl: '.portfolio__prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
     }
   }
 

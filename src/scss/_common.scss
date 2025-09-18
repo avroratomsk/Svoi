@@ -36,3 +36,22 @@
 .swiper-scrollbar-drag {
   background-color: rgba(110, 7, 158, 0.55);
 }
+
+.swiper-btn-next,
+.swiper-btn-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+
+  &::after {
+    font-size: 0;
+  }
+}
+
+.swiper-btn-next {
+  img {
+    transform: rotate(-180deg);
+  }
+}
