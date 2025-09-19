@@ -173,6 +173,90 @@ const portfolioSlider = new Swiper('.portfolio__slider', {
 
 });
 
+const stockSlider = new Swiper('.stock__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 32,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    320: {
+      scrollbar: {
+        enabled: true
+      },
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
+      scrollbar: {
+        enabled: false
+      },
+    }
+  }
+
+});
+
+const newsSlider = new Swiper('.news__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 32,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    320: {
+      scrollbar: {
+        enabled: true
+      },
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
+      scrollbar: {
+        enabled: false
+      },
+    }
+  }
+
+});
+
+const reviewsSlider = new Swiper('.reviews__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 72,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    320: {
+      scrollbar: {
+        enabled: true
+      },
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 3,
+      scrollbar: {
+        enabled: false
+      },
+    }
+  }
+
+});
+
 // Initialize Lenis
 // const lenis = new Lenis({
 //   autoRaf: true,
