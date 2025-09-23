@@ -80,6 +80,12 @@
     border-radius: 40px;
   }
 
+  //.top-section__right
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 

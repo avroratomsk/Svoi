@@ -24,6 +24,10 @@
 @import '_stock';
 @import '_news';
 @import '_reviews';
+@import '_accordion';
+@import '_faq';
+@import '_callback';
+@import '_form';
 
 * {
   outline: none;
@@ -46,7 +50,7 @@ img, picture {
   display: block;
 }
 
-ul,ol {
+ul, ol {
   list-style: none;
 }
 
