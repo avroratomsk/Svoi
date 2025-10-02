@@ -32,6 +32,15 @@
       border-radius: 50%;
     }
 
+    @media screen and (max-width: 578px) {
+      padding: 22px 15px;
+      &::after {
+        left: 5px;
+        width: 5px;
+        height: 5px;
+      }
+    }
+
   }
 
   //.accordion__btn
