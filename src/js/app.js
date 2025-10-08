@@ -3,6 +3,8 @@ import Swiper from 'swiper/bundle';
 
 functions.isWebp();
 
+import "./modules/menu.js"
+
 
 const mainSlider = new Swiper('.main-slider__slider', {
   direction: 'horizontal',
