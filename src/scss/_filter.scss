@@ -1,0 +1,45 @@
+.filter {
+  display: flex;
+  gap: 20px;
+
+  //.filter__wrp
+  &__wrp {
+    position: relative;
+  }
+
+  //.filter__btn
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 250px;
+    padding: 15px 27px;
+    border: 1px solid rgba(110, 7, 158, 1);
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 1);
+    z-index: 3;
+  }
+
+  //.filter__list
+  &__list {
+    width: 100%;
+    padding: 70px 15px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40px 40px 10px 10px;
+    box-shadow: 0 58px 16px 0 rgba(0, 0, 0, 0), 0px 37px 15px 0px rgba(0, 0, 0, 0.01), 0px 21px 12px 0px rgba(0, 0, 0, 0.05), 0px 9px 9px 0px rgba(0, 0, 0, 0.09), 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 1);
+    z-index: 2;
+
+
+    li {
+      padding:7px 0;
+    }
+  }
+
+
+}

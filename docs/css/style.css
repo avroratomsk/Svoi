@@ -3230,6 +3230,62 @@ button {
   color: rgb(103, 103, 103);
 }
 
+.catalog__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 46px 38px;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.filter__wrp {
+  position: relative;
+}
+
+.filter__btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-width: 250px;
+  padding: 15px 27px;
+  border: 1px solid rgb(110, 7, 158);
+  border-radius: 40px;
+  background: rgb(255, 255, 255);
+  z-index: 3;
+}
+
+.filter__list {
+  width: 100%;
+  padding: 70px 15px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px 40px 10px 10px;
+  -webkit-box-shadow: 0 58px 16px 0 rgba(0, 0, 0, 0), 0px 37px 15px 0px rgba(0, 0, 0, 0.01), 0px 21px 12px 0px rgba(0, 0, 0, 0.05), 0px 9px 9px 0px rgba(0, 0, 0, 0.09), 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 58px 16px 0 rgba(0, 0, 0, 0), 0px 37px 15px 0px rgba(0, 0, 0, 0.01), 0px 21px 12px 0px rgba(0, 0, 0, 0.05), 0px 9px 9px 0px rgba(0, 0, 0, 0.09), 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.filter__list li {
+  padding: 7px 0;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
