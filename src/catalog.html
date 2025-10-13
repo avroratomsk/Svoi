@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <div class="catalog">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <span itemprop="name" class="breadcrumbs__item">
+            Проекты домов
+            <meta itemprop="position" content="3"/>
+          </span>
+
+      </div>
+      <h1 class="catalog__title title">Проекты домов</h1>
+      <div class="catalog__grid">
+        <div class="catalog__card card">
+          <div class="card__image" style="background-image: url('/img/proj.jpg')">
+            <img src="@img/mini-logo.png" alt="" class="card__logo">
+          </div>
+          <div class="card__content">
+            <div class="card__content-top">
+              <p class="card__title"><span>SVOI</span>-1-100</p>
+              <p class="card__size">7,5 сот</p>
+            </div>
+            <ul class="card__list-vertical">
+              <li>Одноэтажный дом 100м2 с гаражом</li>
+              <li>ЖК Смородина, ул. Ленина, д.2</li>
+            </ul>
+            <ul class="card__list-horizontal">
+              <li><img src="@img/bed.png" alt="">2 спальни</li>
+              <li><img src="@img/area.png" alt="">18.03 x 14.58</li>
+              <li><img src="@img/const.png" alt="">12 месяцев</li>
+            </ul>
+            <div class="card__content-bottom">
+              <p class="card__price">от 8 000 000 р</p>
+              <a href="" class="card__link">Узнать больше <img src="@img/arrow-right-purple.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include('html/_footer.html')
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

@@ -3194,6 +3194,42 @@ button {
   background: rgba(110, 7, 158, 0.2);
 }
 
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 10px 0px;
+  z-index: 2;
+}
+
+.breadcrumbs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration-line: none;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 10px;
+  margin: 0px 10px;
+}
+
+.breadcrumbs__item:last-child {
+  color: rgb(103, 103, 103);
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -8445,6 +8481,16 @@ body main {
 
   .title {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .breadcrumbs__item {
+    font-size: 11px;
+  }
+
+  .breadcrumbs__item:not(:last-child)::after {
+    width: 5px;
   }
 }
 

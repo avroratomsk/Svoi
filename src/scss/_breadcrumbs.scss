@@ -1,0 +1,47 @@
+.breadcrumbs {
+  display: flex;
+  position: relative;
+  padding: 10px 0px;
+  z-index: 2;
+
+
+  // .breadcrumbs__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: none;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        display: block;
+
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 10px;
+        margin: 0px 10px;
+      }
+
+
+    }
+
+    &:last-child {
+      color: rgb(103, 103, 103);
+    }
+
+    @media screen and (max-width: 620px) {
+      font-size: 11px;
+
+      &:not(:last-child) {
+        &::after {
+          width: 5px;
+        }
+      }
+    }
+  }
+}
