@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8"/>
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Сборка GULP</title>
+  <link
+    rel="stylesheet"
+    href="css/style.min.css?_v=20251014135923"
+  />
+
+  <!-- https://realfavicongenerator.net -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="/img/favicon/favicon-96x96.png"
+    sizes="96x96"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/img/favicon/favicon.svg"
+  />
+  <link
+    rel="shortcut icon"
+    href="/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/img/favicon/apple-touch-icon.png"
+  />
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Ometov Gulp"
+  />
+  <link
+    rel="manifest"
+    href="/img/favicon/site.webmanifest"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20251014135923"
+    rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20251014135923" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20251014135923"/>
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+      </a>
+      <div class="header__social social">
+        <a href="" class="social__item">
+          <picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture>
+        </a>
+        <a href="" class="social__item">
+          <picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture>
+        </a>
+      </div>
+      <nav class="header__nav nav ">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">О нас</a></li>
+          <li class="nav__item">
+            <a href="">Недвижимость</a>
+            <ul class="submenu">
+              <li class="submenu__item"><a href="">Проекты домов</a></li>
+              <li class="submenu__item"><a href="">Дома в продаже</a></li>
+              <li class="submenu__item"><a href="">Участки</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="">ЖК Смородина</a></li>
+          <li class="nav__item"><a href="">Услуги</a></li>
+          <li class="nav__item"><a href="">Наши работы</a></li>
+          <li class="nav__item"><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions action">
+        <a href="" class="action__item">+7 964-086-33-22 <span><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></span></a>
+        <a href="" class="action__item">Оставить заявку <span><picture><source srcset="img/arrow-right-up.webp" type="image/webp"><img src="img/arrow-right-up.png" alt=""></picture></span></a>
+      </div>
+        <button type="button" class="burger" id="burger"><span></span></button>
+    </div>
+  </div>
+</div>
+
+
+<main>
+  <div class="contact">
+  <div class="container">
+    <div class="contact__row">
+      <div class="contact__left">
+        <div class="contact__left-inner">
+          <div class="social contact__social social__vertical">
+            <a href=""><picture><source srcset="img/od.webp" type="image/webp"><img src="img/od.png" alt=""></picture></a>
+            <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+            <a href=""><picture><source srcset="img/tg-bg.webp" type="image/webp"><img src="img/tg-bg.png" alt=""></picture></a>
+            <a href=""><picture><source srcset="img/wh-bg.webp" type="image/webp"><img src="img/wh-bg.png" alt=""></picture></a>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">Адрес:</p>
+            <p class="contact__info">г.Барнаул, Балтийская 92, оф.301</p>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">Режим работы:</p>
+            <p class="contact__info">Пн-сб - 09:00-19:00 Сб-Вс - по предварительной записи</p>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">Сервисная служба (прием обращений по гарантийным случаям):</p>
+            <p class="contact__info"><a href="">+7 909-500-68-71</a></p>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label"><strong>ООО «СВОИ»</strong></p>
+            <p class="contact__label">ИНН: <strong>222100220851</strong></p>
+            <p class="contact__label">ОГРНИП: <strong>317222500044148</strong></p>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">Телефон:</p>
+            <p class="contact__info"><a href="tel:+73852993322">+7 (3852) 99-33-22</a></p>
+            <p class="contact__info"><a href="tel:+79640863322">+7 964-086-33-22</a></p>
+          </div>
+        </div>
+        <div class="contact__btns">
+          <button type="button" class="contact__btn btn">Связаться с нами</button>
+          <button type="button" class="contact__btn btn">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="contact__right">
+        <div class="contact__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A29b7ee4bce237db384d2ac41aff71f5c1b06ef00f12af3ad8064a2665018ff40&amp;source=constructor"
+            width="100%" height="500" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="callback pd">
+
+    <div class="container">
+      <div class="callback__inner">
+        <picture><source srcset="img/callback.webp" type="image/webp"><img src="img/callback.jpg" alt="" class="callback__image"></picture>
+        <div class="callback__row">
+          <div class="callback__col callback__col--first">
+            <div>
+              <h2 class="callback__title title">Проконсультироваться с менеджером</h2>
+              <p class="callback__subtitle">Оставьте заявку или позвоните по телефону</p>
+            </div>
+            <a href="tel:8 964-086-33-22" class="callback__phone">8 964-086-33-22</a>
+          </div>
+          <div class="callback__col">
+            <form action="" class="form">
+              <input type="text" class="form__input" name="name" placeholder="Имя">
+              <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+              <div class="form__bottom">
+                <div class="form__social social">
+                  <a href="#" class="social__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
+                  <a href="#" class="social__link"><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
+                </div>
+                <button type="submit" class="form__submit">Оставить заявку</button>
+              </div>
+              <div class="form__checkbox-inner">
+                <input type="checkbox" id="policy" name="policy" class="form__checkbox">
+                <label for="policy">
+                  Я даю свое согласие на обработку персональных данных и подверждаю, что ознакомлен(а) с
+                  <a href="">политикой конфиденциальности и обработки персональных данных</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="houses-sale pd">
+    <div class="container">
+      <h2 class="houses-sale__title title">Лучшие предложения</h2>
+      <div class="houses-sale__slider swiper">
+        <div class="swiper-wrapper houses-sale__wrapper">
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title"><span>SVOI</span>-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+                  <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+                  <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title">SVOI-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+                  <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+                  <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title"><span>SVOI</span>-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+                  <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+                  <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title">SVOI-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+                  <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+                  <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="/" class="footer__logo"><picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt=""></picture></a>
+      <div class="footer__number">
+        <a href="tel:+79640863322">+7 964-086-33-22</a>
+        <a href="tel:+73852993322">+7 (3852) 99-33-22</a>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <div class="footer__left">
+        <a href="">
+          <picture><source srcset="img/izhs.webp" type="image/webp"><img src="img/izhs.png" alt=""></picture>
+          <span>Участники Федерации ИЖС</span>
+        </a>
+        <a href="">
+          <picture><source srcset="img/sta.webp" type="image/webp"><img src="img/sta.png" alt=""></picture>
+          <span>Являемся участниками Союза Строителей Алтайского края</span>
+        </a>
+      </div>
+      <div class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="">Главная</a></li>
+          <li><a href="">Проекты домов</a></li>
+          <li><a href="">Дома в продаже</a></li>
+          <li><a href="">Услуги</a></li>
+          <li><a href="">Наши работы</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Блог</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__action">
+        <button type="button" class="footer__btn btn">
+          <span>Оставить заявку</span>
+          <span class="footer__btn-arrow">
+            <picture><source srcset="img/arrow-right-up.webp" type="image/webp"><img src="img/arrow-right-up.png" alt=""></picture>
+          </span>
+        </button>
+        <div class="socials">
+          <a href=""><picture><source srcset="img/od.webp" type="image/webp"><img src="img/od.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/tg-footer.webp" type="image/webp"><img src="img/tg-footer.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/wh-footer.webp" type="image/webp"><img src="img/wh-footer.png" alt=""></picture></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 СК "СВОИ"</p>
+        <a href="" class="">Политика конфиденциальности</a>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20251014135923"></script>
+<script src="js/app.min.js?_v=20251014135923"></script>
+</body>
+</html>

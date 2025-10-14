@@ -83,6 +83,14 @@
 }
 
 .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  //.social__vertical
+  &__vertical {
+    flex-direction: column;
+  }
 
   //.social__link
   &__link {
