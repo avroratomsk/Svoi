@@ -259,6 +259,74 @@ const reviewsSlider = new Swiper('.reviews__slider', {
 
 });
 
+const projectThumbSlider = new Swiper('.project__thumbs', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 20,
+  slidesPerView: 4,
+
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  //   draggable: true,
+  // },
+
+  // breakpoints: {
+  //   320: {
+  //     scrollbar: {
+  //       enabled: true
+  //     },
+  //     slidesPerView: 1,
+  //   },
+  //   992: {
+  //     slidesPerView: 3,
+  //     scrollbar: {
+  //       enabled: false
+  //     },
+  //   }
+  // }
+
+});
+
+const projectSlider = new Swiper('.project__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 20,
+
+  pagination: {
+    nextEl: '.project__slider-next',
+    prevEl: '.project__slider-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  thumbs: {
+    swiper: projectThumbSlider,
+  },
+
+  // breakpoints: {
+  //   320: {
+  //     scrollbar: {
+  //       enabled: true
+  //     },
+  //     slidesPerView: 1,
+  //   },
+  //   992: {
+  //     slidesPerView: 3,
+  //     scrollbar: {
+  //       enabled: false
+  //     },
+  //   }
+  // }
+
+});
+
+
+
 // Initialize Lenis
 // const lenis = new Lenis({
 //   autoRaf: true,

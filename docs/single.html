@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8"/>
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Сборка GULP</title>
+  <link
+    rel="stylesheet"
+    href="css/style.min.css?_v=20251014154642"
+  />
+
+  <!-- https://realfavicongenerator.net -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="/img/favicon/favicon-96x96.png"
+    sizes="96x96"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/img/favicon/favicon.svg"
+  />
+  <link
+    rel="shortcut icon"
+    href="/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/img/favicon/apple-touch-icon.png"
+  />
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Ometov Gulp"
+  />
+  <link
+    rel="manifest"
+    href="/img/favicon/site.webmanifest"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20251014154642"
+    rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20251014154642" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20251014154642"/>
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+      </a>
+      <div class="header__social social">
+        <a href="" class="social__item">
+          <picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture>
+        </a>
+        <a href="" class="social__item">
+          <picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture>
+        </a>
+      </div>
+      <nav class="header__nav nav ">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">О нас</a></li>
+          <li class="nav__item">
+            <a href="">Недвижимость</a>
+            <ul class="submenu">
+              <li class="submenu__item"><a href="">Проекты домов</a></li>
+              <li class="submenu__item"><a href="">Дома в продаже</a></li>
+              <li class="submenu__item"><a href="">Участки</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="">ЖК Смородина</a></li>
+          <li class="nav__item"><a href="">Услуги</a></li>
+          <li class="nav__item"><a href="">Наши работы</a></li>
+          <li class="nav__item"><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions action">
+        <a href="" class="action__item">+7 964-086-33-22 <span><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></span></a>
+        <a href="" class="action__item">Оставить заявку <span><picture><source srcset="img/arrow-right-up.webp" type="image/webp"><img src="img/arrow-right-up.png" alt=""></picture></span></a>
+      </div>
+        <button type="button" class="burger" id="burger"><span></span></button>
+    </div>
+  </div>
+</div>
+
+
+<main>
+  <section class="project pd">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Каталог
+          <meta itemprop="position" content="2"/>
+        </a>
+        <span itemprop="name" class="breadcrumbs__item">
+            SVOI-1-100
+            <meta itemprop="position" content="3"/>
+          </span>
+
+      </div>
+
+      <div class="project__top">
+        <div class="project__top-inner">
+          <div class="project__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project__slide">
+                <picture><source srcset="img/plan.webp" type="image/webp"><img src="img/plan.png" alt="" class="project__plan"></picture>
+                <div class="project__scale">
+                  <picture><source srcset="img/scale.webp" type="image/webp"><img src="img/scale.png" alt="" ></picture>
+                </div>
+                <picture><source srcset="img/projects.webp" type="image/webp"><img src="img/projects.jpg" alt="Вид проекта" class="project__slide-image"></picture>
+                <picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="" class="project__slide-logo" ></picture>
+              </div>
+              <div class="swiper-slide project__slide">
+                <picture><source srcset="img/plan.webp" type="image/webp"><img src="img/plan.png" alt="" class="project__plan"></picture>
+                <div class="project__scale">
+                  <picture><source srcset="img/scale.webp" type="image/webp"><img src="img/scale.png" alt="" ></picture>
+                </div>
+                <picture><source srcset="img/projects.webp" type="image/webp"><img src="img/projects.jpg" alt="Вид проекта" class="project__slide-image"></picture>
+                <picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="" class="project__slide-logo" ></picture>
+              </div>
+              <div class="swiper-slide project__slide">
+                <picture><source srcset="img/plan.webp" type="image/webp"><img src="img/plan.png" alt="" class="project__plan"></picture>
+                <div class="project__scale">
+                  <picture><source srcset="img/scale.webp" type="image/webp"><img src="img/scale.png" alt="" ></picture>
+                </div>
+                <picture><source srcset="img/projects.webp" type="image/webp"><img src="img/projects.jpg" alt="Вид проекта" class="project__slide-image"></picture>
+                <picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="" class="project__slide-logo" ></picture>
+              </div>
+              
+            </div>
+            <div class="swiper-button-prev project__slider-next"></div>
+            <div class="swiper-button-next project__slider-prev"></div>
+          </div>
+          <div class="swiper project__swiper project__thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project__thumb-slide"><picture><source srcset="img/projects.webp" type="image/webp"><img src="img/projects.jpg" alt=""></picture></div>
+              <div class="swiper-slide project__thumb-slide"><picture><source srcset="img/projects.webp" type="image/webp"><img src="img/projects.jpg" alt=""></picture></div>
+              <div class="swiper-slide project__thumb-slide"><picture><source srcset="img/projects.webp" type="image/webp"><img src="img/projects.jpg" alt=""></picture></div>
+            </div>
+          </div>
+        </div>
+        <div class="project__info">
+          <h1 class="project__title title">SVOI-1-100</h1>
+          <div class="project__params">
+            <div>Площадь: <b>100 м²</b></div>
+            <div>Материал: <b>Газобетон</b></div>
+            <div>Габариты: <b>18.03 × 14.58</b></div>
+            <div>Срок: <b>12 месяцев</b></div>
+          </div>
+          <div class="project__features">
+            <div class="project__features-title">Удобства:</div>
+            <div class="project__features-row">
+              <div>
+                <img src="img/garage.svg" alt="">
+                <span>Гараж</span>
+                <b>1</b>
+              </div>
+              <div>
+                <img src="img/terassa.svg" alt="">
+                <span>Терасса</span>
+                <b>1</b>
+              </div>
+              <div>
+                <img src="img/spalni.svg" alt="">
+                <span>Спальни</span>
+                <b>3</b>
+              </div>
+              <div>
+                <img src="img/garderob.svg" alt="">
+                <span>Гардероб</span>
+                <b>1</b>
+              </div>
+              <div>
+                <img src="img/coctelnaya.svg" alt="">
+                <span>Коктельная</span>
+                <b>1</b>
+              </div>
+            </div>
+          </div>
+          <div class="project__bottom">
+            <div>
+              <div class="project__bottom-title">Цена от:</div>
+              <div class="project__price">8 584 488
+                <div class="project__currency">₽</div>
+              </div>
+            </div>
+            <button type="button" class="project__bottom-btn btn">
+              Оставить заявку
+              <picture><source srcset="img/arrow-right-white.webp" type="image/webp"><img src="img/arrow-right-white.png" alt=""></picture>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</main>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="/" class="footer__logo"><picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt=""></picture></a>
+      <div class="footer__number">
+        <a href="tel:+79640863322">+7 964-086-33-22</a>
+        <a href="tel:+73852993322">+7 (3852) 99-33-22</a>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <div class="footer__left">
+        <a href="">
+          <picture><source srcset="img/izhs.webp" type="image/webp"><img src="img/izhs.png" alt=""></picture>
+          <span>Участники Федерации ИЖС</span>
+        </a>
+        <a href="">
+          <picture><source srcset="img/sta.webp" type="image/webp"><img src="img/sta.png" alt=""></picture>
+          <span>Являемся участниками Союза Строителей Алтайского края</span>
+        </a>
+      </div>
+      <div class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="">Главная</a></li>
+          <li><a href="">Проекты домов</a></li>
+          <li><a href="">Дома в продаже</a></li>
+          <li><a href="">Услуги</a></li>
+          <li><a href="">Наши работы</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Блог</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__action">
+        <button type="button" class="footer__btn btn">
+          <span>Оставить заявку</span>
+          <span class="footer__btn-arrow">
+            <picture><source srcset="img/arrow-right-up.webp" type="image/webp"><img src="img/arrow-right-up.png" alt=""></picture>
+          </span>
+        </button>
+        <div class="socials">
+          <a href=""><picture><source srcset="img/od.webp" type="image/webp"><img src="img/od.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/tg-footer.webp" type="image/webp"><img src="img/tg-footer.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/wh-footer.webp" type="image/webp"><img src="img/wh-footer.png" alt=""></picture></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 СК "СВОИ"</p>
+        <a href="" class="">Политика конфиденциальности</a>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20251014154642"></script>
+<script src="js/app.min.js?_v=20251014154642"></script>
+</body>
+</html>

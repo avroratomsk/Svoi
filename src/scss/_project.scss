@@ -1,0 +1,250 @@
+.project {
+
+  //.project__top
+  &__top {
+    margin-top: 30px;
+  }
+
+  //.project__top-inner
+  &__top-inner {
+  }
+
+  //.project__slider
+  &__slider {
+  }
+
+  //.project__slide
+  &__slide {
+    position: relative;
+    width: 100%;
+    height: 358px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  //.project__slide-image
+  &__slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  //.project__plan
+  &__plan {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+  }
+
+  //.project__scale
+  &__scale {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.73);
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  //.project__slide-logo
+  &__slide-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  //.project__thumbs
+  &__thumbs {
+    margin-top: 20px;
+  }
+
+  //.project__thumb-slide
+  &__thumb-slide {
+    width: 159px !important;
+    height: 102px !important;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    img, picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-slide-thumb-active {
+    border-color: rgba(110, 7, 158, 1);
+  }
+
+  //.project__slider-next
+  &__slider-next,
+  &__slider-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.73);
+    border-radius: 50%;
+
+    &::after{
+      width: 20px;
+      height: 20px;
+      font-size: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__slider-next {
+    &::after {
+      background-image: url("/img/arrow-left-violet.png");
+    }
+  }
+
+  &__slider-prev {
+    &::after {
+      background-image: url("/img/arrow-right-purple.png");
+    }
+  }
+
+
+  //.project__info
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  //.project__title
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  //.project__params
+  &__params {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 18px;
+      font-weight: 400;
+
+      b {
+        font-size: 24px;
+        color: rgba(110, 7, 158, 1);
+      }
+    }
+
+  }
+
+  //.project__features
+  &__features {
+  }
+
+  //.project__features-title
+  &__features-title {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  //.project__features-row
+  &__features-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+
+      img {
+        width: 34px;
+        height: 34px;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      b {
+        color: rgba(110, 7, 158, 1);
+        font-size: 32px;
+      }
+
+    }
+
+  }
+
+  //.project__bottom
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 65px;
+  }
+
+  //.project__bottom-title
+  &__bottom-title {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  //.project__price
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  //.project__currency
+  &__currency {
+    color: rgba(110, 7, 158, 1);
+  }
+
+  //.project__bottom-btn
+  &__bottom-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 27px;
+    border: 1px solid rgba(110, 7, 158, 1);
+    border-radius: 10px;
+    background: rgba(110, 7, 158, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+
+
+}
