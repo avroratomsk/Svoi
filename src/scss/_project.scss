@@ -3,14 +3,23 @@
   //.project__top
   &__top {
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   //.project__top-inner
   &__top-inner {
+    min-width: 0;
   }
 
   //.project__slider
   &__slider {
+
   }
 
   //.project__slide
@@ -20,6 +29,10 @@
     height: 358px;
     border-radius: 10px;
     overflow: hidden;
+
+    picture {
+      max-width: 100%
+    }
   }
 
   //.project__slide-image
@@ -67,6 +80,10 @@
   //.project__thumbs
   &__thumbs {
     margin-top: 20px;
+
+    @media screen and (max-width: 578px) {
+      display: none;
+    }
   }
 
   //.project__thumb-slide
@@ -97,7 +114,7 @@
     background: rgba(255, 255, 255, 0.73);
     border-radius: 50%;
 
-    &::after{
+    &::after {
       width: 20px;
       height: 20px;
       font-size: 0;
@@ -141,6 +158,10 @@
     gap: 40px;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 1400px) {
+      gap: 20px;
+    }
+
     div {
       display: flex;
       flex-direction: column;
@@ -151,6 +172,10 @@
       b {
         font-size: 24px;
         color: rgba(110, 7, 158, 1);
+
+        @media screen and (max-width: 578px) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -166,6 +191,11 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 150%;
+
+    @media screen and (max-width: 578px) {
+      font-size: 25px;
+    }
+
   }
 
   //.project__features-row
@@ -174,6 +204,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 
     div {
       display: flex;
@@ -194,6 +225,10 @@
       b {
         color: rgba(110, 7, 158, 1);
         font-size: 32px;
+
+        @media screen and (max-width: 578px) {
+          font-size: 25px;
+        }
       }
 
     }
@@ -208,6 +243,11 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 65px;
+
+    @media screen and (max-width: 578px) {
+      margin-top: 30px;
+    }
+
   }
 
   //.project__bottom-title
@@ -224,6 +264,10 @@
     gap: 5px;
     font-size: 50px;
     font-weight: 600;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 40px;
+    }
   }
 
   //.project__currency
@@ -235,6 +279,7 @@
   &__bottom-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     padding: 15px 27px;
     border: 1px solid rgba(110, 7, 158, 1);
@@ -244,7 +289,15 @@
     font-size: 20px;
     font-weight: 500;
 
+    @media screen and (max-width: 578px) {
+      width: 100%;
+    }
+
   }
 
+  //.project__tabs
+  &__tabs {
+    margin-top: 75px;
+  }
 
 }

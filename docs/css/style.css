@@ -2097,6 +2097,16 @@ template {
   margin-left: 2px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 ._lock {
   overflow: hidden;
 }
@@ -3432,6 +3442,15 @@ button {
 
 .project__top {
   margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project__top-inner {
+  min-width: 0;
 }
 
 .project__slide {
@@ -3440,6 +3459,10 @@ button {
   height: 358px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.project__slide picture {
+  max-width: 100%;
 }
 
 .project__slide-image {
@@ -3603,6 +3626,8 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project__features-row div {
@@ -3676,6 +3701,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 5px;
   padding: 15px 27px;
   border: 1px solid rgb(110, 7, 158);
@@ -3684,6 +3712,76 @@ button {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
+}
+
+.project__tabs {
+  margin-top: 75px;
+}
+
+.tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px 55px;
+  border-radius: 30px;
+  background: rgb(243, 243, 243);
+}
+
+.tabs__nav button {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tabs__nav button.active {
+  font-weight: 600;
+}
+
+.tabs__body {
+  min-height: 400px;
+  margin-top: 40px;
+}
+
+.tabs__content {
+  padding: 0 55px;
+  display: none;
+}
+
+.tabs__content h1,
+.tabs__content h2,
+.tabs__content h3,
+.tabs__content h4,
+.tabs__content h5,
+.tabs__content h6 {
+  line-height: 120%;
+  color: #6e079e;
+}
+
+.tabs__content ul,
+.tabs__content ol {
+  margin-top: 15px;
+}
+
+.tabs__content ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.tabs__content ul li {
+  line-height: 140%;
+}
+
+.tabs__content.active {
+  display: block;
 }
 
 * {
@@ -8578,6 +8676,14 @@ body main {
   .works__content-title {
     font-size: 20px;
   }
+
+  .project__params {
+    gap: 20px;
+  }
+
+  .project__price {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -8676,6 +8782,11 @@ body main {
     padding: 30px;
     display: -ms-grid;
     display: grid;
+  }
+
+  .project__top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -8892,6 +9003,19 @@ body main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .tabs__nav {
+    padding: 15px 25px;
+    gap: 20px 10px;
+  }
+
+  .tabs__nav button {
+    font-size: 16px;
+  }
+
+  .tabs__content {
+    padding: 0 25px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -9094,6 +9218,30 @@ body main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 0px;
+  }
+
+  .project__thumbs {
+    display: none;
+  }
+
+  .project__params div b {
+    font-size: 18px;
+  }
+
+  .project__features-title {
+    font-size: 25px;
+  }
+
+  .project__features-row div b {
+    font-size: 25px;
+  }
+
+  .project__bottom {
+    margin-top: 30px;
+  }
+
+  .project__bottom-btn {
+    width: 100%;
   }
 }
 

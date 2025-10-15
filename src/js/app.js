@@ -1,9 +1,11 @@
 import * as functions from './modules/baseFunctions.js';
 import Swiper from 'swiper/bundle';
+import {Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 functions.isWebp();
 
 import "./modules/menu.js"
+import "./modules/tabs.js"
 
 
 const mainSlider = new Swiper('.main-slider__slider', {
@@ -260,6 +262,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
 });
 
 const projectThumbSlider = new Swiper('.project__thumbs', {
+
   direction: 'horizontal',
   loop: true,
   autoHeight: true,
@@ -289,6 +292,7 @@ const projectThumbSlider = new Swiper('.project__thumbs', {
 });
 
 const projectSlider = new Swiper('.project__slider', {
+  modules: {Scrollbar, Pagination},
   direction: 'horizontal',
   loop: true,
   autoHeight: true,
