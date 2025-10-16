@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <section class="project pd">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Каталог
+          <meta itemprop="position" content="2"/>
+        </a>
+        <span itemprop="name" class="breadcrumbs__item">
+            SVOI-1-100
+            <meta itemprop="position" content="3"/>
+          </span>
+
+      </div>
+
+      <div class="project__top">
+        <div class="project__top-inner">
+          <div class="project__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project__slide">
+                <img src="@img/plan.png" alt="" class="project__plan">
+                <div class="project__scale">
+                  <img src="@img/scale.png" alt="">
+                </div>
+                <img src="@img/projects.jpg" alt="Вид проекта" class="project__slide-image">
+                <img src="@img/footer-logo.png" alt="" class="project__slide-logo">
+              </div>
+              <div class="swiper-slide project__slide">
+                <img src="@img/plan.png" alt="" class="project__plan">
+                <div class="project__scale">
+                  <img src="@img/scale.png" alt="">
+                </div>
+                <img src="@img/projects.jpg" alt="Вид проекта" class="project__slide-image">
+                <img src="@img/footer-logo.png" alt="" class="project__slide-logo">
+              </div>
+              <div class="swiper-slide project__slide">
+                <img src="@img/plan.png" alt="" class="project__plan">
+                <div class="project__scale">
+                  <img src="@img/scale.png" alt="">
+                </div>
+                <img src="@img/projects.jpg" alt="Вид проекта" class="project__slide-image">
+                <img src="@img/footer-logo.png" alt="" class="project__slide-logo">
+              </div>
+
+            </div>
+            <div class="swiper-button-prev project__slider-next"></div>
+            <div class="swiper-button-next project__slider-prev"></div>
+          </div>
+          <div class="swiper project__swiper project__thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project__thumb-slide"><img src="@img/projects.jpg" alt=""></div>
+              <div class="swiper-slide project__thumb-slide"><img src="@img/projects.jpg" alt=""></div>
+              <div class="swiper-slide project__thumb-slide"><img src="@img/projects.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="project__info">
+          <h1 class="project__title title">SVOI-1-100</h1>
+          <div class="project__params">
+            <div>Площадь: <b>100 м²</b></div>
+            <div>Материал: <b>Газобетон</b></div>
+            <div>Габариты: <b>18.03 × 14.58</b></div>
+            <div>Срок: <b>12 месяцев</b></div>
+          </div>
+          <div class="project__features">
+            <div class="project__features-title">Удобства:</div>
+            <div class="project__features-row">
+              <div>
+                <img src="@img/garage.svg" alt="">
+                <span>Гараж</span>
+                <b>1</b>
+              </div>
+              <div>
+                <img src="@img/terassa.svg" alt="">
+                <span>Терасса</span>
+                <b>1</b>
+              </div>
+              <div>
+                <img src="@img/spalni.svg" alt="">
+                <span>Спальни</span>
+                <b>3</b>
+              </div>
+              <div>
+                <img src="@img/garderob.svg" alt="">
+                <span>Гардероб</span>
+                <b>1</b>
+              </div>
+              <div>
+                <img src="@img/coctelnaya.svg" alt="">
+                <span>Коктельная</span>
+                <b>1</b>
+              </div>
+            </div>
+          </div>
+          <div class="project__bottom">
+            <div>
+              <div class="project__bottom-title">Цена от:</div>
+              <div class="project__price">8 584 488
+                <div class="project__currency">₽</div>
+              </div>
+            </div>
+            <button type="button" class="project__bottom-btn btn">
+              Оставить заявку
+              <img src="@img/arrow-right-white.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__tabs tabs">
+        <div class="tabs__nav">
+          <button type="button" class="active" data-id="tab-1">Описание</button>
+          <button type="button" data-id="tab-2">Способ оплаты</button>
+          <button type="button" data-id="tab-3">Как расчитать стоимость</button>
+          <button type="button" data-id="tab-4">Дополнителные услуги</button>
+        </div>
+        <div class="tabs__body">
+          <div class="tabs__content active" id="tab-1">
+            <h3>Стандартная комплектация дома:</h3>
+            <br>
+            <ul>
+              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
+              <li>
+                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
+                лента.
+              </li>
+              <li>Утепление крыши: Эко-вата 200 мм.</li>
+              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
+              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
+              <li>Подшивка карнизов дома металлопрофилем.</li>
+              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
+              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
+              <li>Проект дома</li>
+            </ul>
+            <br>
+            <h3>Стандартная комплектация дома:</h3>
+            <ul>
+              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
+              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
+              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
+              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
+              <li>Перегородки 1-ого этажа газобетон 120мм</li>
+              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
+                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
+                установкой армопояса.
+              </li>
+              <li>Лестница из берёзового шпона. Заводское изготовление</li>
+              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
+                алюминиевые батареи
+              </li>
+              <li>Система электроснабжения с установленными розетками и выключателями</li>
+              <li>Система водоснабжения</li>
+              <li>Входная дверь металлическая с терморазрывом</li>
+            </ul>
+          </div>
+          <div class="tabs__content" id="tab-2">
+            <h3>Стандартная комплектация дома2:</h3>
+            <br>
+            <ul>
+              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
+              <li>
+                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
+                лента.
+              </li>
+              <li>Утепление крыши: Эко-вата 200 мм.</li>
+              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
+              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
+              <li>Подшивка карнизов дома металлопрофилем.</li>
+              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
+              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
+              <li>Проект дома</li>
+            </ul>
+            <br>
+            <h3>Стандартная комплектация дома:</h3>
+            <ul>
+              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
+              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
+              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
+              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
+              <li>Перегородки 1-ого этажа газобетон 120мм</li>
+              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
+                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
+                установкой армопояса.
+              </li>
+              <li>Лестница из берёзового шпона. Заводское изготовление</li>
+              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
+                алюминиевые батареи
+              </li>
+              <li>Система электроснабжения с установленными розетками и выключателями</li>
+              <li>Система водоснабжения</li>
+              <li>Входная дверь металлическая с терморазрывом</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="numbers pd">
+    <div class="container">
+      <div class="numbers__row">
+        <div class="numbers__col">
+          <div class="numbers__inner">
+            <p class="numbers__number">12</p>
+            <p class="numbers__title">лет</p>
+            <p class="numbers__text">
+              Строим загородные дома по собственным проектам и проектам клиентов по всему
+              Алтайскому краю
+            </p>
+          </div>
+        </div>
+        <div class="numbers__col">
+          <div class="numbers__inner">
+            <p class="numbers__number">10+</p>
+            <p class="numbers__title">проектов</p>
+            <p class="numbers__text">
+              В 2024 году компания разработала и предложила клиентам более 10-ти новых проектов
+            </p>
+          </div>
+        </div>
+        <div class="numbers__col">
+          <div class="numbers__inner">
+            <p class="numbers__number">3%</p>
+            <p class="numbers__title">Ипотека </p>
+            <p class="numbers__text">
+              Ипотека в ведущих банках от 3%, выгодная рассрочка от компании, trade-in с удобными условиями для клиента
+            </p>
+          </div>
+        </div>
+        <div class="numbers__col">
+          <div class="numbers__inner">
+            <p class="numbers__number">5</p>
+            <p class="numbers__title">лет </p>
+            <p class="numbers__text">
+              Даем гарантию на конструктив дома 5 лет. В течение этого времени будем с вами на связи
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="houses-sale pd">
+    <div class="container">
+      <h2 class="houses-sale__title title">Другие предложения</h2>
+      <div class="houses-sale__slider swiper">
+        <div class="swiper-wrapper houses-sale__wrapper">
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <img src="@img/mini-logo.png" alt="" class="card__logo">
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title"><span>SVOI</span>-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><img src="@img/bed.png" alt="">2 спальни</li>
+                  <li><img src="@img/area.png" alt="">18.03 x 14.58</li>
+                  <li><img src="@img/const.png" alt="">12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <img src="@img/arrow-right-purple.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <img src="@img/mini-logo.png" alt="" class="card__logo">
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title">SVOI-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><img src="@img/bed.png" alt="">2 спальни</li>
+                  <li><img src="@img/area.png" alt="">18.03 x 14.58</li>
+                  <li><img src="@img/const.png" alt="">12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <img src="@img/arrow-right-purple.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <img src="@img/mini-logo.png" alt="" class="card__logo">
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title"><span>SVOI</span>-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><img src="@img/bed.png" alt="">2 спальни</li>
+                  <li><img src="@img/area.png" alt="">18.03 x 14.58</li>
+                  <li><img src="@img/const.png" alt="">12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <img src="@img/arrow-right-purple.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide houses-sale__slide">
+            <div class="houses-sale__card card">
+              <div class="card__image" style="background-image: url('/img/proj.jpg')">
+                <img src="@img/mini-logo.png" alt="" class="card__logo">
+              </div>
+              <div class="card__content">
+                <div class="card__content-top">
+                  <p class="card__title">SVOI-1-100</p>
+                  <p class="card__size">7,5 сот</p>
+                </div>
+                <ul class="card__list-vertical">
+                  <li>Одноэтажный дом 100м2 с гаражом</li>
+                  <li>ЖК Смородина, ул. Ленина, д.2</li>
+                </ul>
+                <ul class="card__list-horizontal">
+                  <li><img src="@img/bed.png" alt="">2 спальни</li>
+                  <li><img src="@img/area.png" alt="">18.03 x 14.58</li>
+                  <li><img src="@img/const.png" alt="">12 месяцев</li>
+                </ul>
+                <div class="card__content-bottom">
+                  <p class="card__price">от 8 000 000 р</p>
+                  <a href="" class="card__link">Узнать больше <img src="@img/arrow-right-purple.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback pd">
+
+    <div class="container">
+      <div class="callback__inner">
+        <img src="@img/callback.jpg" alt="" class="callback__image">
+        <div class="callback__row">
+          <div class="callback__col callback__col--first">
+            <div>
+              <h2 class="callback__title title">Проконсультироваться с менеджером</h2>
+              <p class="callback__subtitle">Оставьте заявку или позвоните по телефону</p>
+            </div>
+            <a href="tel:8 964-086-33-22" class="callback__phone">8 964-086-33-22</a>
+          </div>
+          <div class="callback__col">
+            <form action="" class="form">
+              <input type="text" class="form__input" name="name" placeholder="Имя">
+              <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+              <div class="form__bottom">
+                <div class="form__social social">
+                  <a href="#" class="social__link"><img src="@img/tg.png" alt=""></a>
+                  <a href="#" class="social__link"><img src="@img/wh.png" alt=""></a>
+                </div>
+                <button type="submit" class="form__submit">Оставить заявку</button>
+              </div>
+              <div class="form__checkbox-inner">
+                <input type="checkbox" id="policy" name="policy" class="form__checkbox">
+                <label for="policy">
+                  Я даю свое согласие на обработку персональных данных и подверждаю, что ознакомлен(а) с
+                  <a href="">политикой конфиденциальности и обработки персональных данных</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+@@include('html/_footer.html')
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

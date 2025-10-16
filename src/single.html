@@ -7,258 +7,150 @@
 @@include('html/_header.html')
 
 <main>
-  <section class="project pd">
+  <div class="single">
     <div class="container">
-      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
-           class="breadcrumbs__item">
-          Главная
-          <meta itemprop="position" content="1"/>
-        </a>
-        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
-           class="breadcrumbs__item">
-          Каталог
-          <meta itemprop="position" content="2"/>
-        </a>
-        <span itemprop="name" class="breadcrumbs__item">
-            SVOI-1-100
-            <meta itemprop="position" content="3"/>
-          </span>
-
+      <div class="single__banner" style="background-image: url('@img/banner.jpg')">
+        <a href="" class="single__view-map"><span>Посмотреть на карте</span><img src="@img/location.png" alt=""></a>
+        <div class="single__text">
+          <button type="button" class="single__text-btn"><i class="fa-solid fa-info"></i></button>
+          <p>Даем 5 лет гарантии В течение этого времени будем с вами на связи</p>
+        </div>
+        <p class="single__subtitle">Здесь есть все для комфортной жизни!</p>
+        <h1 class="single__title">ЖК “СМОРОДИНА”</h1>
       </div>
-
-      <div class="project__top">
-        <div class="project__top-inner">
-          <div class="project__slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide project__slide">
-                <img src="@img/plan.png" alt="" class="project__plan">
-                <div class="project__scale">
-                  <img src="@img/scale.png" alt="">
-                </div>
-                <img src="@img/projects.jpg" alt="Вид проекта" class="project__slide-image">
-                <img src="@img/footer-logo.png" alt="" class="project__slide-logo">
-              </div>
-              <div class="swiper-slide project__slide">
-                <img src="@img/plan.png" alt="" class="project__plan">
-                <div class="project__scale">
-                  <img src="@img/scale.png" alt="">
-                </div>
-                <img src="@img/projects.jpg" alt="Вид проекта" class="project__slide-image">
-                <img src="@img/footer-logo.png" alt="" class="project__slide-logo">
-              </div>
-              <div class="swiper-slide project__slide">
-                <img src="@img/plan.png" alt="" class="project__plan">
-                <div class="project__scale">
-                  <img src="@img/scale.png" alt="">
-                </div>
-                <img src="@img/projects.jpg" alt="Вид проекта" class="project__slide-image">
-                <img src="@img/footer-logo.png" alt="" class="project__slide-logo">
-              </div>
-
-            </div>
-            <div class="swiper-button-prev project__slider-next"></div>
-            <div class="swiper-button-next project__slider-prev"></div>
-          </div>
-          <div class="swiper project__swiper project__thumbs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide project__thumb-slide"><img src="@img/projects.jpg" alt=""></div>
-              <div class="swiper-slide project__thumb-slide"><img src="@img/projects.jpg" alt=""></div>
-              <div class="swiper-slide project__thumb-slide"><img src="@img/projects.jpg" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="project__info">
-          <h1 class="project__title title">SVOI-1-100</h1>
-          <div class="project__params">
-            <div>Площадь: <b>100 м²</b></div>
-            <div>Материал: <b>Газобетон</b></div>
-            <div>Габариты: <b>18.03 × 14.58</b></div>
-            <div>Срок: <b>12 месяцев</b></div>
-          </div>
-          <div class="project__features">
-            <div class="project__features-title">Удобства:</div>
-            <div class="project__features-row">
-              <div>
-                <img src="@img/garage.svg" alt="">
-                <span>Гараж</span>
-                <b>1</b>
-              </div>
-              <div>
-                <img src="@img/terassa.svg" alt="">
-                <span>Терасса</span>
-                <b>1</b>
-              </div>
-              <div>
-                <img src="@img/spalni.svg" alt="">
-                <span>Спальни</span>
-                <b>3</b>
-              </div>
-              <div>
-                <img src="@img/garderob.svg" alt="">
-                <span>Гардероб</span>
-                <b>1</b>
-              </div>
-              <div>
-                <img src="@img/coctelnaya.svg" alt="">
-                <span>Коктельная</span>
-                <b>1</b>
-              </div>
-            </div>
-          </div>
-          <div class="project__bottom">
-            <div>
-              <div class="project__bottom-title">Цена от:</div>
-              <div class="project__price">8 584 488
-                <div class="project__currency">₽</div>
-              </div>
-            </div>
-            <button type="button" class="project__bottom-btn btn">
-              Оставить заявку
-              <img src="@img/arrow-right-white.png" alt="">
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="project__tabs tabs">
-        <div class="tabs__nav">
-          <button type="button" class="active" data-id="tab-1">Описание</button>
-          <button type="button" data-id="tab-2">Способ оплаты</button>
-          <button type="button" data-id="tab-3">Как расчитать стоимость</button>
-          <button type="button" data-id="tab-4">Дополнителные услуги</button>
-        </div>
-        <div class="tabs__body">
-          <div class="tabs__content active" id="tab-1">
-            <h3>Стандартная комплектация дома:</h3>
-            <br>
-            <ul>
-              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
-              <li>
-                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
-                лента.
-              </li>
-              <li>Утепление крыши: Эко-вата 200 мм.</li>
-              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
-              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
-              <li>Подшивка карнизов дома металлопрофилем.</li>
-              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
-              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
-              <li>Проект дома</li>
-            </ul>
-            <br>
-            <h3>Стандартная комплектация дома:</h3>
-            <ul>
-              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
-              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
-              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
-              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
-              <li>Перегородки 1-ого этажа газобетон 120мм</li>
-              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
-                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
-                установкой армопояса.
-              </li>
-              <li>Лестница из берёзового шпона. Заводское изготовление</li>
-              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
-                алюминиевые батареи
-              </li>
-              <li>Система электроснабжения с установленными розетками и выключателями</li>
-              <li>Система водоснабжения</li>
-              <li>Входная дверь металлическая с терморазрывом</li>
-            </ul>
-          </div>
-          <div class="tabs__content" id="tab-2">
-            <h3>Стандартная комплектация дома2:</h3>
-            <br>
-            <ul>
-              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
-              <li>
-                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
-                лента.
-              </li>
-              <li>Утепление крыши: Эко-вата 200 мм.</li>
-              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
-              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
-              <li>Подшивка карнизов дома металлопрофилем.</li>
-              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
-              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
-              <li>Проект дома</li>
-            </ul>
-            <br>
-            <h3>Стандартная комплектация дома:</h3>
-            <ul>
-              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
-              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
-              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
-              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
-              <li>Перегородки 1-ого этажа газобетон 120мм</li>
-              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
-                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
-                установкой армопояса.
-              </li>
-              <li>Лестница из берёзового шпона. Заводское изготовление</li>
-              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
-                алюминиевые батареи
-              </li>
-              <li>Система электроснабжения с установленными розетками и выключателями</li>
-              <li>Система водоснабжения</li>
-              <li>Входная дверь металлическая с терморазрывом</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
+  </div>
 
-  </section>
-
-  <section class="numbers pd">
+  <div class="cause pd">
     <div class="container">
-      <div class="numbers__row">
-        <div class="numbers__col">
-          <div class="numbers__inner">
-            <p class="numbers__number">12</p>
-            <p class="numbers__title">лет</p>
-            <p class="numbers__text">
-              Строим загородные дома по собственным проектам и проектам клиентов по всему
-              Алтайскому краю
-            </p>
-          </div>
+      <h2 class="cause__title title">Причины жить в “Смородине”</h2>
+      <div class="cause__tabs tabs">
+      <div class="tabs__nav">
+        <button type="button" class="active" data-id="tab-1">Готовая инфраструктура</button>
+        <button type="button" data-id="tab-2">Безопастность</button>
+        <button type="button" data-id="tab-3">Природа</button>
+        <button type="button" data-id="tab-4">Дорога</button>
+        <button type="button" data-id="tab-5">Умный дом</button>
+        <button type="button" data-id="tab-6">Собственная подстанция</button>
+        <button type="button" data-id="tab-7">Оборудованная площадка</button>
+      </div>
+      <div class="tabs__body">
+        <div class="tabs__content active" id="tab-1">
+          <h3>Стандартная комплектация дома:</h3>
+          <br>
+          <ul>
+            <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
+            <li>
+              Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
+              лента.
+            </li>
+            <li>Утепление крыши: Эко-вата 200 мм.</li>
+            <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
+            <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
+            <li>Подшивка карнизов дома металлопрофилем.</li>
+            <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
+            <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
+            <li>Проект дома</li>
+          </ul>
+          <br>
+          <h3>Стандартная комплектация дома:</h3>
+          <ul>
+            <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
+            <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
+            <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
+            <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
+            <li>Перегородки 1-ого этажа газобетон 120мм</li>
+            <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
+              подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
+              установкой армопояса.
+            </li>
+            <li>Лестница из берёзового шпона. Заводское изготовление</li>
+            <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
+              алюминиевые батареи
+            </li>
+            <li>Система электроснабжения с установленными розетками и выключателями</li>
+            <li>Система водоснабжения</li>
+            <li>Входная дверь металлическая с терморазрывом</li>
+          </ul>
         </div>
-        <div class="numbers__col">
-          <div class="numbers__inner">
-            <p class="numbers__number">10+</p>
-            <p class="numbers__title">проектов</p>
-            <p class="numbers__text">
-              В 2024 году компания разработала и предложила клиентам более 10-ти новых проектов
-            </p>
-          </div>
-        </div>
-        <div class="numbers__col">
-          <div class="numbers__inner">
-            <p class="numbers__number">3%</p>
-            <p class="numbers__title">Ипотека </p>
-            <p class="numbers__text">
-              Ипотека в ведущих банках от 3%, выгодная рассрочка от компании, trade-in с удобными условиями для клиента
-            </p>
-          </div>
-        </div>
-        <div class="numbers__col">
-          <div class="numbers__inner">
-            <p class="numbers__number">5</p>
-            <p class="numbers__title">лет </p>
-            <p class="numbers__text">
-              Даем гарантию на конструктив дома 5 лет. В течение этого времени будем с вами на связи
-            </p>
-          </div>
+        <div class="tabs__content" id="tab-2">
+          <h3>Стандартная комплектация дома2:</h3>
+          <br>
+          <ul>
+            <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
+            <li>
+              Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
+              лента.
+            </li>
+            <li>Утепление крыши: Эко-вата 200 мм.</li>
+            <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
+            <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
+            <li>Подшивка карнизов дома металлопрофилем.</li>
+            <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
+            <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
+            <li>Проект дома</li>
+          </ul>
+          <br>
+          <h3>Стандартная комплектация дома:</h3>
+          <ul>
+            <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
+            <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
+            <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
+            <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
+            <li>Перегородки 1-ого этажа газобетон 120мм</li>
+            <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
+              подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
+              установкой армопояса.
+            </li>
+            <li>Лестница из берёзового шпона. Заводское изготовление</li>
+            <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
+              алюминиевые батареи
+            </li>
+            <li>Система электроснабжения с установленными розетками и выключателями</li>
+            <li>Система водоснабжения</li>
+            <li>Входная дверь металлическая с терморазрывом</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+    </div>
+  </div>
+
+  <div class="about-project pd">
+    <div class="container">
+      <h2 class="title about-project__title">О проект</h2>
+      <div class="about-project__inner">
+        <div class="about-project__text text">
+          <p>
+            Жилой комплекс «Смородина» — это уютный поселок частных домов для тех, кто ценит комфорт, тишину и близость
+            к природе. Здесь вы найдете просторные дома с современными планировками и участками земли, где можно создать
+            собственный уютный уголок. При этом рядом расположены детский сад, школа и магазины, что делает жизнь
+            максимально удобной для всей семьи. «Смородина» объединяет преимущества загородного дома с комфортом
+            городской инфраструктуры.
+          </p>
+        </div>
+        <div class="about-project__logo">
+          <img src="@img/about-project-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="location pd">
+    <div class="container">
+      <h2 class="location__title title">Местоположение</h2>
+      <div class="location__map">
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A29b7ee4bce237db384d2ac41aff71f5c1b06ef00f12af3ad8064a2665018ff40&amp;source=constructor"
+            width="100%" height="500" frameborder="0">
+        </iframe>
+      </div>
+    </div>
+  </div>
 
   <section class="houses-sale pd">
     <div class="container">
-      <h2 class="houses-sale__title title">Другие предложения</h2>
+      <h2 class="houses-sale__title title">Дома</h2>
       <div class="houses-sale__slider swiper">
         <div class="swiper-wrapper houses-sale__wrapper">
           <div class="swiper-slide houses-sale__slide">

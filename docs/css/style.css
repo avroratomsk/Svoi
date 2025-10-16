@@ -3784,6 +3784,148 @@ button {
   display: block;
 }
 
+.single__banner {
+  position: relative;
+  padding: 30px;
+  min-height: 645px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.single__view-map {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 18px 14px;
+  font-weight: 500;
+  background: #6e079e;
+  border-radius: 40px;
+  color: #FFFFFF;
+}
+
+.single__text {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 176px;
+  background: #6e079e;
+  color: #FFFFFF;
+}
+
+.single__text-btn {
+  color: #FFFFFF;
+}
+
+.single__subtitle {
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.single__title {
+  color: rgb(110, 7, 158);
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.location__title {
+  margin-bottom: 41px;
+}
+
+.location__map {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.about-project__title {
+  margin-bottom: 61px;
+}
+
+.about-project__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 142px;
+  padding: 60px 55px;
+  background: #6e079e;
+  border-radius: 40px;
+}
+
+.about-project__text {
+  color: #FFFFFF;
+  line-height: 140%;
+}
+
+.about-project__logo {
+  width: 100%;
+  max-width: 380px;
+}
+
+.about-project__logo img {
+  max-width: 100%;
+}
+
+.cause__title {
+  margin-bottom: 51px;
+}
+
+.cause .tabs__nav {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(110, 7, 158, 0.2);
+}
+
+.cause .tabs__nav button {
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+
+.cause .tabs__nav button::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(110, 7, 158, 0.53);
+  opacity: 0;
+}
+
+.cause .tabs__nav button.active::before {
+  opacity: 1;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -5750,6 +5892,10 @@ body main {
 
   .contact__left {
     max-width: 392px;
+  }
+
+  .single__text-btn {
+    display: none;
   }
 }
 
@@ -8788,6 +8934,14 @@ body main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .single__subtitle {
+    font-size: 30px;
+  }
+
+  .single__title {
+    font-size: 65px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -9016,6 +9170,31 @@ body main {
   .tabs__content {
     padding: 0 25px;
   }
+
+  .single__view-map {
+    font-size: 14px;
+  }
+
+  .single__text {
+    font-size: 14px;
+  }
+
+  .single__subtitle {
+    font-size: 25px;
+  }
+
+  .single__title {
+    font-size: 45px;
+  }
+
+  .about-project__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -9025,6 +9204,10 @@ body main {
             justify-content: center;
     height: 400px;
     border-radius: 10px;
+  }
+
+  .single__banner {
+    min-height: 500px;
   }
 }
 
@@ -9084,6 +9267,26 @@ body main {
 
   .contact__map {
     min-height: 400px;
+  }
+
+  .single__view-map {
+    width: 50px;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .single__view-map span {
+    display: none;
+  }
+
+  .single__text p {
+    display: none;
+  }
+
+  .single__title {
+    font-size: 35px;
   }
 }
 
@@ -9309,6 +9512,10 @@ body main {
 @media screen and (max-width: 425px) {
   .main-slider__logo {
     width: 100px;
+  }
+
+  .single__title {
+    font-size: 28px;
   }
 }
 
