@@ -1832,7 +1832,8 @@ template {
   line-height: 100%;
 }
 
-.main-slider__title span {
+.main-slider__title b,
+.main-slider__title strong {
   color: #6E079E;
 }
 
