@@ -2317,7 +2317,7 @@ button {
 }
 
 .card__title {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -2326,7 +2326,7 @@ button {
 }
 
 .card__size {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
   color: #6e079e;
 }
@@ -3249,20 +3249,29 @@ button {
   content: "";
   display: block;
   background-repeat: no-repeat;
+  background-position: center;
   width: 20px;
   height: 10px;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .breadcrumbs__item:last-child {
   color: rgb(103, 103, 103);
 }
 
+.catalog__title {
+  margin-bottom: 40px;
+}
+
 .catalog__grid {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 46px 38px;
+}
+
+.catalog__filter {
+  margin-bottom: 40px;
 }
 
 .filter {
@@ -3403,6 +3412,15 @@ button {
 
 .contact__info span {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.contact__info-strong {
+  font-weight: 700;
+}
+
+.contact__info-accent {
+  font-weight: 700;
+  color: #6E079E !important;
 }
 
 .contact__item-horiz {
@@ -9323,14 +9341,6 @@ body main {
   .numbers__row {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-  }
-
-  .card__title {
-    font-size: 25px;
-  }
-
-  .card__size {
-    font-size: 25px;
   }
 
   .stock__wrapper {

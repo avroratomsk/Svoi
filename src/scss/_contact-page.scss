@@ -125,6 +125,19 @@
     }
   }
 
+  //.contact__info-strong
+  &__info-strong {
+    font-weight: 700;
+  }
+
+
+  //.contact__info-accent
+  &__info-accent {
+    font-weight: 700;
+    color: #6E079E !important;
+  }
+
+
   //.contact__item-horiz
   &__item-horiz {
     display: flex;

@@ -2,12 +2,13 @@
 
   //.catalog__title
   &__title {
+    margin-bottom: 40px;
   }
 
   //.catalog__grid
   &__grid {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns:repeat(auto-fill, minmax(420px, 1fr));
     gap: 46px 38px;
   }
 
@@ -15,5 +16,9 @@
   &__card {
   }
 
+  //.catalog__filter
+  &__filter{
+    margin-bottom: 40px;
+  }
 
 }

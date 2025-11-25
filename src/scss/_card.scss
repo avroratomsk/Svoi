@@ -37,27 +37,20 @@
 
   //.card__title
   &__title {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 500;
 
     span {
       color: #6e079e;
     }
 
-    @media screen and (max-width: 578px) {
-      font-size: 25px;
-    }
   }
 
   //.card__size
   &__size {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 500;
     color: #6e079e;
-
-    @media screen and (max-width: 578px) {
-      font-size: 25px;
-    }
 
   }
 
