@@ -49,6 +49,8 @@
     position: absolute;
     bottom: 13px;
     left: 13px;
+    z-index: 8;
+    cursor: pointer;
   }
 
   //.project__scale
@@ -145,6 +147,7 @@
 
   //.project__title
   &__title {
+    flex: 1 1 auto;
     font-size: 48px;
     font-weight: 600;
     color: #000000;
@@ -277,6 +280,7 @@
 
   //.project__bottom-btn
   &__bottom-btn {
+    align-self: flex-end;
     display: flex;
     align-items: center;
     justify-content: center;

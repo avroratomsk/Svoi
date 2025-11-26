@@ -6,6 +6,7 @@ functions.isWebp();
 
 import "./modules/menu.js"
 import "./modules/tabs.js"
+import "./modules/popup.js"
 
 
 const mainSlider = new Swiper('.main-slider__slider', {
