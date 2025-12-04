@@ -1,5 +1,5 @@
 "use strict"
-import { bodyLock, bodyUnLock } from "./baseFunctions.js";
+import {bodyLock, bodyUnLock} from "./baseFunctions.js";
 
 const openPopup = (e) => {
   bodyLock();
@@ -8,7 +8,7 @@ const openPopup = (e) => {
 
   const dataPlan = e.currentTarget.dataset.plan;
 
-  if(dataPlan) {
+  if (dataPlan) {
     openImagePopup(dataPlan, currentPopup);
   }
 
@@ -25,20 +25,24 @@ const openImagePopup = (dataPlan, currentPopup) => {
 
 const closePopup = (e) => {
   bodyUnLock();
+  const video = document.querySelectorAll("video");
+  video?.forEach(video => video.pause());
+
   document.querySelector(".popup_show").classList.remove("popup_show");
 };
 
 document.addEventListener("keydown", (e) => {
   if (e.keyCode === 27 && document.querySelector(".popup_show").classList.contains("popup_show")) {
-    document.querySelector(".popup_show").classList.remove("popup_show");
-    document.body.classList.remove("_lock");
-    bodyUnLock();
+    closePopup()
   }
 });
 
 const popup = document.querySelectorAll(".popup");
 popup?.forEach(popup => popup.addEventListener("click", (e) => {
   if (!e.target.closest(".popup__content") && !e.target.closest(".popup-centered__content")) {
+    const video = document.querySelectorAll("video");
+    video?.forEach(video => video.pause());
+
     e.currentTarget.classList.remove("popup_show");
     document.body.classList.remove("_lock");
     bodyUnLock();

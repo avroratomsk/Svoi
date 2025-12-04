@@ -7,9 +7,9 @@
       </div>
       <div class="popup__inner">
         <form action="" class="popup__form form" method="POST" id="callback-form">
-          <input type="text" name="name" class="form__input" placeholder="Ваше имя" required >
-          <input type="tel" name="phone" class="form__input" placeholder="номер телефона" required data-tel-input >
-          <input type="hidden" name="order" id="order-product" class="form__input" >
+          <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" class="form__input" placeholder="номер телефона" required data-tel-input>
+          <input type="hidden" name="order" id="order-product" class="form__input">
           <div class="form__row">
             <input type="checkbox" name="agreement" class="form" id="agreement">
             <label for="agreement" class="form__row-label">
@@ -30,6 +30,25 @@
       <div class="popup__inner">
         <div id="plan-image">
           <img src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="video" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close close"></button>
+      <div class="popup__inner">
+        <div id="plan-video">
+          <video
+              controls
+              poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif">
+            <source
+                src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
+                type="video/mp4">
+          </video>
         </div>
       </div>
     </div>

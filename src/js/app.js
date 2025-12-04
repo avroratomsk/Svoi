@@ -4,9 +4,10 @@ import {Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 functions.isWebp();
 
-import "./modules/menu.js"
-import "./modules/tabs.js"
-import "./modules/popup.js"
+import "./modules/menu.js";
+import "./modules/tabs.js";
+import "./modules/popup.js";
+import "./modules/normalizeFormatPhoneLink.js";
 
 
 const mainSlider = new Swiper('.main-slider__slider', {
@@ -44,7 +45,6 @@ const mainSlider = new Swiper('.main-slider__slider', {
     el: '.swiper-scrollbar',
   },
 });
-
 
 const responsibilitySlider = new Swiper('.responsibility__slider', {
   direction: 'horizontal',
@@ -365,6 +365,31 @@ document.querySelectorAll('.accordion__title').forEach(title => {
     }
   });
 });
+
+const imagesItems = document.querySelectorAll('.images__item');
+const imagesGridContainer = document.querySelector('.images__grid');
+
+if(imagesItems.length === 5) {
+  imagesGridContainer.classList.add('grid-5');
+}
+
+if (imagesItems.length === 4) {
+  imagesGridContainer.classList.add('grid-4');
+}
+
+if (imagesItems.length === 3) {
+  imagesGridContainer.classList.add('grid-3');
+}
+
+if (imagesItems.length === 2) {
+  imagesGridContainer.classList.add('grid-2');
+}
+
+if (imagesItems.length === 1) {
+  imagesGridContainer.classList.add('grid-1');
+}
+
+
 
 
 
