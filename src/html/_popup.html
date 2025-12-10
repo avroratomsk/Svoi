@@ -1,23 +1,34 @@
 <div id="callback" class="popup">
   <div class="popup__wrapper">
     <div class="popup__content">
+      <img src="@img/popup_bg.jpg" alt="" class="popup__img">
       <button data-close type="button" class="popup__close close"></button>
       <div class="popup__top">
-        <p class="popup__title">Оставьте заявку на консультацию</p>
+        <p class="popup__title">Узнать больше <br> об услуге <br> Фундамент «Под ключ»</p>
+        <p class="popup__subtitle">
+          Оставьте заявку или позвоните <br> по телефону
+        </p>
       </div>
       <div class="popup__inner">
-        <form action="" class="popup__form form" method="POST" id="callback-form">
-          <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" class="form__input" placeholder="номер телефона" required data-tel-input>
-          <input type="hidden" name="order" id="order-product" class="form__input">
-          <div class="form__row">
-            <input type="checkbox" name="agreement" class="form" id="agreement">
-            <label for="agreement" class="form__row-label">
-              Я согласен(а) с <a href="" target="_blank">политикой конфиденциальности</a>
+        <form action="" class="popup__form form">
+          <input type="text" class="form__input" name="name" placeholder="Имя">
+          <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+          <div class="form__bottom">
+            <div class="form__social social">
+              <a href="#" class="social__link"><img src="@img/tg.png" alt=""></a>
+              <a href="#" class="social__link"><img src="@img/wh.png" alt=""></a>
+            </div>
+            <button type="submit" class="form__submit">Оставить заявку</button>
+          </div>
+          <div class="form__checkbox-inner">
+            <input type="checkbox" id="policy" name="policy" class="form__checkbox">
+            <label for="policy">
+              Я даю свое согласие на обработку персональных данных и подверждаю, что ознакомлен(а) с
+              <a href="">политикой конфиденциальности и обработки персональных данных</a>
             </label>
           </div>
-          <button type="submit" class="form__submit">Отправить</button>
         </form>
+        <a href="tel:8 964-086-33-22" class="callback__phone">8 964-086-33-22</a>
       </div>
     </div>
   </div>
