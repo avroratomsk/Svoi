@@ -35,11 +35,32 @@ body._lock::after {
     margin-top: 40px;
   }
 
+  &--video {
+
+    .popup__content {
+      border-radius: 10px;
+      overflow: auto;
+    }
+
+    .popup__close {
+      top: 0;
+      right: 0;
+      z-index: 999;
+
+      &::before,
+      &::after {
+        background-color: #6e079e;
+      }
+
+    }
+  }
+
 }
 
 .popup__close {
   top: 55px;
   right: 62px;
+  z-index: 99;
 
   &::before,
   &::after {

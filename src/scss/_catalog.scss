@@ -21,4 +21,11 @@
     margin-bottom: 40px;
   }
 
+  &__card__prev,
+  &__card__next {
+    &::after {
+      font-size: 25px;
+    }
+  }
+
 }

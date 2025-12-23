@@ -1,15 +1,21 @@
-import {bodyLock} from "./baseFunctions.js";
+import {bodyLock, bodyUnLock} from "./baseFunctions.js";
 
 const burgerBtn = document.getElementById("burger");
 
 burgerBtn?.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle("active");
-    const nav = document.querySelector(".nav");
-    nav.classList.toggle("active");
+  e.currentTarget.classList.toggle("active");
 
-    if (nav.classList.contains("active")) {
-        bodyLock();
-    }
+  const heightHeader = document.querySelector(".header").offsetHeight;
+
+  const nav = document.querySelector(".nav");
+  nav.style.top = heightHeader + 1 + 'px';
+  nav.classList.toggle("active");
+
+  if (nav.classList.contains("active")) {
+    bodyLock();
+  }else {
+    bodyUnLock();
+  }
 });
 
 let lastScroll = window.scrollY;

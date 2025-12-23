@@ -15,17 +15,18 @@ if (isMobile()) {
   document.documentElement.classList.add('_pc');
 }
 
-// Блокировка скролла
+let widthScrollBar = window.innerWidth - document.documentElement.clientWidth;
+
+// Блокировка скрола
 export const bodyLock = (e) => {
   document.body.classList.add('_lock');
-  let widthScrollBar = window.innerWidth - document.documentElement.clientWidth;
   // document.querySelector('.header').style.marginRight = widthScrollBar + 'px';
-  document.documentElement.style.marginRight = widthScrollBar + 'px';
+  document.body.style.paddingRight = widthScrollBar + 'px';
 };
 
 // Удаление блокировки скролла
 export const bodyUnLock = (e) => {
-  document.documentElement.style.marginRight = '0px';
+  document.body.style.paddingRight = '0px';
   // document.querySelector('.header').style.marginRight = '0px';
   document.body.classList.remove('_lock');
 };

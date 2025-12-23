@@ -2,6 +2,12 @@ import * as functions from './modules/baseFunctions.js';
 import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Scrollbar } from "swiper/modules";
 
+// import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
+
+// Fancybox.bind("[data-photo]", {
+//
+// });
+
 functions.isWebp();
 
 import "./modules/menu.js";
@@ -36,8 +42,8 @@ const mainSlider = new Swiper('.main-slider__slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.main-slider__next',
+    prevEl: '.main-slider__prev',
   },
 
   // And if we need scrollbar
@@ -327,6 +333,22 @@ const projectSlider = new Swiper('.project__slider', {
   //     },
   //   }
   // }
+
+});
+
+const catalogCardImage = new Swiper('.catalog__card-image', {
+  modules: {Scrollbar, Pagination, Navigation},
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 20,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
 
 });
 

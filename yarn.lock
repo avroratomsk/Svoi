@@ -26,6 +26,11 @@
     http-response-object "^3.0.1"
     parse-cache-control "^1.0.1"
 
+"@fancyapps/ui@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-6.1.7.tgz#bba8e47c2a5307ecd5d01177f3911ceb69f6a19f"
+  integrity sha512-KHOvuy90JBFDgbNa2V1N9Jg7PE/lSQMXN9VbhR+WQSIxIEi4PV7kndeao7ezir5WeJ8OZRyDelNKJVLicXfBIg==
+
 "@gar/promisify@^1.1.3":
   version "1.1.3"
   resolved "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.3.tgz"

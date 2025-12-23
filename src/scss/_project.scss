@@ -172,7 +172,7 @@
       font-weight: 400;
 
       b {
-        font-size: 24px;
+        font-size: 16px;
         color: rgba(110, 7, 158, 1);
 
         @media screen and (max-width: 578px) {
@@ -225,11 +225,7 @@
 
       b {
         color: rgba(110, 7, 158, 1);
-        font-size: 32px;
-
-        @media screen and (max-width: 578px) {
-          font-size: 25px;
-        }
+        font-size: 16px;
       }
 
     }

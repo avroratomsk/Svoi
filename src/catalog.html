@@ -22,7 +22,7 @@
 
       </div>
       <h1 class="catalog__title title">Проекты домов</h1>
-      <div class="catalog__filter filter">
+     <!-- <div class="catalog__filter filter">
         <div class="filter__wrp">
           <button type="button" class="filter__btn">
             <span>Локация</span>
@@ -34,11 +34,26 @@
           </ul>
         </div>
 
-      </div>
+      </div>-->
       <div class="catalog__grid">
         <div class="catalog__card card">
-          <div class="card__image" style="background-image: url('img/proj.jpg')">
-            <img src="@img/mini-logo.png" alt="" class="card__logo">
+          <div class="swiper catalog__card-image">
+            <div class="catalog__card-wrapper swiper-wrapper">
+              <div class="swiper-slide catalog__card-slide">
+                <video controls width="100%" height="220px" poster="@img/proj.jpg">
+                  <source src="/video/2025-10-17 13.02.33.mp4" type="video/webm">
+                </video>
+              </div>
+              <div class="swiper-slide catalog__card-slide">
+                <img src="@img/proj.jpg" alt="">
+              </div>
+              <div class="swiper-slide catalog__card-slide">
+                <img src="@img/proj.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-button-prev catalog__card__prev"></div>
+            <div class="swiper-button-next catalog__card__next"></div>
           </div>
           <div class="card__content">
             <div class="card__content-top">
