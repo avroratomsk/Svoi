@@ -1,6 +1,6 @@
 import * as functions from './modules/baseFunctions.js';
 import Swiper from 'swiper/bundle';
-import {Navigation, Pagination, Scrollbar } from "swiper/modules";
+import {Navigation, Pagination, Scrollbar} from "swiper/modules";
 
 // import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 
@@ -56,6 +56,7 @@ const responsibilitySlider = new Swiper('.responsibility__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 10,
+
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
@@ -305,7 +306,7 @@ const projectSlider = new Swiper('.project__slider', {
   autoHeight: true,
   spaceBetween: 20,
 
-  pagination: {
+  navigation: {
     nextEl: '.project__slider-next',
     prevEl: '.project__slider-prev',
   },
@@ -349,9 +350,26 @@ const catalogCardImage = new Swiper('.catalog__card-image', {
     prevEl: '.swiper-button-prev',
   },
 
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+  breakpoints: {
+    320: {
+      navigation: {
+        enabled: false
+      },
+    },
+    768: {
+      navigation: {
+        enabled: true
+      },
+    }
+  }
+
 
 });
-
 
 
 // Initialize Lenis
@@ -391,7 +409,7 @@ document.querySelectorAll('.accordion__title').forEach(title => {
 const imagesItems = document.querySelectorAll('.images__item');
 const imagesGridContainer = document.querySelector('.images__grid');
 
-if(imagesItems.length === 5) {
+if (imagesItems.length === 5) {
   imagesGridContainer.classList.add('grid-5');
 }
 
@@ -412,6 +430,16 @@ if (imagesItems.length === 1) {
 }
 
 
+const playBtnCatalog = document.querySelectorAll('.catalog__play');
+playBtnCatalog?.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    const video = item.nextElementSibling;
+    video.controls = true;
+    video.play();
+    item.style.display = 'none';
+
+  })
+})
 
 
 

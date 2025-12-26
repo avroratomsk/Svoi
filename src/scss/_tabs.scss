@@ -6,17 +6,20 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 15px 55px;
+    padding: 0 55px;
     border-radius: 30px;
-    background: rgba(243, 243, 243, 1);
 
     button {
+      padding: 10px 20px;
       font-size: 20px;
       font-weight: 500;
       cursor: pointer;
+      background: rgba(243, 243, 243, 1);
+      border-radius: 5px;
 
       &.active {
-        font-weight: 600;
+        background: #6e079e;
+        color: #fff;
       }
     }
 

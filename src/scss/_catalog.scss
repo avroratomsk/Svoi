@@ -16,16 +16,79 @@
   &__card {
   }
 
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 99;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: 3px;
+    }
+  }
+
+  &__card-image {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+
+      .catalog__card__prev {
+        left: 10px;
+      }
+
+      .catalog__card__next {
+        right: 10px;
+      }
+
+    }
+  }
+
   //.catalog__filter
-  &__filter{
+  &__filter {
     margin-bottom: 40px;
+  }
+
+  &__card__prev {
+    left: -20%;
+  }
+
+  &__card__next {
+    right: -20%;
   }
 
   &__card__prev,
   &__card__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: $animation_speed;
+
     &::after {
-      font-size: 25px;
+      font-size: 16px;
+      color: #6e079e;
     }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #FFFFFF;
   }
 
 }
