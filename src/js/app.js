@@ -8,6 +8,8 @@ import {Navigation, Pagination, Scrollbar} from "swiper/modules";
 //
 // });
 
+
+
 functions.isWebp();
 
 import "./modules/menu.js";
