@@ -2477,7 +2477,7 @@ button {
 
 .added__card-title {
   line-height: 120%;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 500;
   color: #000000;
 }
@@ -2490,7 +2490,7 @@ button {
 }
 
 .added__price {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -2615,7 +2615,7 @@ button {
 
 .stock__slide-title {
   margin-bottom: 10px;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -2636,7 +2636,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 18px 48px;
+  padding: 18px 10px;
   background: #6e079e;
   border-radius: 10px;
   color: #ffffff;
@@ -10037,7 +10037,7 @@ body main {
   }
 
   .stock__slide-title {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .stock__slide-link {
