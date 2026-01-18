@@ -1,6 +1,7 @@
 import * as functions from './modules/baseFunctions.js';
 import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Scrollbar} from "swiper/modules";
+import {Fancybox} from "@fancyapps/ui"
 
 // import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 
@@ -431,7 +432,9 @@ if (imagesItems.length === 1) {
   imagesGridContainer.classList.add('grid-1');
 }
 
-
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
 const playBtnCatalog = document.querySelectorAll('.catalog__play');
 playBtnCatalog?.forEach((item) => {
   item.addEventListener('click', (e) => {
@@ -439,6 +442,14 @@ playBtnCatalog?.forEach((item) => {
     video.controls = true;
     video.play();
     item.style.display = 'none';
+  })
+})
+
+
+const scaleBtn = document.querySelectorAll('.project__scale');
+
+scaleBtn.forEach((item) => {
+  item.addEventListener('click', (e) => {
 
   })
 })
