@@ -227,3 +227,20 @@ body._lock::after {
     max-width: 100%;
   }
 }
+
+#reviews {
+  .popup__content {
+    border-radius: 20px;
+    background: #FFFFFF;
+  }
+
+  .popup__close {
+    top: 25px;
+    right: 30px;
+
+    &::after,&::before {
+      background-color: red;
+    }
+  }
+
+}

@@ -454,6 +454,14 @@ scaleBtn.forEach((item) => {
   })
 })
 
+const reviewsLink = document.querySelectorAll('.reviews__link');
+reviewsLink?.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    const prevElText = item.previousElementSibling.innerHTML;
+    document.getElementById('text').innerHTML = prevElText;
+  })
+})
+
 
 
 

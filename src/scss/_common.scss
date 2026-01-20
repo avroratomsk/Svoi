@@ -13,8 +13,14 @@ button {
   border: none;
 }
 
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .title {
-  font-family: "Oswald", sans-serif;
   color: rgba(48, 48, 48, 1);
   font-size: 50px;
   font-weight: 500;
@@ -93,6 +99,11 @@ button {
     color: #000000;
     border: 1px solid rgba(0, 0, 0, 0.32);
     border-radius: 40px;
+  }
+
+  .top-section__link-ref {
+    text-decoration: underline;
+    color: #000000;
   }
 
   //.top-section__right

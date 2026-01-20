@@ -32,6 +32,12 @@
   &__text {
     margin-bottom: 5px;
     line-height: 140%;
+    max-height: 200px;
+    overflow: hidden;
+
+    &.active {
+      max-height: 500px;
+    }
   }
 
   //.reviews__link
