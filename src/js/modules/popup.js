@@ -29,6 +29,8 @@ const closePopup = (e) => {
   video?.forEach(video => video.pause());
 
   document.querySelector(".popup_show").classList.remove("popup_show");
+  document.getElementById('title-popup').innerText = 'Проконсультироваться с менеджером';
+
 };
 
 document.addEventListener("keydown", (e) => {

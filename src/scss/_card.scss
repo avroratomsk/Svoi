@@ -1,5 +1,9 @@
 .card {
 
+  &.active {
+    display: block !important;
+  }
+
   //.card__image
   &__image {
     position: relative;

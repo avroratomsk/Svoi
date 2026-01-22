@@ -7,13 +7,26 @@
     flex-direction: column;
     gap: 30px;
 
+
     @media screen and (min-width: 992px) {
       display: contents;
     }
   }
 
+  //.faq__border
+  &__border{
+    @media screen and (min-width: 768px) {
+      padding: 27px;
+    }
+  }
+
   .container {
     position: relative;
+    border-radius: 16px;
+
+    @media screen and (min-width: 768px) {
+      border: 1px solid #6e079e;
+    }
   }
 
   .top-section {

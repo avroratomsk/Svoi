@@ -147,9 +147,10 @@ body._lock::after {
 .popup__title {
   text-align: left;
   color: #FFFFFF;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 500;
   line-height: 120%;
+  text-wrap: balance;
 }
 
 .popup__subtitle {
@@ -242,5 +243,56 @@ body._lock::after {
       background-color: red;
     }
   }
+
+}
+
+#filter {
+
+  .popup__content {
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+
+  .popup__close {
+    top: 0;
+    right: 0;
+
+    &::after,&::before {
+      background-color: red;
+    }
+  }
+
+  .filter {}
+
+  .filter__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filter__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    box-shadow: none;
+
+    li {
+      border: 1px solid #6e079e;
+    }
+  }
+
+  .filter__btn {
+    width: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+
+    img {
+      display: none;
+    }
+  }
+
 
 }

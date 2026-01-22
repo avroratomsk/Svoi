@@ -1,10 +1,35 @@
 .filter {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 20px;
+
+  select {
+    border: none;
+    background: none;
+    font-size: 14px;
+  }
+
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
   //.filter__wrp
   &__wrp {
     position: relative;
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+    }
+
   }
 
   //.filter__btn
@@ -15,18 +40,22 @@
     justify-content: center;
     gap: 10px;
     width: 100%;
-    min-width: 250px;
-    padding: 15px 27px;
+    min-width: 140px;
+    padding: 10px 15px;
     border: 1px solid rgba(110, 7, 158, 1);
     border-radius: 40px;
     background: rgba(255, 255, 255, 1);
+    //font-size: 14px;
+    white-space: nowrap;
     z-index: 3;
   }
 
   //.filter__list
   &__list {
+    display: none;
     width: 100%;
-    padding: 70px 15px 15px;
+    min-width: 140px;
+    padding: 50px 5px 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,11 +64,55 @@
     background: rgba(255, 255, 255, 1);
     z-index: 2;
 
+    &.active {
+      display: block;
+    }
+
 
     li {
-      padding:7px 0;
+      padding: 7px 0;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+
+      @media (hover: hover) {
+        &:hover {
+          background: rgba($color: #000, $alpha: 0.05);
+        }
+      }
     }
   }
 
+  &__reset {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    display: none;
+
+
+    &::before,&::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      margin-left: -8px;
+      height: 2px;
+      margin-top: -2px;
+      background: red;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__reset.active {
+    display: inline-flex;
+  }
 
 }

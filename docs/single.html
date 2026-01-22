@@ -13,7 +13,7 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20260121050628"
+    href="css/style.min.css?_v=20260122134443"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -49,13 +49,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260121050628"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260122134443"
     rel="stylesheet">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260121050628" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260121050628"/>
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260122134443" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260122134443"/>
   <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260121050628"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260122134443"
   />
 </head>
 
@@ -101,7 +101,10 @@
   <div class="single">
     <div class="container">
       <div class="single__banner" style="background-image: url('img/banner.jpg')">
-        <a href="" class="single__view-map"><span>Посмотреть на карте</span><picture><source srcset="img/location.webp" type="image/webp"><img src="img/location.png" alt=""></picture></a>
+        <div class="single__links">
+          <a href="" class="single__view-map"><span>Посмотреть на карте</span><picture><source srcset="img/location.webp" type="image/webp"><img src="img/location.png" alt=""></picture></a>
+          <a href="" class="single__view-map" download>Скачать прайс</a>
+        </div>
         <div class="single__text">
           <button type="button" class="single__text-btn"><i class="fa-solid fa-info"></i></button>
           <p>Даем 5 лет гарантии В течение этого времени будем с вами на связи</p>
@@ -141,93 +144,100 @@
   <div class="cause pd">
     <div class="container">
       <h2 class="cause__title title">Причины жить в “Смородине”</h2>
-      <div class="cause__tabs tabs">
-        <div class="tabs__nav">
-          <button type="button" class="active" data-id="tab-1">Готовая инфраструктура</button>
-          <button type="button" data-id="tab-2">Безопастность</button>
-          <button type="button" data-id="tab-3">Природа</button>
-          <button type="button" data-id="tab-4">Дорога</button>
-          <button type="button" data-id="tab-5">Умный дом</button>
-          <button type="button" data-id="tab-6">Собственная подстанция</button>
-          <button type="button" data-id="tab-7">Оборудованная площадка</button>
+    </div>
+    <div class="cause__tabs tabs">
+      <div class="tabs__nav">
+        <button type="button" class="active" data-id="tab-1">Готовая инфраструктура</button>
+        <button type="button" data-id="tab-2">Безопастность</button>
+        <button type="button" data-id="tab-3">Природа</button>
+        <button type="button" data-id="tab-4">Дорога</button>
+        <button type="button" data-id="tab-5">Умный дом</button>
+        <button type="button" data-id="tab-6">Собственная подстанция</button>
+        <button type="button" data-id="tab-7">Оборудованная площадка</button>
+      </div>
+      <div class="tabs__body">
+        <div class="tabs__content active" id="tab-1">
+          <div class="tabs__text">
+            <h3>Стандартная комплектация дома:</h3>
+            <br>
+            <ul>
+              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
+              <li>
+                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
+                лента.
+              </li>
+              <li>Утепление крыши: Эко-вата 200 мм.</li>
+              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
+              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
+              <li>Подшивка карнизов дома металлопрофилем.</li>
+              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
+              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
+              <li>Проект дома</li>
+            </ul>
+            <br>
+            <h3>Стандартная комплектация дома:</h3>
+            <ul>
+              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
+              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
+              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
+              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
+              <li>Перегородки 1-ого этажа газобетон 120мм</li>
+              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
+                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
+                установкой армопояса.
+              </li>
+              <li>Лестница из берёзового шпона. Заводское изготовление</li>
+              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
+                алюминиевые батареи
+              </li>
+              <li>Система электроснабжения с установленными розетками и выключателями</li>
+              <li>Система водоснабжения</li>
+              <li>Входная дверь металлическая с терморазрывом</li>
+            </ul>
+          </div>
+
+          <div class="tabs__image">
+            <picture><source srcset="img/image_1.webp" type="image/webp"><img src="img/image_1.jpg" alt=""></picture>
+          </div>
+
         </div>
-        <div class="tabs__body">
-          <div class="tabs__content active" id="tab-1">
-            <h3>Стандартная комплектация дома:</h3>
-            <br>
-            <ul>
-              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
-              <li>
-                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
-                лента.
-              </li>
-              <li>Утепление крыши: Эко-вата 200 мм.</li>
-              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
-              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
-              <li>Подшивка карнизов дома металлопрофилем.</li>
-              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
-              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
-              <li>Проект дома</li>
-            </ul>
-            <br>
-            <h3>Стандартная комплектация дома:</h3>
-            <ul>
-              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
-              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
-              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
-              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
-              <li>Перегородки 1-ого этажа газобетон 120мм</li>
-              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
-                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
-                установкой армопояса.
-              </li>
-              <li>Лестница из берёзового шпона. Заводское изготовление</li>
-              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
-                алюминиевые батареи
-              </li>
-              <li>Система электроснабжения с установленными розетками и выключателями</li>
-              <li>Система водоснабжения</li>
-              <li>Входная дверь металлическая с терморазрывом</li>
-            </ul>
-          </div>
-          <div class="tabs__content" id="tab-2">
-            <h3>Стандартная комплектация дома2:</h3>
-            <br>
-            <ul>
-              <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
-              <li>
-                Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
-                лента.
-              </li>
-              <li>Утепление крыши: Эко-вата 200 мм.</li>
-              <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
-              <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
-              <li>Подшивка карнизов дома металлопрофилем.</li>
-              <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
-              <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
-              <li>Проект дома</li>
-            </ul>
-            <br>
-            <h3>Стандартная комплектация дома:</h3>
-            <ul>
-              <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
-              <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
-              <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
-              <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
-              <li>Перегородки 1-ого этажа газобетон 120мм</li>
-              <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
-                подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
-                установкой армопояса.
-              </li>
-              <li>Лестница из берёзового шпона. Заводское изготовление</li>
-              <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
-                алюминиевые батареи
-              </li>
-              <li>Система электроснабжения с установленными розетками и выключателями</li>
-              <li>Система водоснабжения</li>
-              <li>Входная дверь металлическая с терморазрывом</li>
-            </ul>
-          </div>
+        <div class="tabs__content" id="tab-2">
+          <h3>Стандартная комплектация дома2:</h3>
+          <br>
+          <ul>
+            <li>Материал стен: газоблок СИБИТ (может быть СТРОЙБЕРГ) 300мм. или 400мм. Марка Д500</li>
+            <li>
+              Фундамент: армированный (арматура 12мм) ростверк: сваи диаметром 380-400 мм длиной 2500 мм, бетонная
+              лента.
+            </li>
+            <li>Утепление крыши: Эко-вата 200 мм.</li>
+            <li>Элементы крыши: стропильные ноги сеч. 50*150 мм. Обрешетка – доска толщ. 25 мм, разреженная.</li>
+            <li>Кровельный материал дома: металлический профиль или металлочерепица, цвет разный.</li>
+            <li>Подшивка карнизов дома металлопрофилем.</li>
+            <li>Система канализования с разводкой по дому и устройством выгребной ямы из 3 колец 1500 * 900 мм</li>
+            <li>Система газоснабжения дома, с подведением к дому. заведением в котельную и счетчиком газа</li>
+            <li>Проект дома</li>
+          </ul>
+          <br>
+          <h3>Стандартная комплектация дома:</h3>
+          <ul>
+            <li>Внутренние стены оштукатурены и шпаклёваны под наклейку обоев (белые).</li>
+            <li>Окна пластиковые пятикамерные с подоконниками и отделкой откосов. Могут быть кешированные</li>
+            <li>На первом этаже черновая бетонная стяжка пола. Второй этаж - ДСП.</li>
+            <li>Перегородки второго этажа – гипсокартон со звукоизолирующим материалом</li>
+            <li>Перегородки 1-ого этажа газобетон 120мм</li>
+            <li>ежэтажное перекрытие первого и второго этажей - деревянные балки сечение 200*50 мм, разреженная
+              подшивка потолка –доска толщ. 25 мм со звукоизоляцией; по желанию заказчика могут быть бетонные плиты с
+              установкой армопояса.
+            </li>
+            <li>Лестница из берёзового шпона. Заводское изготовление</li>
+            <li>Система отопления: газ с установленным газовым котлом. Первый этаж -“Теплый пол”, второй этаж -
+              алюминиевые батареи
+            </li>
+            <li>Система электроснабжения с установленными розетками и выключателями</li>
+            <li>Система водоснабжения</li>
+            <li>Входная дверь металлическая с терморазрывом</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -479,7 +489,7 @@
       <picture><source srcset="img/popup_bg.webp" type="image/webp"><img src="img/popup_bg.jpg" alt="" class="popup__img"></picture>
       <button data-close type="button" class="popup__close close"></button>
       <div class="popup__top">
-        <p class="popup__title">Узнать больше <br> об услуге <br> Фундамент «Под ключ»</p>
+        <p class="popup__title" id="title-popup">Проконсультироваться с менеджером</p>
         <p class="popup__subtitle">
           Оставьте заявку или позвоните <br> по телефону
         </p>
@@ -488,6 +498,8 @@
         <form action="" class="popup__form form">
           <input type="text" class="form__input" name="name" placeholder="Имя">
           <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+          <input type="tel" class="form__input" name="service" style="position: absolute; left: 0; top: 0; opacity: 0;">
+
           <div class="form__bottom">
             <div class="form__social social">
               <a href="#" class="social__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
@@ -537,6 +549,86 @@
   </div>
 </div>
 
+<div id="filter" class="popup popup_show">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close close"></button>
+      <div class="popup__inner">
+        <div class="popup__filter filter">
+          <div class="filter__inner">
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span class="filter__btn-name" data-default="Цена">Цена</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="5 400 000">5 400 000</li>
+                <li data-value="5 690 000">5 690 000</li>
+                <li data-value="5 690 000">5 990 000</li>
+                <li data-value="8 000 000">8 000 000</li>
+                <li data-value="10 500 000">10 500 000</li>
+                <li data-value="12 550 000">12 550 000</li>
+              </ul>
+              <input type="text" name="price" id="price">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span class="filter__btn-name" data-default="Спальни">Спальни</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="1">1</li>
+                <li data-value="2">2</li>
+                <li data-value="3">3</li>
+              </ul>
+              <input type="text" name="spalny">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span>Площадь</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+              </ul>
+              <input type="text" name="area">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span>Материал</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="Газобетон">Газобетон</li>
+                <li data-value="Газобетон 400">Газобетон 400</li>
+                <li data-value="Газоблок">Газоблок</li>
+              </ul>
+              <input type="text" name="material">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span>Этажность</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="1">1</li>
+                <li data-value="2">2</li>
+              </ul>
+              <input type="text" name="etazh">
+            </div>
+
+            <button type="button" class="filter__reset"></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="video" class="popup popup--video">
   <div class="popup__wrapper">
     <div class="popup__content">
@@ -557,7 +649,7 @@
 </div>
 
 
-<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260121050628"></script>
-<script src="js/app.min.js?_v=20260121050628"></script>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260122134443"></script>
+<script src="js/app.min.js?_v=20260122134443"></script>
 </body>
 </html>

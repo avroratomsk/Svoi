@@ -13,7 +13,7 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20260121050628"
+    href="css/style.min.css?_v=20260122134443"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -49,13 +49,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260121050628"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260122134443"
     rel="stylesheet">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260121050628" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260121050628"/>
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260122134443" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260122134443"/>
   <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260121050628"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260122134443"
   />
 </head>
 
@@ -113,47 +113,156 @@
 
       </div>
       <h1 class="catalog__title title">Проекты домов</h1>
-      <!-- <div class="catalog__filter filter">
-         <div class="filter__wrp">
-           <button type="button" class="filter__btn">
-             <span>Локация</span>
-             <img src="img/chevron-down.svg" alt="">
-           </button>
-           <ul class="filter__list">
-             <li><a href="">ЖК “Смородина”</a></li>
-             <li><a href="">ЖК “Ботаника”</a></li>
-           </ul>
-         </div>
 
-       </div>-->
-      <div class="catalog__grid">
-        <div class="catalog__card card">
-          <div class="swiper catalog__card-image">
-            <div class="catalog__card-wrapper swiper-wrapper">
-              <div class="swiper-slide catalog__card-slide">
-                <button type="button" class="catalog__play">
-                  <img src="img/play.svg" alt="">
-                </button>
-                <video width="100%" poster="img/proj.jpg">
-                  <source src="/video/2025-10-17 13.02.33.mp4" type="video/webm">
-                </video>
-              </div>
-              <div class="swiper-slide catalog__card-slide">
-                <picture><source srcset="img/proj.webp" type="image/webp"><img src="img/proj.jpg" alt=""></picture>
-              </div>
-              <div class="swiper-slide catalog__card-slide">
-                <picture><source srcset="img/proj.webp" type="image/webp"><img src="img/proj.jpg" alt=""></picture>
-              </div>
+      <div class="catalog__filter filter">
+        <div class="filter__inner">
+          <div class="filter__wrp">
+            <button type="button" class="filter__btn">
+              <span class="filter__btn-name" data-default="Цена">Цена</span>
+              <img src="img/chevron-down.svg" alt="">
+            </button>
+            <ul class="filter__list">
+              <li data-value="5 400 000">5 400 000</li>
+              <li data-value="5 690 000">5 690 000</li>
+              <li data-value="5 690 000">5 990 000</li>
+              <li data-value="8 000 000">8 000 000</li>
+              <li data-value="10 500 000">10 500 000</li>
+              <li data-value="12 550 000">12 550 000</li>
+            </ul>
+            <input type="text" name="price" id="price">
+          </div>
 
+          <div class="filter__wrp">
+            <button type="button" class="filter__btn">
+              <span class="filter__btn-name" data-default="Спальни">Спальни</span>
+              <img src="img/chevron-down.svg" alt="">
+            </button>
+            <ul class="filter__list">
+              <li data-value="1">1</li>
+              <li data-value="2">2</li>
+              <li data-value="3">3</li>
+            </ul>
+            <input type="text" name="spalny">
+          </div>
+
+          <div class="filter__wrp">
+            <button type="button" class="filter__btn">
+              <span>Площадь</span>
+              <img src="img/chevron-down.svg" alt="">
+            </button>
+            <ul class="filter__list">
+            </ul>
+            <input type="text" name="area">
+          </div>
+
+          <div class="filter__wrp">
+            <button type="button" class="filter__btn">
+              <span>Материал</span>
+              <img src="img/chevron-down.svg" alt="">
+            </button>
+            <ul class="filter__list">
+              <li data-value="Газобетон">Газобетон</li>
+              <li data-value="Газобетон 400">Газобетон 400</li>
+              <li data-value="Газоблок">Газоблок</li>
+            </ul>
+            <input type="text" name="material">
+          </div>
+
+          <div class="filter__wrp">
+            <button type="button" class="filter__btn">
+              <span>Этажность</span>
+              <img src="img/chevron-down.svg" alt="">
+            </button>
+            <ul class="filter__list">
+              <li data-value="1">1</li>
+              <li data-value="2">2</li>
+            </ul>
+            <input type="text" name="etazh">
+          </div>
+
+          <button type="button" class="filter__reset"></button>
+
+        </div>
+
+        <!--<select name="popuplate">
+          <option value="desc">Сначала популярные</option>
+          <option value="desc">Сначала дешевые</option>
+          <option value="desc">Сначала по цене</option>
+        </select>-->
+
+      </div>
+
+      <div class="catalog__grid" id="catalog-grid">
+        <div class="swiper-slide houses-sale__slide">
+          <div class="catalog__card card"
+               data-location="ЖК Смородина"
+               data-price="8 000 000"
+               data-project="SVOI-1-100"
+               data-etazh="2"
+               data-sanuzly="1"
+               data-spalny="2"
+          >
+            <div class="swiper catalog__card-image">
+              <div class="catalog__card-wrapper swiper-wrapper">
+                <div class="swiper-slide catalog__card-slide"
+                >
+                  <button type="button" class="catalog__play">
+                    <img src="img/play.svg" alt="">
+                  </button>
+                  <video width="100%" poster="img/proj.jpg">
+                    <source src="/video/2025-10-17 13.02.33.mp4" type="video/webm">
+                  </video>
+                </div>
+                <div class="swiper-slide catalog__card-slide"
+
+                >
+                  <picture><source srcset="img/proj.webp" type="image/webp"><img src="img/proj.jpg" alt=""></picture>
+                </div>
+                <div class="swiper-slide catalog__card-slide"
+
+                >
+                  <picture><source srcset="img/proj.webp" type="image/webp"><img src="img/proj.jpg" alt=""></picture>
+                </div>
+
+              </div>
+              <div class="swiper-button-prev catalog__card__prev"></div>
+              <div class="swiper-button-next catalog__card__next"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-prev catalog__card__prev"></div>
-            <div class="swiper-button-next catalog__card__next"></div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="card__content">
+              <div class="card__content-top">
+                <p class="card__title"><span>SVOI</span>-1-100</p>
+                <p class="card__size">7,5 сот</p>
+              </div>
+              <ul class="card__list-vertical">
+                <li>Одноэтажный дом 100м2 с гаражом</li>
+                <li>ЖК Смородина, ул. Ленина, д.2</li>
+              </ul>
+              <ul class="card__list-horizontal">
+                <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+                <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+                <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+              </ul>
+              <div class="card__content-bottom">
+                <p class="card__price">от 8 000 000 р</p>
+                <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__card card"
+             data-location="ЖК Смородина"
+             data-price="7000000"
+             data-project="SVOI-1-80"
+             data-etazh="2"
+             data-sanuzly="2">
+          <div class="card__image" style="background-image: url('img/proj.jpg')">
+            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
           </div>
           <div class="card__content">
             <div class="card__content-top">
-              <p class="card__title"><span>SVOI</span>-1-100</p>
+              <p class="card__title"><span>SVOI</span>-1-80</p>
               <p class="card__size">7,5 сот</p>
             </div>
             <ul class="card__list-vertical">
@@ -171,109 +280,14 @@
             </div>
           </div>
         </div>
-        <div class="catalog__card card">
+        <div class="catalog__card card"
+             data-location="ЖК Ботаника" data-price="6000000" data-project="SVOI-1-70" data-etazh="2" data-sanuzly="1">
           <div class="card__image" style="background-image: url('img/proj.jpg')">
             <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
           </div>
           <div class="card__content">
             <div class="card__content-top">
-              <p class="card__title"><span>SVOI</span>-1-100</p>
-              <p class="card__size">7,5 сот</p>
-            </div>
-            <ul class="card__list-vertical">
-              <li>Одноэтажный дом 100м2 с гаражом</li>
-              <li>ЖК Смородина, ул. Ленина, д.2</li>
-            </ul>
-            <ul class="card__list-horizontal">
-              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
-              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
-              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
-            </ul>
-            <div class="card__content-bottom">
-              <p class="card__price">от 8 000 000 р</p>
-              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__card card">
-          <div class="card__image" style="background-image: url('img/proj.jpg')">
-            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
-          </div>
-          <div class="card__content">
-            <div class="card__content-top">
-              <p class="card__title"><span>SVOI</span>-1-100</p>
-              <p class="card__size">7,5 сот</p>
-            </div>
-            <ul class="card__list-vertical">
-              <li>Одноэтажный дом 100м2 с гаражом</li>
-              <li>ЖК Смородина, ул. Ленина, д.2</li>
-            </ul>
-            <ul class="card__list-horizontal">
-              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
-              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
-              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
-            </ul>
-            <div class="card__content-bottom">
-              <p class="card__price">от 8 000 000 р</p>
-              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__card card">
-          <div class="card__image" style="background-image: url('img/proj.jpg')">
-            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
-          </div>
-          <div class="card__content">
-            <div class="card__content-top">
-              <p class="card__title"><span>SVOI</span>-1-100</p>
-              <p class="card__size">7,5 сот</p>
-            </div>
-            <ul class="card__list-vertical">
-              <li>Одноэтажный дом 100м2 с гаражом</li>
-              <li>ЖК Смородина, ул. Ленина, д.2</li>
-            </ul>
-            <ul class="card__list-horizontal">
-              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
-              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
-              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
-            </ul>
-            <div class="card__content-bottom">
-              <p class="card__price">от 8 000 000 р</p>
-              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__card card">
-          <div class="card__image" style="background-image: url('img/proj.jpg')">
-            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
-          </div>
-          <div class="card__content">
-            <div class="card__content-top">
-              <p class="card__title"><span>SVOI</span>-1-100</p>
-              <p class="card__size">7,5 сот</p>
-            </div>
-            <ul class="card__list-vertical">
-              <li>Одноэтажный дом 100м2 с гаражом</li>
-              <li>ЖК Смородина, ул. Ленина, д.2</li>
-            </ul>
-            <ul class="card__list-horizontal">
-              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
-              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
-              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
-            </ul>
-            <div class="card__content-bottom">
-              <p class="card__price">от 8 000 000 р</p>
-              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__card card">
-          <div class="card__image" style="background-image: url('img/proj.jpg')">
-            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
-          </div>
-          <div class="card__content">
-            <div class="card__content-top">
-              <p class="card__title"><span>SVOI</span>-1-100</p>
+              <p class="card__title"><span>SVOI</span>-1-70</p>
               <p class="card__size">7,5 сот</p>
             </div>
             <ul class="card__list-vertical">
@@ -292,6 +306,11 @@
           </div>
         </div>
       </div>
+
+      <div class="catalog__empty">
+        Ничего не найдено
+      </div>
+
     </div>
   </div>
 
@@ -395,7 +414,7 @@
       <picture><source srcset="img/popup_bg.webp" type="image/webp"><img src="img/popup_bg.jpg" alt="" class="popup__img"></picture>
       <button data-close type="button" class="popup__close close"></button>
       <div class="popup__top">
-        <p class="popup__title">Узнать больше <br> об услуге <br> Фундамент «Под ключ»</p>
+        <p class="popup__title" id="title-popup">Проконсультироваться с менеджером</p>
         <p class="popup__subtitle">
           Оставьте заявку или позвоните <br> по телефону
         </p>
@@ -404,6 +423,8 @@
         <form action="" class="popup__form form">
           <input type="text" class="form__input" name="name" placeholder="Имя">
           <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+          <input type="tel" class="form__input" name="service" style="position: absolute; left: 0; top: 0; opacity: 0;">
+
           <div class="form__bottom">
             <div class="form__social social">
               <a href="#" class="social__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
@@ -453,6 +474,86 @@
   </div>
 </div>
 
+<div id="filter" class="popup popup_show">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close close"></button>
+      <div class="popup__inner">
+        <div class="popup__filter filter">
+          <div class="filter__inner">
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span class="filter__btn-name" data-default="Цена">Цена</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="5 400 000">5 400 000</li>
+                <li data-value="5 690 000">5 690 000</li>
+                <li data-value="5 690 000">5 990 000</li>
+                <li data-value="8 000 000">8 000 000</li>
+                <li data-value="10 500 000">10 500 000</li>
+                <li data-value="12 550 000">12 550 000</li>
+              </ul>
+              <input type="text" name="price" id="price">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span class="filter__btn-name" data-default="Спальни">Спальни</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="1">1</li>
+                <li data-value="2">2</li>
+                <li data-value="3">3</li>
+              </ul>
+              <input type="text" name="spalny">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span>Площадь</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+              </ul>
+              <input type="text" name="area">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span>Материал</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="Газобетон">Газобетон</li>
+                <li data-value="Газобетон 400">Газобетон 400</li>
+                <li data-value="Газоблок">Газоблок</li>
+              </ul>
+              <input type="text" name="material">
+            </div>
+
+            <div class="filter__wrp">
+              <button type="button" class="filter__btn">
+                <span>Этажность</span>
+                <img src="img/chevron-down.svg" alt="">
+              </button>
+              <ul class="filter__list">
+                <li data-value="1">1</li>
+                <li data-value="2">2</li>
+              </ul>
+              <input type="text" name="etazh">
+            </div>
+
+            <button type="button" class="filter__reset"></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="video" class="popup popup--video">
   <div class="popup__wrapper">
     <div class="popup__content">
@@ -473,7 +574,7 @@
 </div>
 
 
-<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260121050628"></script>
-<script src="js/app.min.js?_v=20260121050628"></script>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260122134443"></script>
+<script src="js/app.min.js?_v=20260122134443"></script>
 </body>
 </html>

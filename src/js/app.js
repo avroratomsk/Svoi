@@ -3,6 +3,8 @@ import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Scrollbar} from "swiper/modules";
 import {Fancybox} from "@fancyapps/ui"
 
+import './modules/filter.js'
+
 // import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 
 // Fancybox.bind("[data-photo]", {
@@ -120,43 +122,6 @@ const housesSaleSlider = new Swiper('.houses-sale__slider', {
       slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 3,
-      scrollbar: {
-        enabled: false,
-      },
-    }
-  }
-
-});
-
-const addedSlider = new Swiper('.added__slider', {
-  direction: 'horizontal',
-  loop: true,
-  autoHeight: true,
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
-
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      scrollbar: {
-        enabled: true,
-      },
-    },
-    768: {
-      slidesPerView: 1.3,
-    },
-    // when window width is >= 480px
-    992: {
-      slidesPerView: 2,
-      spaceBetween: 0
-    },
-    1400: {
       slidesPerView: 3,
       scrollbar: {
         enabled: false,
@@ -459,6 +424,15 @@ reviewsLink?.forEach((item) => {
   item.addEventListener('click', (e) => {
     const prevElText = item.previousElementSibling.innerHTML;
     document.getElementById('text').innerHTML = prevElText;
+  })
+})
+
+const titleTextBtn = document. querySelectorAll('[data-text]');
+titleTextBtn?.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    const text = item.dataset.text;
+    const titlePopup = document.getElementById('title-popup');
+    titlePopup.innerText = text;
   })
 })
 

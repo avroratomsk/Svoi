@@ -17,6 +17,23 @@
 
   }
 
+  &__empty {
+    display: none;
+    text-align: center;
+    padding: 100px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgba($color: #000000, $alpha: 0.5);
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .houses-sale__slide {
+    display: contents;
+  }
+
   //.catalog__card
   &__card {
   }
