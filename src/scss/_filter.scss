@@ -1,8 +1,4 @@
 .filter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
 
   select {
     border: none;
@@ -108,6 +104,28 @@
 
     &::after {
       transform: rotate(-45deg);
+    }
+
+    @media screen and (max-width: 992px) {
+      width: auto;
+      height: 100%;
+      text-align: center;
+      background: red;
+      padding: 10px 15px;
+
+      &::before,&::after {
+        display: none;
+      }
+    }
+
+    span {
+      display: block;
+      font-weight: 600;
+      color: #FFFFFF;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
     }
   }
 

@@ -64,13 +64,16 @@
   </div>
 </div>
 
-<div id="filter" class="popup popup_show">
+<div id="filter" class="popup">
   <div class="popup__wrapper">
     <div class="popup__content">
       <button data-close type="button" class="popup__close close"></button>
       <div class="popup__inner">
         <div class="popup__filter filter">
           <div class="filter__inner">
+
+            <button type="button" class="filter__reset"><span>Сбросить</span></button>
+
             <div class="filter__wrp">
               <button type="button" class="filter__btn">
                 <span class="filter__btn-name" data-default="Цена">Цена</span>
@@ -84,7 +87,7 @@
                 <li data-value="10 500 000">10 500 000</li>
                 <li data-value="12 550 000">12 550 000</li>
               </ul>
-              <input type="text" name="price" id="price">
+              <input type="text" name="popup-price">
             </div>
 
             <div class="filter__wrp">
@@ -97,7 +100,7 @@
                 <li data-value="2">2</li>
                 <li data-value="3">3</li>
               </ul>
-              <input type="text" name="spalny">
+              <input type="text" name="popup-spalny">
             </div>
 
             <div class="filter__wrp">
@@ -107,7 +110,7 @@
               </button>
               <ul class="filter__list">
               </ul>
-              <input type="text" name="area">
+              <input type="text" name="popup-area">
             </div>
 
             <div class="filter__wrp">
@@ -120,7 +123,7 @@
                 <li data-value="Газобетон 400">Газобетон 400</li>
                 <li data-value="Газоблок">Газоблок</li>
               </ul>
-              <input type="text" name="material">
+              <input type="text" name="popup-material">
             </div>
 
             <div class="filter__wrp">
@@ -132,10 +135,10 @@
                 <li data-value="1">1</li>
                 <li data-value="2">2</li>
               </ul>
-              <input type="text" name="etazh">
+              <input type="text" name="popup-etazh">
             </div>
 
-            <button type="button" class="filter__reset"></button>
+
 
           </div>
         </div>

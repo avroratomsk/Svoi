@@ -13,7 +13,7 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20260122134443"
+    href="css/style.min.css?_v=20260123083400"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -49,13 +49,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260122134443"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260123083400"
     rel="stylesheet">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260122134443" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260122134443"/>
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260123083400" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260123083400"/>
   <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260122134443"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260123083400"
   />
 </head>
 
@@ -614,13 +614,16 @@
   </div>
 </div>
 
-<div id="filter" class="popup popup_show">
+<div id="filter" class="popup">
   <div class="popup__wrapper">
     <div class="popup__content">
       <button data-close type="button" class="popup__close close"></button>
       <div class="popup__inner">
         <div class="popup__filter filter">
           <div class="filter__inner">
+
+            <button type="button" class="filter__reset"><span>Сбросить</span></button>
+
             <div class="filter__wrp">
               <button type="button" class="filter__btn">
                 <span class="filter__btn-name" data-default="Цена">Цена</span>
@@ -634,7 +637,7 @@
                 <li data-value="10 500 000">10 500 000</li>
                 <li data-value="12 550 000">12 550 000</li>
               </ul>
-              <input type="text" name="price" id="price">
+              <input type="text" name="popup-price">
             </div>
 
             <div class="filter__wrp">
@@ -647,7 +650,7 @@
                 <li data-value="2">2</li>
                 <li data-value="3">3</li>
               </ul>
-              <input type="text" name="spalny">
+              <input type="text" name="popup-spalny">
             </div>
 
             <div class="filter__wrp">
@@ -657,7 +660,7 @@
               </button>
               <ul class="filter__list">
               </ul>
-              <input type="text" name="area">
+              <input type="text" name="popup-area">
             </div>
 
             <div class="filter__wrp">
@@ -670,7 +673,7 @@
                 <li data-value="Газобетон 400">Газобетон 400</li>
                 <li data-value="Газоблок">Газоблок</li>
               </ul>
-              <input type="text" name="material">
+              <input type="text" name="popup-material">
             </div>
 
             <div class="filter__wrp">
@@ -682,10 +685,10 @@
                 <li data-value="1">1</li>
                 <li data-value="2">2</li>
               </ul>
-              <input type="text" name="etazh">
+              <input type="text" name="popup-etazh">
             </div>
 
-            <button type="button" class="filter__reset"></button>
+
 
           </div>
         </div>
@@ -714,7 +717,7 @@
 </div>
 
 
-<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260122134443"></script>
-<script src="js/app.min.js?_v=20260122134443"></script>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260123083400"></script>
+<script src="js/app.min.js?_v=20260123083400"></script>
 </body>
 </html>
