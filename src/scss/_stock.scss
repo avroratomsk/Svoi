@@ -35,6 +35,24 @@
     }
   }
 
+  &__card {
+    display: flex;
+    gap: 73px;
+    padding: 30px 30px;
+    background: rgba(110, 7, 158, 0.4);
+    border-radius: 10px 10px 150px 10px;
+
+    @media screen and (max-width: 1400px) {
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 578px) {
+      flex-direction: column;
+      border-radius: 10px;
+      gap: 20px;
+    }
+  }
+
   //.stock__content
   &__content {
     display: flex;
@@ -98,4 +116,11 @@
 
     }
   }
+}
+
+.stock-grid {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }

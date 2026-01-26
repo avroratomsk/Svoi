@@ -13,7 +13,7 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20260123083400"
+    href="css/style.min.css?_v=20260126092138"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -49,13 +49,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260123083400"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260126092138"
     rel="stylesheet">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260123083400" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260123083400"/>
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260126092138" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260126092138"/>
   <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260123083400"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260126092138"
   />
 </head>
 
@@ -352,11 +352,27 @@
       </div>
     </div>
     <div class="footer__bottom">
-        <p class="footer__copyright">© 2025 СК "СВОИ"</p>
-        <a href="" class="">Политика конфиденциальности</a>
+      <p class="footer__copyright">© 2025 СК "СВОИ"</p>
+      <a href="" class="">Политика конфиденциальности</a>
     </div>
   </div>
 </div>
+
+<div id="cookie-notice">
+  <div>
+    Мы используем cookie и сервис обработки персональных данных посредством метрической программы
+    <a
+      href="https://yandex.ru/legal/metrica_termsofuse/ru/" target="_blank">«Яндекс Метрика».</a>. Это позволяет нам
+    анализировать взаимодействие посетителей с сайтом и делать его лучше. Продолжая пользоваться
+    сайтом, вы соглашаетесь с использованием файлов
+    <a href="[[~24]]" target="_blank">cookie</a> и <a href="[[~24]]" target="_blank">политикой конфиденциальности</a>.
+  </div>
+
+  <button id="accept-cookies">
+    Я согласен
+  </button>
+</div>
+
 <div id="callback" class="popup">
   <div class="popup__wrapper">
     <div class="popup__content">
@@ -372,7 +388,7 @@
         <form action="" class="popup__form form">
           <input type="text" class="form__input" name="name" placeholder="Имя">
           <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
-          <input type="tel" class="form__input" name="service" style="position: absolute; left: 0; top: 0; opacity: 0;">
+          <input type="tel" class="form__input" id="order-product" name="service" style="position: absolute; left: 0; top: 0; opacity: 0;">
 
           <div class="form__bottom">
             <div class="form__social social">
@@ -526,7 +542,7 @@
 </div>
 
 
-<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260123083400"></script>
-<script src="js/app.min.js?_v=20260123083400"></script>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260126092138"></script>
+<script src="js/app.min.js?_v=20260126092138"></script>
 </body>
 </html>

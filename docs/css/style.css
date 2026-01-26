@@ -1802,6 +1802,39 @@ template {
   height: 28px;
 }
 
+#cookie-notice {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  color: #000;
+  padding: 15px;
+  border-radius: 5px;
+  line-height: 150%;
+  z-index: 1000;
+}
+
+#cookie-notice a {
+  display: inline;
+  color: #6e079e;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#accept-cookies {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #6e079e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 .main-slider__slide {
   position: relative;
   height: 679px;
@@ -2661,6 +2694,16 @@ button {
   border-radius: 10px 10px 150px 10px;
 }
 
+.stock__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 73px;
+  padding: 30px 30px;
+  background: rgba(110, 7, 158, 0.4);
+  border-radius: 10px 10px 150px 10px;
+}
+
 .stock__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2707,6 +2750,18 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 130px 10px;
+}
+
+.stock-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news__slide {
@@ -3510,6 +3565,11 @@ button {
   width: 100% !important;
   overflow: hidden;
   border-radius: 16px;
+}
+
+.catalog__card-slide img {
+  width: 100%;
+  height: 312px;
 }
 
 .catalog__play {
@@ -9919,6 +9979,10 @@ body main {
     gap: 30px;
   }
 
+  .stock__card {
+    gap: 30px;
+  }
+
   .stock__slide-link {
     padding: 18px;
   }
@@ -10561,6 +10625,15 @@ body main {
   }
 
   .stock__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  .stock__card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
