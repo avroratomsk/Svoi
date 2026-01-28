@@ -89,5 +89,19 @@
     }
   }
 
+  .reviews-next,
+  .reviews-prev {
+    top: 57%;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #6e079e;
+    border-radius: 50%;
+
+    &::after {
+      color: #6e079e;
+      font-size: 16px;
+    }
+  }
 
 }

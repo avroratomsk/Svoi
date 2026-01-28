@@ -189,34 +189,6 @@ const newsSlider = new Swiper('.news__slider', {
 
 });
 
-const reviewsSlider = new Swiper('.reviews__slider', {
-  direction: 'horizontal',
-  loop: true,
-  autoHeight: true,
-  spaceBetween: 72,
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
-
-  breakpoints: {
-    320: {
-      scrollbar: {
-        enabled: true
-      },
-      slidesPerView: 1,
-    },
-    992: {
-      slidesPerView: 3,
-      scrollbar: {
-        enabled: false
-      },
-    }
-  }
-
-});
-
 const projectThumbSlider = new Swiper('.project__thumbs', {
 
   direction: 'horizontal',
@@ -294,8 +266,8 @@ const catalogCardImage = new Swiper('.catalog__card-image', {
   slidesPerView: 1,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.catalog__card__next',
+    prevEl: '.catalog__card__prev',
   },
 
   pagination: {
@@ -316,5 +288,39 @@ const catalogCardImage = new Swiper('.catalog__card-image', {
     }
   }
 
+
+});
+
+const reviewsSlider = new Swiper('.reviews__slider', {
+  modules: [Pagination, Scrollbar],
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 72,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  navigation: {
+    nextEl: '.reviews-next',
+    prevEl: '.reviews-prev',
+  },
+
+  breakpoints: {
+    320: {
+      scrollbar: {
+        enabled: true
+      },
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 3,
+      scrollbar: {
+        enabled: false
+      },
+    }
+  }
 
 });

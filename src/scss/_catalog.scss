@@ -33,7 +33,6 @@
   }
 
 
-
   //.catalog__grid
   &__grid {
     display: grid;
@@ -67,14 +66,16 @@
   &__card {
   }
 
-  &__card-slide{
+  &__card-slide {
     width: 100% !important;
+    height: 312px;
     overflow: hidden;
     border-radius: 16px;
 
     img {
       width: 100%;
-      height: 312px;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -159,7 +160,7 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF !important;
   }
 
 }

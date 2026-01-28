@@ -1803,7 +1803,7 @@ template {
 }
 
 #cookie-notice {
-  display: block;
+  display: none;
   width: 100%;
   max-width: 700px;
   position: fixed;
@@ -1853,6 +1853,18 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px 10px 295px 10px;
+}
+
+.main-slider__slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 10px 10px 295px 10px;
+  z-index: -1;
 }
 
 .main-slider__content {
@@ -2280,6 +2292,19 @@ button {
           align-items: flex-end;
 }
 
+.top-section__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
 .close {
   position: absolute;
   top: 25px;
@@ -2317,6 +2342,30 @@ button {
 
 button {
   cursor: pointer;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background: #6e079e;
+  border-radius: 10px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+
+.back-to-top.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .numbers__row {
@@ -2388,6 +2437,10 @@ button {
 
 .houses-sale__wrapper {
   padding: 0 0 20px;
+}
+
+.houses-sale__card .swiper-pagination-bullet {
+  background-color: #FFFFFF !important;
 }
 
 .card.active {
@@ -2628,6 +2681,10 @@ button {
   background-repeat: no-repeat;
 }
 
+.portfolio__title {
+  margin-bottom: 40px;
+}
+
 .portfolio__image {
   height: 320px;
   margin-bottom: 20px;
@@ -2764,6 +2821,10 @@ button {
       flex-wrap: wrap;
 }
 
+.stock-grid .swiper-slide {
+  width: auto;
+}
+
 .news__slide {
   display: -ms-grid;
   display: grid;
@@ -2885,6 +2946,22 @@ button {
   width: 225px;
   height: 164px;
   border-radius: 10px 10px 57px 10px;
+}
+
+.reviews .reviews-next,
+.reviews .reviews-prev {
+  top: 57%;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #6e079e;
+  border-radius: 50%;
+}
+
+.reviews .reviews-next::after,
+.reviews .reviews-prev::after {
+  color: #6e079e;
+  font-size: 16px;
 }
 
 .accordion {
@@ -3457,9 +3534,9 @@ button {
 }
 
 .works__accordion .accordion__btn img {
-  -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-          transform: rotate(0);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
   width: 21px;
   height: 27px;
 }
@@ -3563,13 +3640,16 @@ button {
 
 .catalog__card-slide {
   width: 100% !important;
+  height: 312px;
   overflow: hidden;
   border-radius: 16px;
 }
 
 .catalog__card-slide img {
   width: 100%;
-  height: 312px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog__play {
@@ -3665,7 +3745,7 @@ button {
 }
 
 .catalog .swiper-pagination-bullet {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
 }
 
 .filter select {
@@ -3811,19 +3891,13 @@ button {
   width: 100%;
 }
 
+.contact__address {
+  text-wrap: balance;
+}
+
 .contact__left-inner {
   border: 1px solid rgba(110, 7, 158, 0.2);
   border-radius: 20px 80px 80px 20px;
-  padding-right: 60px;
-}
-
-.contact__social {
-  position: absolute;
-  top: 50px;
-  right: 10px;
-}
-
-.contact .contact__left-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3832,7 +3906,13 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
-  padding: 50px 30px;
+  padding: 50px 100px 50px 30px;
+}
+
+.contact__social {
+  position: absolute;
+  top: 50px;
+  right: 35px;
 }
 
 .contact__right {
@@ -4762,6 +4842,7 @@ body._lock::after {
   margin: 35px 0 0;
   font-size: 24px;
   font-weight: 400;
+  line-height: 140%;
 }
 
 .popup__form {
@@ -10093,7 +10174,7 @@ body main {
   .contact__left-inner {
     width: 100%;
     max-width: 100%;
-    padding: 30px;
+    padding: 50px 60px 50px 30px;
     display: -ms-grid;
     display: grid;
   }
@@ -10504,6 +10585,16 @@ body main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .contact__left-inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 50px 50px 50px 30px;
+  }
+
+  .contact__social {
+    right: 20px;
   }
 
   .contact__map {

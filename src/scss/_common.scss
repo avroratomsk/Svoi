@@ -112,6 +112,14 @@ button {
     flex-direction: column;
     align-items: flex-end;
   }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
 }
 
 .close {
@@ -153,6 +161,24 @@ button {
 
 button {
   cursor: pointer;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background: #6e079e;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  &.active {
+    display: flex;
+  }
 }
 
 

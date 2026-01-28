@@ -7,6 +7,7 @@ import "./modules/tabs.js";
 import "./modules/popup.js";
 import "./modules/sliders.js";
 import "./modules/normalizeFormatPhoneLink.js";
+import "./modules/stickyMenu.js";
 
 // import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 
@@ -15,14 +16,12 @@ import "./modules/normalizeFormatPhoneLink.js";
 // });
 
 
-
 functions.isWebp();
 
 
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
-
 
 
 document.querySelectorAll('.accordion__title').forEach(title => {
@@ -98,7 +97,7 @@ reviewsLink?.forEach((item) => {
   })
 })
 
-const titleTextBtn = document. querySelectorAll('[data-text]');
+const titleTextBtn = document.querySelectorAll('[data-text]');
 titleTextBtn?.forEach((item) => {
   item.addEventListener('click', (e) => {
     const text = item.dataset.text;
@@ -108,7 +107,7 @@ titleTextBtn?.forEach((item) => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Проверяем, установлены ли куки
   if (!document.cookie.split('; ').find(row => row.startsWith('cookie_consent='))) {
     // Если куки не установлены, показываем уведомление
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Обработчик для кнопки согласия
-  document.getElementById('accept-cookies').addEventListener('click', function() {
+  document.getElementById('accept-cookies').addEventListener('click', function () {
     // Устанавливаем куки на 1 год
     document.cookie = "cookie_consent=true; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
     // Скрываем уведомление
@@ -124,6 +123,22 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+const heroBlockBottom = document.querySelector('.main-slider').getBoundingClientRect().bottom;
+const backToTopBtn = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+
+  window.scrollY > heroBlockBottom ? backToTopBtn.classList.add('active') : backToTopBtn.classList.remove('active');
+
+});
+
+
+backToTopBtn.addEventListener('click', (e) => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
 
 
 

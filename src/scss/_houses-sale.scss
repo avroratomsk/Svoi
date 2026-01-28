@@ -20,6 +20,14 @@
 
   //.houses-sale__card
   &__card {
+
+    .swiper-pagination-bullet {
+      background-color: #FFFFFF !important;
+    }
+
+    .swiper-pagination-bullet-active {
+    }
+
   }
 
   //.card__content-top
