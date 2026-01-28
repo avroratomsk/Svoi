@@ -66,7 +66,7 @@ const applyFilter = () => {
 
     card.style.display = isVisible ? '' : 'none';
 
-    if(activePopup?.classList.contains('popup_show') && activePopup){
+    if (activePopup?.classList.contains('popup_show') && activePopup) {
       activePopup.classList.remove('popup_show');
       document.body.classList.remove('_lock');
 
@@ -169,6 +169,79 @@ document.addEventListener('click', e => {
 });
 
 
+</*div className="filter__wrp">
+  <label>Цена</label>
+  <input type="number" name="priceMin" placeholder="от"/>
+  <input type="number" name="priceMax" placeholder="до"/>
+</div>
+Спальни
+< div
+className = "filter__wrp" >
+  < label > Спальни < /label>
+<input type="number" name="spalnyMin" placeholder="от"/>
+<input type="number" name="spalnyMax" placeholder="до"/>
+</div>
+Остальные(пример)
+< div
+className = "filter__wrp" >
+  < label > Этажность < /label>
+<input type="number" name="etazh"/>
+</div>*/
+
+
+/*const cards = document.querySelectorAll('.card');
+const inputs = document.querySelectorAll('.filter__wrp input');
+const resetBtn = document.querySelector('.filter__reset');
+
+const parseNumber = val =>
+  Number(String(val).replace(/\s+/g, '')) || 0;
+
+function getFilters() {
+  return {
+    priceMin: parseNumber(document.querySelector('[name="priceMin"]')?.value),
+    priceMax: parseNumber(document.querySelector('[name="priceMax"]')?.value),
+    spalnyMin: parseNumber(document.querySelector('[name="spalnyMin"]')?.value),
+    spalnyMax: parseNumber(document.querySelector('[name="spalnyMax"]')?.value),
+    etazh: document.querySelector('[name="etazh"]')?.value || '',
+    material: document.querySelector('[name="material"]')?.value || '',
+    area: document.querySelector('[name="area"]')?.value || '',
+  };
+}
+
+function applyFilter() {
+  const f = getFilters();
+
+  cards.forEach(card => {
+    let visible = true;
+
+    const price = parseNumber(card.dataset.price);
+    const spalny = parseNumber(card.dataset.spalny);
+    const etazh = card.dataset.etazh;
+    const material = card.dataset.material;
+    const area = card.dataset.area;
+
+    if (f.priceMin && price < f.priceMin) visible = false;
+    if (f.priceMax && price > f.priceMax) visible = false;
+
+    if (f.spalnyMin && spalny < f.spalnyMin) visible = false;
+    if (f.spalnyMax && spalny > f.spalnyMax) visible = false;
+
+    if (f.etazh && etazh !== f.etazh) visible = false;
+    if (f.material && material !== f.material) visible = false;
+    if (f.area && area !== f.area) visible = false;
+
+    card.style.display = visible ? '' : 'none';
+  });
+}
+
+inputs.forEach(input =>
+  input.addEventListener('input', applyFilter)
+);
+
+resetBtn.addEventListener('click', () => {
+  inputs.forEach(i => (i.value = ''));
+  cards.forEach(c => (c.style.display = ''));
+});*/
 
 
 
