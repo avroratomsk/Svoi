@@ -3754,6 +3754,33 @@ button {
   font-size: 14px;
 }
 
+.filter__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.filter__price .filter__input {
+  position: relative !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
+.filter__input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 .filter__inner {
   width: 100%;
   display: -webkit-box;

@@ -34,14 +34,12 @@
               <span class="filter__btn-name" data-default="Цена">Цена</span>
               <img src="@img/chevron-down.svg" alt="">
             </button>
-            <ul class="filter__list">
-              <li data-value="5 400 000">5 400 000</li>
-              <li data-value="5 690 000">5 690 000</li>
-              <li data-value="5 690 000">5 990 000</li>
-              <li data-value="8 000 000">8 000 000</li>
-              <li data-value="10 500 000">10 500 000</li>
-              <li data-value="12 550 000">12 550 000</li>
-            </ul>
+            <div class="filter__list">
+              <div class="filter__price">
+                <input type="text" name="min" placeholder="от" id="filter-min" class="filter__input">
+                <input type="text" name="max" placeholder="до" id="filter-max" class="filter__input">
+              </div>
+            </div>
             <input type="text" name="price" id="price">
           </div>
 

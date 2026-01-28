@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const heroBlockBottom = document.querySelector('.main-slider').getBoundingClientRect().bottom;
+const heroBlockBottom = document.querySelector('.main-slider')?.getBoundingClientRect().bottom;
 const backToTopBtn = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', () => {

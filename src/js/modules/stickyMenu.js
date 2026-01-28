@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let isSticky = false;
 
   const onScroll = () => {
-    console.log(window.scrollY)
-    console.log(headerOffsetTop)
     if (window.scrollY > headerOffsetTop && !isSticky) {
       header.classList.add('sticky');
       const headerHeight = header.offsetHeight; // уже после фиксации
