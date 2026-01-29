@@ -3839,6 +3839,11 @@ button {
           transform: rotate(-180deg);
 }
 
+.filter__wrp button.is-active {
+  background: #6e079e;
+  color: #FFFFFF;
+}
+
 .filter__wrp-inner {
   width: 100%;
   position: absolute;

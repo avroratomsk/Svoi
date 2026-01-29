@@ -75,6 +75,11 @@
           transform: rotate(-180deg);
         }
       }
+
+      &.is-active {
+        background: #6e079e;
+        color: #FFFFFF;
+      }
     }
 
 
