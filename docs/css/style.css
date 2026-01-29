@@ -3786,9 +3786,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
@@ -3946,40 +3946,9 @@ button {
 
 .filter__reset {
   position: relative;
-  height: 20px;
-  width: 20px;
   display: none;
-}
-
-.filter__reset::before,
-.filter__reset::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  margin-left: -8px;
-  height: 2px;
-  margin-top: -2px;
-  background: red;
-}
-
-.filter__reset::before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.filter__reset::after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.filter__reset span {
-  display: block;
-  font-weight: 600;
-  color: #FFFFFF;
+  color: red;
+  font-weight: 700;
 }
 
 .filter__reset.active {
@@ -8242,10 +8211,6 @@ body main {
   .catalog__top button {
     display: none;
   }
-
-  .filter__reset span {
-    display: none;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -10532,19 +10497,6 @@ body main {
 
   .catalog__filter {
     display: none !important;
-  }
-
-  .filter__reset {
-    width: auto;
-    height: 100%;
-    text-align: center;
-    background: red;
-    padding: 10px 15px;
-  }
-
-  .filter__reset::before,
-  .filter__reset::after {
-    display: none;
   }
 
   .tabs__nav {

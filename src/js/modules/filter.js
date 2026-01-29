@@ -61,6 +61,7 @@ function getFilters() {
     etazh: getCheckedValues('etazh'),
     project: getCheckedValues('project'),
     location: getCheckedValues('location'),
+    material: getCheckedValues('material'),
   };
 }
 
@@ -98,6 +99,7 @@ function applyFilter() {
     const etazh = card.dataset.etazh;
     const project = card.dataset.project;
     const location = card.dataset.location;
+    const material = card.dataset.material;
 
     // RANGE
     if (f.priceMin !== null && price < f.priceMin) visible = false;
@@ -108,6 +110,7 @@ function applyFilter() {
 
     // MULTI CHECKBOX (OR внутри группы)
     if (f.spalni.length && !f.spalni.includes(spalny)) visible = false;
+    if (f.material.length && !f.material.includes(material)) visible = false;
     if (f.etazh.length && !f.etazh.includes(etazh)) visible = false;
     if (f.project.length && !f.project.includes(project)) visible = false;
     if (f.location.length && !f.location.includes(location)) visible = false;
@@ -141,10 +144,10 @@ function toggleEmpty(count) {
 /* ======================
    EVENTS
 ====================== */
-filter.addEventListener('input', applyFilter);
-filter.addEventListener('change', applyFilter);
+filter?.addEventListener('input', applyFilter);
+filter?.addEventListener('change', applyFilter);
 
-resetBtn.addEventListener('click', () => {
+resetBtn?.addEventListener('click', () => {
   document.querySelectorAll('.catalog__filter input').forEach(i => {
     i.type === 'checkbox' ? i.checked = false : i.value = '';
   });
