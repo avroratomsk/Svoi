@@ -12,15 +12,15 @@
     flex-direction: column;
     gap: 20px;
 
-    .filter__input{
-        position: relative !important;
-        opacity: 1 !important;
-        z-index: 1 !important;
+    .filter__input {
+      position: relative !important;
+      opacity: 1 !important;
+      z-index: 1 !important;
     }
 
   }
 
-  &__input{
+  &__input {
     width: 100%;
     height: 40px;
     padding: 5px 10px;
@@ -31,22 +31,101 @@
   &__inner {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
   }
 
   //.filter__wrp
   &__wrp {
+    min-width: 180px;
     position: relative;
 
-    input {
+    z-index: 999;
+
+    /*input {
       position: absolute;
       top: 0;
       left: 0;
       opacity: 0;
       z-index: -1;
+    }*/
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgba($color: #6e079e, $alpha: 0.5);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 18px;
+      color: #2f2f2f;
+      text-align: center;
+      cursor: pointer;
+      background: #FFFFFF;
+
+      img {
+        transition: $animation-speed;
+      }
+
+      &.active {
+        img {
+          transform: rotate(-180deg);
+        }
+      }
     }
 
+
+  }
+
+  &__wrp-inner {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    padding: 50px 20px 20px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    z-index: -1;
+    border: 1px solid rgba($color: #6e079e, $alpha: 0.3);
+    border-radius: 10px;
+
+    label {
+      position: relative;
+      font-size: 14px;
+    }
+
+
+    input[type="number"] {
+      padding: 10px 15px;
+      max-width: 130px;
+      border-radius: 10px;
+      border: 1px solid rgba($color: #6e079e, $alpha: 0.3);
+    }
+
+    input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    &.active {
+      display: flex;
+    }
+
+
+  }
+
+  .checkbox-label:has(input:checked) {
+    color: #6e079e;
+    font-weight: 700;
   }
 
   //.filter__btn
@@ -107,7 +186,7 @@
     display: none;
 
 
-    &::before,&::after {
+    &::before, &::after {
       content: '';
       position: absolute;
       top: 50%;
@@ -134,7 +213,7 @@
       background: red;
       padding: 10px 15px;
 
-      &::before,&::after {
+      &::before, &::after {
         display: none;
       }
     }

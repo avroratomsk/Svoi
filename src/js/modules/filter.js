@@ -1,4 +1,4 @@
-const filterBtns = document.querySelectorAll(".filter__btn");
+/*const filterBtns = document.querySelectorAll(".filter__btn");
 const filterCards = document.querySelectorAll('.card');
 
 
@@ -166,10 +166,10 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.filter__wrp')) {
     closeAllFilters();
   }
-});
+});*/
 
 
-</*div className="filter__wrp">
+/*<div className="filter__wrp">
   <label>Цена</label>
   <input type="number" name="priceMin" placeholder="от"/>
   <input type="number" name="priceMax" placeholder="до"/>
@@ -188,10 +188,19 @@ className = "filter__wrp" >
 <input type="number" name="etazh"/>
 </div>*/
 
-
-/*const cards = document.querySelectorAll('.card');
+const filterBtns = document.querySelectorAll('.filter__wrp button');
+const cards = document.querySelectorAll('.card');
 const inputs = document.querySelectorAll('.filter__wrp input');
 const resetBtn = document.querySelector('.filter__reset');
+
+filterBtns?.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const nextElem = e.currentTarget.nextElementSibling;
+
+    nextElem.classList.toggle('active');
+    e.currentTarget.classList.toggle('active');
+  })
+})
 
 const parseNumber = val =>
   Number(String(val).replace(/\s+/g, '')) || 0;
@@ -220,10 +229,10 @@ function applyFilter() {
     const material = card.dataset.material;
     const area = card.dataset.area;
 
-    if (f.priceMin && price < f.priceMin) visible = false;
+    if (f.priceMin && price <= f.priceMin) visible = false;
     if (f.priceMax && price > f.priceMax) visible = false;
 
-    if (f.spalnyMin && spalny < f.spalnyMin) visible = false;
+    if (f.spalnyMin && spalny <= f.spalnyMin) visible = false;
     if (f.spalnyMax && spalny > f.spalnyMax) visible = false;
 
     if (f.etazh && etazh !== f.etazh) visible = false;
@@ -241,7 +250,7 @@ inputs.forEach(input =>
 resetBtn.addEventListener('click', () => {
   inputs.forEach(i => (i.value = ''));
   cards.forEach(c => (c.style.display = ''));
-});*/
+});
 
 
 

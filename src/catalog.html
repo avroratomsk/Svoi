@@ -29,67 +29,118 @@
 
       <div class="catalog__filter filter">
         <div class="filter__inner">
+
           <div class="filter__wrp">
-            <button type="button" class="filter__btn">
-              <span class="filter__btn-name" data-default="Цена">Цена</span>
-              <img src="@img/chevron-down.svg" alt="">
-            </button>
-            <div class="filter__list">
-              <div class="filter__price">
-                <input type="text" name="min" placeholder="от" id="filter-min" class="filter__input">
-                <input type="text" name="max" placeholder="до" id="filter-max" class="filter__input">
-              </div>
+            <button type="button">Цена <img src="@img/chevron-down.svg" alt=""></button>
+            <div class="filter__wrp-inner">
+              <input type="number" step="100000" name="priceMin" placeholder="от"/>
+              <input type="number" step="100000" name="priceMax" placeholder="до"/>
             </div>
-            <input type="text" name="price" id="price">
           </div>
 
           <div class="filter__wrp">
-            <button type="button" class="filter__btn">
-              <span class="filter__btn-name" data-default="Спальни">Спальни</span>
-              <img src="@img/chevron-down.svg" alt="">
-            </button>
-            <ul class="filter__list">
-              <li data-value="1">1</li>
-              <li data-value="2">2</li>
-              <li data-value="3">3</li>
-            </ul>
-            <input type="text" name="spalny">
+            <button type="button">Площадь <img src="@img/chevron-down.svg" alt=""></button>
+            <div class="filter__wrp-inner">
+              <input type="number" name="areaMin" placeholder="от"/>
+              <input type="number" name="areaMax" placeholder="до"/>
+            </div>
           </div>
 
           <div class="filter__wrp">
-            <button type="button" class="filter__btn">
-              <span>Площадь</span>
-              <img src="@img/chevron-down.svg" alt="">
-            </button>
-            <ul class="filter__list">
-            </ul>
-            <input type="text" name="area">
+            <button type="button">Спальни <img src="@img/chevron-down.svg" alt=""></button>
+            <div class="filter__wrp-inner">
+              <label class="checkbox-label"><input type="checkbox" name="spalni" value="1">1</label>
+              <label class="checkbox-label"><input type="checkbox" name="spalni" value="2">2</label>
+            </div>
           </div>
 
           <div class="filter__wrp">
-            <button type="button" class="filter__btn">
-              <span>Материал</span>
-              <img src="@img/chevron-down.svg" alt="">
-            </button>
-            <ul class="filter__list">
-              <li data-value="Газобетон">Газобетон</li>
-              <li data-value="Газобетон 400">Газобетон 400</li>
-              <li data-value="Газоблок">Газоблок</li>
-            </ul>
-            <input type="text" name="material">
+            <button type="button">Этажность <img src="@img/chevron-down.svg" alt=""></button>
+            <div class="filter__wrp-inner">
+              <label class="checkbox-label"><input type="checkbox" name="etazh" value="1">1</label>
+              <label class="checkbox-label"><input type="checkbox" name="etazh" value="2">2</label>
+            </div>
           </div>
 
           <div class="filter__wrp">
-            <button type="button" class="filter__btn">
-              <span>Этажность</span>
-              <img src="@img/chevron-down.svg" alt="">
-            </button>
-            <ul class="filter__list">
-              <li data-value="1">1</li>
-              <li data-value="2">2</li>
-            </ul>
-            <input type="text" name="etazh">
+            <button type="button">Проект <img src="@img/chevron-down.svg" alt=""></button>
+            <div class="filter__wrp-inner">
+              <label class="checkbox-label"><input type="checkbox" name="project" value="Ника">Ника</label>
+              <label class="checkbox-label"><input type="checkbox" name="project" value="Мила">Мила</label>
+              <label class="checkbox-label"><input type="checkbox" name="project" value="Добрыня">Добрыня</label>
+              <label class="checkbox-label"><input type="checkbox" name="project" value="Археологическая 1">Археологическая 1</label>
+            </div>
           </div>
+
+          <div class="filter__wrp">
+            <button type="button">Локация <img src="@img/chevron-down.svg" alt=""></button>
+            <div class="filter__wrp-inner">
+              <label class="checkbox-label"><input type="checkbox" name="location" value="КП Смородина">КП Смородина</label>
+              <label class="checkbox-label"><input type="checkbox" name="location" value="КП Ботаника">КП Ботаника</label>
+            </div>
+          </div>
+
+          <!-- <div class="filter__wrp">
+             <button type="button" class="filter__btn">
+               <span class="filter__btn-name" data-default="Цена">Цена</span>
+               <img src="@img/chevron-down.svg" alt="">
+             </button>
+             <div class="filter__list">
+               <div class="filter__price">
+                 <input type="text" name="min" placeholder="от" id="filter-min" class="filter__input">
+                 <input type="text" name="max" placeholder="до" id="filter-max" class="filter__input">
+               </div>
+             </div>
+             <input type="text" name="price" id="price">
+           </div>
+
+           <div class="filter__wrp">
+             <button type="button" class="filter__btn">
+               <span class="filter__btn-name" data-default="Спальни">Спальни</span>
+               <img src="@img/chevron-down.svg" alt="">
+             </button>
+             <ul class="filter__list">
+               <li data-value="1">1</li>
+               <li data-value="2">2</li>
+               <li data-value="3">3</li>
+             </ul>
+             <input type="text" name="spalny">
+           </div>
+
+           <div class="filter__wrp">
+             <button type="button" class="filter__btn">
+               <span>Площадь</span>
+               <img src="@img/chevron-down.svg" alt="">
+             </button>
+             <ul class="filter__list">
+             </ul>
+             <input type="text" name="area">
+           </div>
+
+           <div class="filter__wrp">
+             <button type="button" class="filter__btn">
+               <span>Материал</span>
+               <img src="@img/chevron-down.svg" alt="">
+             </button>
+             <ul class="filter__list">
+               <li data-value="Газобетон">Газобетон</li>
+               <li data-value="Газобетон 400">Газобетон 400</li>
+               <li data-value="Газоблок">Газоблок</li>
+             </ul>
+             <input type="text" name="material">
+           </div>
+
+           <div class="filter__wrp">
+             <button type="button" class="filter__btn">
+               <span>Этажность</span>
+               <img src="@img/chevron-down.svg" alt="">
+             </button>
+             <ul class="filter__list">
+               <li data-value="1">1</li>
+               <li data-value="2">2</li>
+             </ul>
+             <input type="text" name="etazh">
+           </div>-->
 
           <button type="button" class="filter__reset"><span>Сбросить</span></button>
 
@@ -192,7 +243,7 @@
           </div>
         </div>
         <div class="catalog__card card"
-             data-location="ЖК Ботаника" data-price="6000000" data-project="SVOI-1-70" data-etazh="2" data-sanuzly="1">
+             data-location="ЖК Ботаника" data-price="6000000" data-project="SVOI-1-70" data-etazh="1" data-sanuzly="1">
           <div class="card__image" style="background-image: url('img/proj.jpg')">
             <img src="@img/mini-logo.png" alt="" class="card__logo">
           </div>
