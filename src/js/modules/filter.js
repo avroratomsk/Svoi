@@ -12,7 +12,11 @@ const catalogGrid = document.querySelector('.catalog__grid');
    HELPERS
 ====================== */
 const parseNumber = val =>
-  Number(String(val).replace(/\s+/g, '')) || null;
+  Number(
+    String(val)
+      .replace(',', '.')
+      .replace(/[^\d.]/g, '')
+  ) || null;
 
 function getCheckedValues(name) {
   return [...document.querySelectorAll(`input[name="${name}"]:checked`)]
@@ -102,11 +106,11 @@ function applyFilter() {
     const material = card.dataset.material;
 
     // RANGE
-    if (f.priceMin !== null && price < f.priceMin) visible = false;
-    if (f.priceMax !== null && price > f.priceMax) visible = false;
+    if (f.priceMin !== null && price <= f.priceMin) visible = false;
+    if (f.priceMax !== null && price >= f.priceMax) visible = false;
 
-    if (f.areaMin !== null && area < f.areaMin) visible = false;
-    if (f.areaMax !== null && area > f.areaMax) visible = false;
+    if (f.areaMin !== null && area <= f.areaMin) visible = false;
+    if (f.areaMax !== null && area >= f.areaMax) visible = false;
 
     // MULTI CHECKBOX (OR внутри группы)
     if (f.spalni.length && !f.spalni.includes(spalny)) visible = false;
