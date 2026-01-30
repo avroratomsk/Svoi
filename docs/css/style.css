@@ -3947,8 +3947,22 @@ button {
 .filter__reset {
   position: relative;
   display: none;
-  color: red;
-  font-weight: 700;
+  border: 1px solid rgb(110, 7, 158);
+  background: #6e079e;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .filter__reset.active {
@@ -4395,7 +4409,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 15px;
@@ -4403,8 +4417,8 @@ button {
 }
 
 .tabs__nav button {
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   background: rgb(243, 243, 243);
@@ -4611,8 +4625,8 @@ button {
 }
 
 .cause .tabs__nav button {
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
   font-weight: 400;
   position: relative;
 }
@@ -5239,6 +5253,7 @@ body._lock::after {
 .gallery__item img {
   max-width: 100%;
   min-height: 200px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: 0.25s;

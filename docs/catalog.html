@@ -13,7 +13,7 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20260130084608"
+    href="css/style.min.css?_v=20260130105915"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -49,13 +49,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260130084608"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap&_v=20260130105915"
     rel="stylesheet">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260130084608" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260130084608"/>
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20260130105915" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20260130105915"/>
   <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260130084608"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css?_v=20260130105915"
   />
 </head>
 
@@ -140,8 +140,8 @@
           <div class="filter__wrp">
             <button type="button">Спальни <img src="img/chevron-down.svg" alt=""></button>
             <div class="filter__wrp-inner">
-              <label class="checkbox-label"><input type="checkbox" name="spalny" value="1">1</label>
-              <label class="checkbox-label"><input type="checkbox" name="spalny" value="2">2</label>
+              <label class="checkbox-label"><input type="checkbox" name="spalni" value="1">1</label>
+              <label class="checkbox-label"><input type="checkbox" name="spalni" value="2">2</label>
             </div>
           </div>
 
@@ -190,179 +190,144 @@
 
       </div>
 
-      <div class="catalog__grid" id="catalog-grid" style="">
-        <div class="houses-sale__card card" data-price="5400000" data-etazh="1" data-sanuzly="1" data-spalny="2" data-material="Газобетон" data-area="70 м2" style="">
-          <!-- <a href="proektyi-domov/svoi-24-1-70" class="card__image" style="background-image: url('static/img/proj.webp')">
-              <picture><source srcset="static/img/mini-logo.webp" type="image/webp"><img src="static/img/mini-logo.png" alt="" class="card__logo"></picture>
-          </a> -->
-          <div class="swiper catalog__card-image swiper-initialized swiper-horizontal swiper-backface-hidden">
-            <div class="catalog__card-wrapper swiper-wrapper" id="swiper-wrapper-14c1ee419c41b46e" aria-live="polite">
-              <div class="swiper-slide catalog__card-slide swiper-slide-active" style="width: 445px; margin-right: 20px;" role="group" aria-label="1 / 4" data-swiper-slide-index="0">
-                <picture><source srcset="upload/24-01-70/02-brks.webp-(1).webp" type="image/webp"><img src="upload/24-01-70/02-brks.jpg-(1).webp" alt=""></picture>
+      <div class="catalog__grid" id="catalog-grid">
+        <div class="swiper-slide houses-sale__slide">
+          <div class="catalog__card card"
+               data-location="КП Смородина"
+               data-price="8 000 000"
+               data-project="Ника"
+               data-etazh="2"
+               data-sanuzly="1"
+               data-spalny="2"
+               data-area="60 м2"
+          >
+            <div class="swiper catalog__card-image">
+              <div class="catalog__card-wrapper swiper-wrapper">
+                <div class="swiper-slide catalog__card-slide"
+                >
+                  <button type="button" class="catalog__play">
+                    <img src="img/play.svg" alt="">
+                  </button>
+                  <video width="100%" poster="img/proj.jpg">
+                    <source src="/video/2025-10-17 13.02.33.mp4" type="video/webm">
+                  </video>
+                </div>
+                <div class="swiper-slide catalog__card-slide"
 
+                >
+                  <picture><source srcset="img/proj.webp" type="image/webp"><img src="img/proj.jpg" alt=""></picture>
+                </div>
+                <div class="swiper-slide catalog__card-slide"
 
-              </div><div class="swiper-slide catalog__card-slide swiper-slide-next" style="width: 445px; margin-right: 20px;" role="group" aria-label="2 / 4" data-swiper-slide-index="1">
-              <picture><source srcset="upload/24-01-70/02-brks.webp.webp" type="image/webp"><img src="upload/24-01-70/02-brks.jpg.webp" alt=""></picture>
+                >
+                  <picture><source srcset="img/proj.webp" type="image/webp"><img src="img/proj.jpg" alt=""></picture>
+                </div>
 
-
-            </div><div class="swiper-slide catalog__card-slide" style="width: 445px; margin-right: 20px;" role="group" aria-label="3 / 4" data-swiper-slide-index="2">
-              <picture><source srcset="upload/24-01-70/09-corona-camera001.webp.webp" type="image/webp"><img src="upload/24-01-70/09-corona-camera001.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" role="group" aria-label="4 / 4" data-swiper-slide-index="3" style="width: 445px; margin-right: 20px;">
-              <picture><source srcset="upload/24-01-70/09-corona-camera002.webp.webp" type="image/webp"><img src="upload/24-01-70/09-corona-camera002.jpg.webp" alt=""></picture>
-
-
+              </div>
+              <div class="swiper-button-prev catalog__card__prev"></div>
+              <div class="swiper-button-next catalog__card__next"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
             </div>
-            </div>
-            <div class="swiper-button-prev catalog__card__prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-14c1ee419c41b46e"></div>
-            <div class="swiper-button-next catalog__card__next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-14c1ee419c41b46e"></div>
-
-            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-          <div class="card__content">
-            <div class="card__content-top">
-              <a href="proektyi-domov/svoi-24-1-70" class="card__title"><span>SVOI-24-1-70</span></a>
-              <p class="card__size">70 м2</p>
-            </div>
-
-
-            <ul class="card__list-horizontal">
-
-
-              <li>Материал стен: Газобетон</li>
-              <li>Количество спален: 2</li>
-            </ul>
-            <div class="card__content-bottom">
-              <p class="card__price">от 5400000 р</p>
-              <a href="proektyi-domov/svoi-24-1-70" class="card__link">Узнать больше
-                <picture>
-                  <source srcset="static/img/arrow-right-purple.webp" type="image/webp">
-                  <picture><source srcset="static/img/arrow-right-purple.webp" type="image/webp"><img src="static/img/arrow-right-purple.png" alt=""></picture></picture>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="houses-sale__card card" data-price="5690000" data-etazh="1" data-sanuzly="1" data-spalny="2" data-material="Газобетон" data-area="80 м2" style="">
-          <!-- <a href="proektyi-domov/svoi-24-1-80" class="card__image" style="background-image: url('upload/24-1-80/02-brks.jpg.webp')">
-              <picture><source srcset="static/img/mini-logo.webp" type="image/webp"><img src="static/img/mini-logo.png" alt="" class="card__logo"></picture>
-          </a> -->
-          <div class="swiper catalog__card-image swiper-initialized swiper-horizontal swiper-backface-hidden">
-            <div class="catalog__card-wrapper swiper-wrapper" id="swiper-wrapper-5542a83828c435d2" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-930px, 0px, 0px); transition-delay: 0ms;">
-              <div class="swiper-slide catalog__card-slide" style="width: 445px; margin-right: 20px;" role="group" aria-label="1 / 6" data-swiper-slide-index="0">
-                <picture><source srcset="upload/24-1-80/02-brks.webp.webp" type="image/webp"><img src="upload/24-1-80/02-brks.jpg.webp" alt=""></picture>
-
-
-              </div><div class="swiper-slide catalog__card-slide swiper-slide-prev" style="width: 445px; margin-right: 20px;" role="group" aria-label="2 / 6" data-swiper-slide-index="1">
-              <picture><source srcset="upload/24-1-80/02-shpak.webp.webp" type="image/webp"><img src="upload/24-1-80/02-shpak.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide swiper-slide-active" style="width: 445px; margin-right: 20px;" role="group" aria-label="3 / 6" data-swiper-slide-index="2">
-              <picture><source srcset="upload/24-1-80/02-shtuk.webp.webp" type="image/webp"><img src="upload/24-1-80/02-shtuk.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide swiper-slide-next" style="width: 445px; margin-right: 20px;" role="group" aria-label="4 / 6" data-swiper-slide-index="3">
-              <picture><source srcset="upload/24-1-80/05-corona-camera001.webp.webp" type="image/webp"><img src="upload/24-1-80/05-corona-camera001.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" style="width: 445px; margin-right: 20px;" role="group" aria-label="5 / 6" data-swiper-slide-index="4">
-              <picture><source srcset="upload/24-1-80/05-corona-camera002.webp.webp" type="image/webp"><img src="upload/24-1-80/05-corona-camera002.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" role="group" aria-label="6 / 6" data-swiper-slide-index="5" style="width: 445px; margin-right: 20px;">
-              <picture><source srcset="upload/24-1-80/05-corona-camera003.webp" type="image/webp"><img src="upload/24-1-80/05-corona-camera003.jpg" alt=""></picture>
-
-
-            </div>
-            </div>
-            <div class="swiper-button-prev catalog__card__prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-5542a83828c435d2"></div>
-            <div class="swiper-button-next catalog__card__next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5542a83828c435d2"></div>
-
-            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-          <div class="card__content">
-            <div class="card__content-top">
-              <a href="proektyi-domov/svoi-24-1-80" class="card__title"><span>SVOI-24-1-80</span></a>
-              <p class="card__size">80 м2</p>
-            </div>
-
-
-            <ul class="card__list-horizontal">
-
-
-              <li>Материал стен: Газобетон</li>
-              <li>Количество спален: 2</li>
-            </ul>
-            <div class="card__content-bottom">
-              <p class="card__price">от 5690000 р</p>
-              <a href="proektyi-domov/svoi-24-1-80" class="card__link">Узнать больше
-                <picture>
-                  <source srcset="static/img/arrow-right-purple.webp" type="image/webp">
-                  <picture><source srcset="static/img/arrow-right-purple.webp" type="image/webp"><img src="static/img/arrow-right-purple.png" alt=""></picture></picture>
-              </a>
+            <div class="card__content">
+              <div class="card__content-top">
+                <p class="card__title"><span>SVOI</span>-1-60</p>
+                <p class="card__size">7,5 сот</p>
+              </div>
+              <ul class="card__list-vertical">
+                <li>Одноэтажный дом 100м2 с гаражом</li>
+                <li>ЖК Смородина, ул. Ленина, д.2</li>
+              </ul>
+              <ul class="card__list-horizontal">
+                <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+                <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+                <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+              </ul>
+              <div class="card__content-bottom">
+                <p class="card__price">от 8 000 000 р</p>
+                <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="houses-sale__card card" data-price="5990000" data-etazh="2" data-sanuzly="2" data-spalny="3" data-material="Газобетон" data-area="100 м2" style="">
-          <!-- <a href="proektyi-domov/svoi-24-2-100" class="card__image" style="background-image: url('upload/24-2-100/11-01.jpg.webp')">
-              <picture><source srcset="static/img/mini-logo.webp" type="image/webp"><img src="static/img/mini-logo.png" alt="" class="card__logo"></picture>
-          </a> -->
-          <div class="swiper catalog__card-image swiper-initialized swiper-horizontal swiper-backface-hidden">
-            <div class="catalog__card-wrapper swiper-wrapper" id="swiper-wrapper-a138e73dca1b278b" aria-live="polite">
-              <div class="swiper-slide catalog__card-slide swiper-slide-active" style="width: 445px; margin-right: 20px;" role="group" aria-label="1 / 6" data-swiper-slide-index="0">
-                <picture><source srcset="upload/24-2-100/11-01.webp.webp" type="image/webp"><img src="upload/24-2-100/11-01.jpg.webp" alt=""></picture>
-
-
-              </div><div class="swiper-slide catalog__card-slide swiper-slide-next" style="width: 445px; margin-right: 20px;" role="group" aria-label="2 / 6" data-swiper-slide-index="1">
-              <picture><source srcset="upload/24-2-100/11-02.webp.webp" type="image/webp"><img src="upload/24-2-100/11-02.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" style="width: 445px; margin-right: 20px;" role="group" aria-label="3 / 6" data-swiper-slide-index="2">
-              <picture><source srcset="upload/24-2-100/11-03.webp.webp" type="image/webp"><img src="upload/24-2-100/11-03.jpg.webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" style="width: 445px; margin-right: 20px;" role="group" aria-label="4 / 6" data-swiper-slide-index="3">
-              <picture><source srcset="upload/24-2-100/house11-corona-camer.webp-(1).webp" type="image/webp"><img src="upload/24-2-100/house11-corona-camer.jpg-(1).webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" style="width: 445px; margin-right: 20px;" role="group" aria-label="5 / 6" data-swiper-slide-index="4">
-              <picture><source srcset="upload/24-2-100/house11-corona-camer.webp-(2).webp" type="image/webp"><img src="upload/24-2-100/house11-corona-camer.jpg-(2).webp" alt=""></picture>
-
-
-            </div><div class="swiper-slide catalog__card-slide" role="group" aria-label="6 / 6" data-swiper-slide-index="5" style="width: 445px; margin-right: 20px;">
-              <picture><source srcset="upload/24-2-100/house11-corona-camer.webp.webp" type="image/webp"><img src="upload/24-2-100/house11-corona-camer.jpg.webp" alt=""></picture>
-
-
-            </div>
-            </div>
-            <div class="swiper-button-prev catalog__card__prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a138e73dca1b278b"></div>
-            <div class="swiper-button-next catalog__card__next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a138e73dca1b278b"></div>
-
-            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
+        <div class="catalog__card card"
+             data-location="ЖК Смородина"
+             data-price="7000000"
+             data-project="Мила"
+             data-etazh="2"
+             data-sanuzly="2"
+             data-area="80 м2"
+        >
+          <div class="card__image" style="background-image: url('img/proj.jpg')">
+            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+          </div>
           <div class="card__content">
             <div class="card__content-top">
-              <a href="proektyi-domov/svoi-24-2-100" class="card__title"><span>SVOI-24-2-100</span></a>
-              <p class="card__size">100 м2</p>
+              <p class="card__title"><span>SVOI</span>-1-80</p>
+              <p class="card__size">7,5 сот</p>
             </div>
-
-
+            <ul class="card__list-vertical">
+              <li>Одноэтажный дом 100м2 с гаражом</li>
+              <li>ЖК Смородина, ул. Ленина, д.2</li>
+            </ul>
             <ul class="card__list-horizontal">
-
-
-              <li>Материал стен: Газобетон</li>
-              <li>Количество спален: 3</li>
+              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
             </ul>
             <div class="card__content-bottom">
-              <p class="card__price">от 5990000 р</p>
-              <a href="proektyi-domov/svoi-24-2-100" class="card__link">Узнать больше
-                <picture>
-                  <source srcset="static/img/arrow-right-purple.webp" type="image/webp">
-                  <picture><source srcset="static/img/arrow-right-purple.webp" type="image/webp"><img src="static/img/arrow-right-purple.png" alt=""></picture></picture>
-              </a>
+              <p class="card__price">от 8 000 000 р</p>
+              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__card card"
+             data-location="ЖК Ботаника" data-area="70 м2" data-price="6000000" data-project="Добрыня" data-etazh="1" data-sanuzly="1">
+          <div class="card__image" style="background-image: url('img/proj.jpg')">
+            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+          </div>
+          <div class="card__content">
+            <div class="card__content-top">
+              <p class="card__title"><span>SVOI</span>-1-70</p>
+              <p class="card__size">7,5 сот</p>
+            </div>
+            <ul class="card__list-vertical">
+              <li>Одноэтажный дом 100м2 с гаражом</li>
+              <li>ЖК Смородина, ул. Ленина, д.2</li>
+            </ul>
+            <ul class="card__list-horizontal">
+              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+            </ul>
+            <div class="card__content-bottom">
+              <p class="card__price">от 8 000 000 р</p>
+              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__card card"
+             data-location="КП Ботаника" data-price="6000000" data-project="Археологическая 1" data-etazh="1" data-sanuzly="2">
+          <div class="card__image" style="background-image: url('img/proj.jpg')">
+            <picture><source srcset="img/mini-logo.webp" type="image/webp"><img src="img/mini-logo.png" alt="" class="card__logo"></picture>
+          </div>
+          <div class="card__content">
+            <div class="card__content-top">
+              <p class="card__title"><span>SVOI</span>-1-70</p>
+              <p class="card__size">7,5 сот</p>
+            </div>
+            <ul class="card__list-vertical">
+              <li>Одноэтажный дом 100м2 с гаражом</li>
+              <li>ЖК Смородина, ул. Ленина, д.2</li>
+            </ul>
+            <ul class="card__list-horizontal">
+              <li><picture><source srcset="img/bed.webp" type="image/webp"><img src="img/bed.png" alt=""></picture>2 спальни</li>
+              <li><picture><source srcset="img/area.webp" type="image/webp"><img src="img/area.png" alt=""></picture>18.03 x 14.58</li>
+              <li><picture><source srcset="img/const.webp" type="image/webp"><img src="img/const.png" alt=""></picture>12 месяцев</li>
+            </ul>
+            <div class="card__content-bottom">
+              <p class="card__price">от 8 000 000 р</p>
+              <a href="" class="card__link">Узнать больше <picture><source srcset="img/arrow-right-purple.webp" type="image/webp"><img src="img/arrow-right-purple.png" alt=""></picture></a>
             </div>
           </div>
         </div>
@@ -658,7 +623,7 @@
 </div>
 
 
-<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260130084608"></script>
-<script src="js/app.min.js?_v=20260130084608"></script>
+<script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js?_v=20260130105915"></script>
+<script src="js/app.min.js?_v=20260130105915"></script>
 </body>
 </html>

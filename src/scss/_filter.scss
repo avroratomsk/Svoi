@@ -187,8 +187,20 @@
   &__reset {
     position: relative;
     display: none;
-    color: red;
-    font-weight: 700;
+    border: 1px solid rgba(110, 7, 158, 1);
+    background: #6e079e;
+    color: #FFFFFF;
+
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+
   }
 
   &__reset.active {

@@ -99,7 +99,7 @@ function applyFilter() {
 
     const price = parseNumber(card.dataset.price);
     const area = parseNumber(card.dataset.area);
-    const spalny = card.dataset.spalny;
+    const spalni = card.dataset.spalni;
     const etazh = card.dataset.etazh;
     const project = card.dataset.project;
     const location = card.dataset.location;
@@ -113,7 +113,7 @@ function applyFilter() {
     if (f.areaMax !== null && area >= f.areaMax) visible = false;
 
     // MULTI CHECKBOX (OR внутри группы)
-    if (f.spalni.length && !f.spalni.includes(spalny)) visible = false;
+    if (f.spalni.length && !f.spalni.includes(spalni)) visible = false;
     if (f.material.length && !f.material.includes(material)) visible = false;
     if (f.etazh.length && !f.etazh.includes(etazh)) visible = false;
     if (f.project.length && !f.project.includes(project)) visible = false;
