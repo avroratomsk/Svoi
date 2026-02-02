@@ -2718,7 +2718,7 @@ button {
 }
 
 .portfolio__content-title {
-  font-size: 32px;
+  font-size: 23px;
   font-weight: 500;
 }
 
@@ -5240,7 +5240,7 @@ body._lock::after {
   margin-top: 40px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
   gap: 30px;
 }
 
@@ -10294,6 +10294,10 @@ body main {
   .team__grid {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 
 @media (max-width: 1200px) {
@@ -10556,6 +10560,11 @@ body main {
     -ms-grid-rows: (199px)[5];
     grid-template-rows: repeat(5, 199px);
         grid-template-areas: "a a b b" "a a c c" "a a d d" "f f f f" "g g g g";
+  }
+
+  .gallery {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .images__item:nth-child(1) {
