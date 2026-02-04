@@ -179,6 +179,16 @@ button {
   &.active {
     display: flex;
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+
+    img {
+      height: 15px;
+    }
+  }
 }
 
 

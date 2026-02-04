@@ -4,15 +4,13 @@
 
   //.info-block__top
   &__top {
-    //display: grid;
-    //grid-template-columns: 864px 1fr;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 76px;
 
     @media screen and (max-width: 1400px) {
-      grid-template-columns: 1fr;
+      flex-wrap: wrap;
     }
 
   }
@@ -196,7 +194,7 @@
     @media screen and (max-width: 1200px) {
       font-size: 12px;
     }
-    
+
     @media screen and (max-width: 380px) {
       max-width: 100%;
     }

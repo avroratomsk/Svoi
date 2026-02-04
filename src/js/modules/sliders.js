@@ -263,6 +263,7 @@ const catalogCardImage = new Swiper('.catalog__card-image', {
   loop: true,
   autoHeight: false,
   spaceBetween: 20,
+  nested: true,
   slidesPerView: 1,
 
   navigation: {
@@ -319,6 +320,41 @@ const reviewsSlider = new Swiper('.reviews__slider', {
       slidesPerView: 3,
       scrollbar: {
         enabled: false
+      },
+    }
+  }
+
+});
+
+const teamSlider = new Swiper('.team__slider', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 38,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      scrollbar: {
+        enabled: true,
+      },
+    },
+    1200: {
+      slidesPerView: 3,
+      scrollbar: {
+        enabled: false,
       },
     }
   }

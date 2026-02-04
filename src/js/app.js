@@ -140,6 +140,12 @@ backToTopBtn.addEventListener('click', (e) => {
   });
 });
 
+const singleTextBtn = document.querySelector('.single__text-btn');
+singleTextBtn?.addEventListener('click', (e) => {
+  const nextEl  = singleTextBtn.nextElementSibling;
+  nextEl.classList.toggle('active');
+})
+
 
 
 

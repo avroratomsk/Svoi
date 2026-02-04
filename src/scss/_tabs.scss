@@ -21,6 +21,10 @@
         background: #6e079e;
         color: #fff;
       }
+
+      @media screen and (max-width: 578px) {
+        width: 100%;
+      }
     }
 
     @media screen and (max-width: 992px) {
@@ -31,6 +35,10 @@
         font-size: 16px;
       }
 
+    }
+
+    @media screen  and (max-width: 578px) {
+      padding: 0;
     }
 
   }
@@ -48,6 +56,10 @@
 
     @media screen and (max-width: 992px) {
       padding: 0 25px;
+    }
+
+    @media screen and (max-width: 578px) {
+      padding: 0;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -77,6 +89,11 @@
       display: flex;
       align-items: center;
       gap: 40px;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
   }
