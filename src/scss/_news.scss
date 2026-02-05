@@ -6,14 +6,15 @@
 
   //.news__slider
   &__slider {
+    @media screen and (max-width: 992px) {
+      padding-bottom: 30px;
+    }
   }
 
   //.news__wrapper
   &__wrapper {
 
-    @media screen and (max-width: 578px) {
-      padding-bottom: 30px;
-    }
+
   }
 
   //.news__slide

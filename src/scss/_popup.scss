@@ -240,11 +240,66 @@ body._lock::after {
     top: 25px;
     right: 30px;
 
-    &::after,&::before {
+    &::after, &::before {
       background-color: red;
     }
   }
 
+}
+
+#callback-form {
+
+  .popup__title {
+
+    @media screen and (max-width: 578px) {
+      padding-right: 80px;
+    }
+
+
+    @media screen and (max-width: 480px) {
+      word-break: normal;
+    }
+  }
+
+}
+
+#callback {
+  .popup__title {
+    padding-right: 80px;
+  }
+
+  #title-popup {
+
+    @media screen and (max-width: 520px) {
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      word-break: normal;
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    #title-popup {
+      font-size: 18px;
+    }
+
+    .popup__close {
+      top: 40px;
+      right: 50px
+    }
+
+    .popup__top {
+      padding: 90px 30px 0;
+    }
+
+    .popup__subtitle {
+      margin: 20px 0 0;
+      font-size: 16px;
+      text-wrap: balance;
+    }
+  }
 }
 
 #filter {
@@ -258,7 +313,7 @@ body._lock::after {
     top: 15px;
     right: 15px;
 
-    &::after,&::before {
+    &::after, &::before {
       background-color: red;
     }
   }
@@ -268,40 +323,44 @@ body._lock::after {
   }
 
   .filter__inner {
-    align-items: flex-start;
     flex-direction: column;
   }
 
-  .filter__list {
+
+  .filter__wrp {
+    width: 100%;
+    border: 1px solid rgba(110, 7, 158, .3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 16px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      img {
+        display: none;
+      }
+    }
+
+  }
+
+  .filter__wrp-inner {
     position: relative;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px 0;
-    box-shadow: none;
-
-    li {
-      border: 1px solid #6e079e;
-      padding: 5px 10px;
-    }
-  }
-
-  .filter__btn {
-    width: auto;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
-
-    img {
-      display: none;
-    }
-  }
-
-  .filter__reset {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
+    padding: 10px;
+    border: none;
   }
 
 

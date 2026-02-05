@@ -6,6 +6,9 @@
 
   //.stock__slider
   &__slider {
+    @media screen and (max-width: 992px) {
+      padding-bottom: 30px;
+    }
   }
 
   //.stock__wrapper

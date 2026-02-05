@@ -1,7 +1,7 @@
 /* ======================
    DOM
 ====================== */
-const filter = document.querySelector('.catalog__filter');
+const filter = document.querySelectorAll('.filter');
 const filterWrps = document.querySelectorAll('.filter__wrp');
 const cards = document.querySelectorAll('.card');
 const resetBtn = document.querySelector('.filter__reset');
@@ -148,11 +148,17 @@ function toggleEmpty(count) {
 /* ======================
    EVENTS
 ====================== */
-filter?.addEventListener('input', applyFilter);
-filter?.addEventListener('change', applyFilter);
+filter?.forEach(item => {
+  item.addEventListener('input', applyFilter);
+})
+
+filter?.forEach(item => {
+  item.addEventListener('change', applyFilter);
+})
+
 
 resetBtn?.addEventListener('click', () => {
-  document.querySelectorAll('.catalog__filter input').forEach(i => {
+  document.querySelectorAll('.filter input').forEach(i => {
     i.type === 'checkbox' ? i.checked = false : i.value = '';
   });
 

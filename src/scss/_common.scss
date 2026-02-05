@@ -118,6 +118,10 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+
+    @media screen and (max-width: 578px) {
+
+    }
   }
 
 }

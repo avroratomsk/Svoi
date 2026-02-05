@@ -5,17 +5,24 @@
     margin-bottom: 42px;
   }
 
+  &__slider {
+    @media screen and (max-width: 1400px) {
+      padding-bottom: 30px;
+    }
+  }
+
   //.added__wrapper
   &__wrapper {
     width: 100%;
-    padding: 0 0 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 16px;
+    //padding: 0 0 20px;
+    //display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    //gap: 16px;
   }
 
   //.added__card
   &__card {
+    //width: 100% !important;
     display: flex;
     gap: 20px;
     border-right: 2px solid rgba($color: #535353, $alpha: 0.38) !important;
@@ -31,6 +38,10 @@
     //@media screen and (min-width: 768px) {
     //  padding-right: 25px;
     //}
+
+    @media screen and (max-width: 1400px) {
+      padding-right: 20px;
+    }
 
     @media screen and (max-width: 460px) {
       flex-direction: column;

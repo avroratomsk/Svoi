@@ -297,7 +297,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   direction: 'horizontal',
   loop: true,
   autoHeight: true,
-  spaceBetween: 72,
+
 
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -316,11 +316,19 @@ const reviewsSlider = new Swiper('.reviews__slider', {
       },
       slidesPerView: 1,
     },
+    768: {
+      slidesPerView: 1.3,
+    },
     992: {
+      slidesPerView: 2,
+    },
+    1200: {
       slidesPerView: 3,
-      scrollbar: {
-        enabled: false
-      },
+      spaceBetween: 30,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 72,
     }
   }
 
@@ -352,6 +360,43 @@ const teamSlider = new Swiper('.team__slider', {
       },
     },
     1200: {
+      slidesPerView: 3,
+      scrollbar: {
+        enabled: false,
+      },
+    }
+  }
+
+});
+
+const addedSlider = new Swiper('.added__slider', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 38,
+
+  scrollbar: {
+    el: '.added__scrollbar',
+    draggable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1.3,
+    },
+    1200: {
+      slidesPerView: 2,
+      scrollbar: {
+        enabled: true,
+      },
+    },
+    1400: {
       slidesPerView: 3,
       scrollbar: {
         enabled: false,

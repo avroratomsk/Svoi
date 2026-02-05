@@ -123,12 +123,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const heroBlockBottom = document.querySelector('.main-slider')?.getBoundingClientRect().bottom;
+// const heroBlockBottom = document.querySelector('.main-slider')?.getBoundingClientRect().bottom;
 const backToTopBtn = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', () => {
 
-  window.scrollY > heroBlockBottom ? backToTopBtn.classList.add('active') : backToTopBtn.classList.remove('active');
+  window.scrollY > 600 ? backToTopBtn.classList.add('active') : backToTopBtn.classList.remove('active');
 
 });
 
@@ -144,7 +144,53 @@ const singleTextBtn = document.querySelector('.single__text-btn');
 singleTextBtn?.addEventListener('click', (e) => {
   const nextEl  = singleTextBtn.nextElementSibling;
   nextEl.classList.toggle('active');
-})
+});
+
+
+// Функция для проверки, равен ли экран 992px или больше
+/*function checkDeviceWidth() {
+  if (window.matchMedia("(min-width: 992px)").matches) {
+    console.log("Устройство: Desktop / Планшет (>= 992px)");
+    // Ваш код для больших экранов
+  } else {
+    console.log("Устройство: Mobile / Планшет (< 992px)");
+    // Ваш код для маленьких экранов
+  }
+}
+
+// Проверка при загрузке
+checkDeviceWidth();
+
+// Проверка при изменении размера окна
+window.addEventListener('resize', checkDeviceWidth);*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tml = document.getElementById('tml');
+  const target = document.getElementById('thiIs');
+  const originalParent = tml?.parentElement;
+
+  function moveBlock() {
+    if (window.innerWidth <= 992) {
+
+      // очищаем контейнер
+      target.innerHTML = '';
+
+      // переносим tml
+      if(tml) {
+        target.appendChild(tml);
+      }
+
+    } else {
+      if (!originalParent.contains(tml) && tml) {
+        originalParent?.appendChild(tml);
+      }
+    }
+  }
+
+  moveBlock();
+  window.addEventListener('resize', moveBlock);
+});
+
 
 
 
