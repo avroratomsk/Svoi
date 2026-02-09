@@ -4117,14 +4117,20 @@ button {
 .project__slide {
   position: relative;
   width: 100%;
-  height: 358px;
+  height: 358px !important;
   border-radius: 10px;
   overflow: hidden;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project__slide img,
 .project__slide picture {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .project__slide video {
@@ -4135,10 +4141,7 @@ button {
 }
 
 .project__slide-image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100% !important;
 }
 
 .project__plan {
@@ -4234,10 +4237,10 @@ button {
 }
 
 .no-webp .project__slider-next::after{
-  background-image: url("/img/arrow-left-violet.png"); }
+  background-image: url("/img/arrow-right-purple.png"); }
 
 .no-webp .project__slider-prev::after{
-  background-image: url("/img/arrow-right-purple.png"); }
+  background-image: url("/img/arrow-left.png"); }
 
 .project__info {
   display: -webkit-box;
@@ -11351,6 +11354,6 @@ body main {
   }
 }
 
-.webp .project__slider-next::after{ background-image: url(/img/arrow-left-violet.webp); }
+.webp .project__slider-next::after{ background-image: url(/img/arrow-right-purple.webp); }
 
-.webp .project__slider-prev::after{ background-image: url(/img/arrow-right-purple.webp); }
+.webp .project__slider-prev::after{ background-image: url(/img/arrow-left.webp); }
