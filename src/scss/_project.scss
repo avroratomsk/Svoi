@@ -42,6 +42,10 @@
       object-fit: cover;
     }
 
+    @media screen and (max-width: 425px) {
+      height: 240px !important;
+    }
+
   }
 
   //.project__slide-image
@@ -178,6 +182,11 @@
       gap: 20px;
     }
 
+    @media screen and (max-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
     div {
       display: flex;
       flex-direction: column;
@@ -185,12 +194,16 @@
       font-size: 18px;
       font-weight: 400;
 
+      @media screen and (max-width: 578px) {
+        font-size: 16px;
+      }
+
       b {
         font-size: 16px;
         color: rgba(110, 7, 158, 1);
 
         @media screen and (max-width: 578px) {
-          font-size: 18px;
+          font-size: 14px;
         }
       }
     }

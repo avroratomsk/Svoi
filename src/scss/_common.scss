@@ -11,6 +11,7 @@ h1,h2,h3,h4,h5,h6 {
 button {
   background: none;
   border: none;
+  appearance: none;
 }
 
 .btn-arrow {
@@ -91,6 +92,7 @@ button {
   flex-wrap: wrap;
   margin-bottom: 30px;
 
+
   //.top-section__link
   &__link {
     padding: 10px 17px;
@@ -120,7 +122,7 @@ button {
     margin-top: 40px;
 
     @media screen and (max-width: 578px) {
-
+      margin-top: 20px;
     }
   }
 

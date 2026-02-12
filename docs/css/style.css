@@ -1890,6 +1890,7 @@ template {
   font-size: 85px;
   font-weight: 700;
   line-height: 100%;
+  text-wrap: balance;
 }
 
 .main-slider__title b,
@@ -1923,6 +1924,8 @@ template {
   display: block;
   padding: 13px 16px;
   font-size: 16px;
+  text-wrap: balance;
+  line-height: 140%;
 }
 
 .main-slider__icon {
@@ -2182,6 +2185,9 @@ h6 {
 button {
   background: none;
   border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .btn-arrow {
@@ -2676,10 +2682,6 @@ button {
   background-repeat: no-repeat;
 }
 
-.portfolio__title {
-  margin-bottom: 40px;
-}
-
 .portfolio__image {
   height: 320px;
   margin-bottom: 20px;
@@ -2702,9 +2704,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2729,6 +2731,16 @@ button {
 .portfolio__desc {
   font-size: 20px;
   font-weight: 400;
+}
+
+.portfolio__next,
+.portfolio__prev {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio__next svg,
+.portfolio__prev svg {
+  width: 20px;
 }
 
 .stock__slide {
@@ -5116,6 +5128,10 @@ body._lock::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 20px;
+}
+
+.services .news__slide {
+  width: 100% !important;
 }
 
 .text-page__title {
@@ -10245,6 +10261,7 @@ body main {
 
 @media screen and (max-width: 1200px) {
   .header .social {
+    display: none;
     position: fixed;
     bottom: 100px;
     right: 30px;
@@ -10480,6 +10497,10 @@ body main {
     width: 20px;
   }
 
+  .info-block__top {
+    margin-bottom: 40px;
+  }
+
   .info-block__grid {
     -ms-grid-rows: 268px 204px 200px;
     grid-template-rows: 268px 204px 200px;
@@ -10488,8 +10509,8 @@ body main {
   .info-block__item:nth-child(2) {
     -ms-grid-column-span: 2;
     grid-column: span 2;
-    -ms-grid-row-span: 2;
-    grid-row: span 2;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
   }
 
   .info-block__item:nth-child(3) {
@@ -10572,6 +10593,10 @@ body main {
             order: 1;
   }
 
+  .faq__btn {
+    margin-top: 0;
+  }
+
   .callback__col--first {
     gap: 40px;
   }
@@ -10587,6 +10612,13 @@ body main {
 
   .catalog__filter {
     display: none !important;
+  }
+
+  .project__params {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .tabs__nav {
@@ -10690,6 +10722,10 @@ body main {
     border-radius: 10px;
   }
 
+  .main-slider__slide::before {
+    border-radius: 10px;
+  }
+
   .single__banner {
     min-height: 500px;
   }
@@ -10728,18 +10764,12 @@ body main {
     grid-row: span 1;
   }
 
-  .info-block__item:nth-child(3) {
-    -ms-grid-column-span: 1;
-    grid-column: span 1;
-  }
-
-  .info-block__item:nth-child(4) {
-    -ms-grid-column-span: 1;
-    grid-column: span 1;
-  }
-
   .title {
     font-size: 35px;
+  }
+
+  .reviews {
+    padding: 40px 0;
   }
 
   .works__accordion .accordion__title p {
@@ -10833,6 +10863,10 @@ body main {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
   }
+
+  .top-page__inner {
+    padding: 40px 20px;
+  }
 }
 
 @media screen and (max-width: 758px) {
@@ -10919,13 +10953,13 @@ body main {
     grid-template-columns: 1fr;
   }
 
+  .top-section__bottom {
+    margin-top: 20px;
+  }
+
   .numbers__row {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-  }
-
-  .stock__wrapper {
-    padding-bottom: 30px;
   }
 
   .stock__slide {
@@ -10961,10 +10995,12 @@ body main {
 
   .stock__image img {
     border-radius: 10px;
+    height: 100%;
   }
 
   .news__slide {
     border-radius: 10px;
+    padding: 30px 15px;
   }
 
   .news__slide-inner {
@@ -11035,8 +11071,12 @@ body main {
     display: none;
   }
 
+  .project__params div {
+    font-size: 16px;
+  }
+
   .project__params div b {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .project__features-title {
@@ -11184,6 +11224,10 @@ body main {
 
   .works__accordion .accordion__title p {
     font-size: 18px;
+  }
+
+  .project__slide {
+    height: 240px !important;
   }
 
   .single__title {

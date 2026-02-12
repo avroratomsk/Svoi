@@ -85,6 +85,10 @@
     border: 1px solid rgba(132, 132, 132, 1);
     border-radius: 40px;
     background: rgba(255, 255, 255, 1);
+
+    @media screen and (max-width: 992px) {
+      margin-top: 0;
+    }
   }
 
 }

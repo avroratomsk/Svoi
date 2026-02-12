@@ -8,6 +8,12 @@ const resetBtn = document.querySelector('.filter__reset');
 const emptyBlock = document.querySelector('.catalog__empty');
 const catalogGrid = document.querySelector('.catalog__grid');
 
+const dataPriceCard = document.querySelectorAll('[data-price]');
+
+dataPriceCard?.forEach((item) => {
+  item.dataset.price = item.dataset.price.replaceAll(' ', '').trim();
+})
+
 /* ======================
    HELPERS
 ====================== */

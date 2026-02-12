@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
     } else {
-      if (!originalParent.contains(tml) && tml) {
+      if (!originalParent?.contains(tml) && tml) {
         originalParent?.appendChild(tml);
       }
     }

@@ -13,6 +13,10 @@
       flex-wrap: wrap;
     }
 
+    @media screen and (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+
   }
 
   //.info-block__text
@@ -112,7 +116,7 @@
 
       @media screen and (max-width: 992px) {
         grid-column: span 2;
-        grid-row: span 2;
+        grid-row: span 1;
       }
 
 
@@ -123,19 +127,11 @@
         grid-column: span 2;
       }
 
-      @media screen and (max-width: 768px) {
-        grid-column: span 1;
-      }
-
     }
 
     &:nth-child(4) {
       @media screen and (max-width: 992px) {
         grid-column: span 2;
-      }
-
-      @media screen and (max-width: 768px) {
-        grid-column: span 1;
       }
     }
 
