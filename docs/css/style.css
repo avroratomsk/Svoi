@@ -5064,7 +5064,7 @@ body._lock::after {
 
 #filter .popup__close::after,
 #filter .popup__close::before {
-  background-color: red;
+  background-color: #6e079e;
 }
 
 #filter .filter__inner {
