@@ -2823,8 +2823,8 @@ button {
       flex-wrap: wrap;
 }
 
-.stock-grid .swiper-slide {
-  width: auto;
+.stock-grid .news__slide {
+  width: auto !important;
 }
 
 .news__slide {
@@ -3682,7 +3682,7 @@ button {
 }
 
 .catalog__play img {
-  width: 20px;
+  width: 20px !important;
   height: 20px;
   margin-left: 3px;
 }
@@ -4409,6 +4409,7 @@ button {
 
 .project__tabs {
   margin-top: 75px;
+  padding: 0 12px;
 }
 
 .tabs__nav {
