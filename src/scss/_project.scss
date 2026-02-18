@@ -32,9 +32,9 @@
     display: flex !important;
     justify-content: center;
 
-    img, picture {
-      max-width: 100% !important;
-    }
+    //img, picture {
+    //  max-width: 100% !important;
+    //}
 
     video {
       width: 100%;
@@ -50,9 +50,10 @@
 
   //.project__slide-image
   &__slide-image {
-    //width: 100%;
-    height: 100% !important;
-    //object-fit: cover;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    object-position: center;
   }
 
   //.project__plan

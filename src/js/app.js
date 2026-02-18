@@ -70,13 +70,21 @@ if (imagesItems.length === 1) {
 }
 
 
+
 const playBtnCatalog = document.querySelectorAll('.catalog__play');
+console.log(playBtnCatalog)
 playBtnCatalog?.forEach((item) => {
   item.addEventListener('click', (e) => {
-    const video = item.nextElementSibling;
-    video.controls = true;
-    video.play();
-    item.style.display = 'none';
+    const dataSet = e.currentTarget.dataset.video;
+    const popup = document.getElementById('video');
+    const element = document.getElementById('plan-video');
+
+    popup.classList.add('popup_show');
+    document.body.classList.add('_lock');
+    element.innerHTML = `<video width="100%"  controls="">
+          <source src="${dataSet}" type="video/webm">
+        </video>`
+
   })
 })
 

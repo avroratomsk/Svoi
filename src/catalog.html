@@ -23,7 +23,10 @@
       </div>
       <div class="catalog__top">
         <h1 class="catalog__title title">Проекты домов</h1>
-        <button type="button" class="btn" data-popup="filter">Фильтр</button>
+        <div class="filter__btns-pc">
+          <button type="button" class="btn" data-popup="filter">Фильтр</button>
+          <button type="button" id="reset-mb" class="filter__reset">Сбросить фильтр</button>
+        </div>
       </div>
 
 
@@ -87,7 +90,7 @@
             </div>
           </div>
 
-          <button type="button" class="filter__reset">Сбросить</button>
+          <button type="button" id="reset-pc" class="filter__reset">Сбросить</button>
 
         </div>
 
@@ -114,21 +117,18 @@
               <div class="catalog__card-wrapper swiper-wrapper">
                 <div class="swiper-slide catalog__card-slide"
                 >
-                  <button type="button" class="catalog__play">
+                  <button type="button" class="catalog__play" data-video="/video/2025-10-17 13.02.33.mp4">
                     <img src="@img/play.svg" alt="">
                   </button>
-                  <video width="100%" poster="@img/proj.jpg">
-                    <source src="/video/2025-10-17 13.02.33.mp4" type="video/webm">
-                  </video>
-                </div>
-                <div class="swiper-slide catalog__card-slide"
-
-                >
                   <img src="@img/proj.jpg" alt="">
                 </div>
-                <div class="swiper-slide catalog__card-slide"
-
-                >
+                <div class="swiper-slide catalog__card-slide">
+                  <button type="button" class="catalog__play" data-video="/video/2025-10-17 13.02.33.mp4">
+                    <img src="@img/play.svg" alt="">
+                  </button>
+                  <img src="@img/proj.jpg" alt="">
+                </div>
+                <div class="swiper-slide catalog__card-slide">
                   <img src="@img/proj.jpg" alt="">
                 </div>
 
