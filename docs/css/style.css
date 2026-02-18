@@ -5053,6 +5053,11 @@ body._lock::after {
   padding-right: 80px;
 }
 
+#video .popup__close {
+  top: 5px;
+  right: 5px;
+}
+
 #filter .popup__content {
   display: -webkit-box;
   display: -ms-flexbox;
