@@ -27,7 +27,11 @@
 
   //.reviews__slide
   &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 24px;
+    height: 100% !important;
     border-radius: 20px;
     background: #ffffff;
   }

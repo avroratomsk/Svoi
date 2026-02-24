@@ -19,9 +19,7 @@ import "./modules/stickyMenu.js";
 functions.isWebp();
 
 
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
+Fancybox.bind("[data-fancybox]", {});
 
 
 document.querySelectorAll('.accordion__title').forEach(title => {

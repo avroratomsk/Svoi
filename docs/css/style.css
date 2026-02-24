@@ -2903,7 +2903,18 @@ button {
 }
 
 .reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 24px;
+  height: 100% !important;
   border-radius: 20px;
   background: #ffffff;
 }
@@ -4760,19 +4771,11 @@ button {
   margin-bottom: 30px;
 }
 
-.team__grid {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
-}
-
 .team__slider {
   padding-bottom: 25px;
 }
 
 .team__item {
-  width: 100% !important;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid rgba(110, 7, 158, 0.3);
@@ -8352,18 +8355,6 @@ body main {
     display: none;
   }
 
-  .team__slider {
-    display: contents;
-  }
-
-  .team__wrapper {
-    display: contents;
-  }
-
-  .team__scrollbar {
-    display: contents;
-  }
-
   #reset-mb {
     display: none !important;
   }
@@ -10747,10 +10738,6 @@ body main {
     -ms-grid-rows: (199px)[5];
     grid-template-rows: repeat(5, 199px);
         grid-template-areas: "a a b b" "a a c c" "a a d d" "f f f f" "g g g g";
-  }
-
-  .team__grid {
-    display: contents;
   }
 
   #reset-pc {

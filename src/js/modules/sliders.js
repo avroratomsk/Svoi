@@ -311,6 +311,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
 
   breakpoints: {
     320: {
+      autoHeight: true,
       scrollbar: {
         enabled: true
       },
@@ -337,7 +338,8 @@ const reviewsSlider = new Swiper('.reviews__slider', {
 const teamSlider = new Swiper('.team__slider', {
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 38,
+  spaceBetween: 15,
+  slidesPerView: 3,
 
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -355,15 +357,9 @@ const teamSlider = new Swiper('.team__slider', {
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
-      scrollbar: {
-        enabled: true,
-      },
     },
     1200: {
       slidesPerView: 3,
-      scrollbar: {
-        enabled: false,
-      },
     }
   }
 

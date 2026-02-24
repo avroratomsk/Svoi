@@ -9,10 +9,34 @@ const emptyBlock = document.querySelector('.catalog__empty');
 const catalogGrid = document.querySelector('.catalog__grid');
 
 const dataPriceCard = document.querySelectorAll('[data-price]');
+const dataUchCard = document.querySelectorAll('[data-uch]');
 
 dataPriceCard?.forEach((item) => {
   item.dataset.price = item.dataset.price.replaceAll(' ', '').trim();
 })
+
+dataUchCard?.forEach((item) => {
+  let value = item.dataset.uch;
+
+  // оставляем цифры, точку и запятую
+  value = value.replace(/[^\d.,]/g, '');
+
+  // заменяем запятую на точку
+  value = value.replace(',', '.');
+
+  // если точек больше одной — оставляем только первую
+  const firstDotIndex = value.indexOf('.');
+  if (firstDotIndex !== -1) {
+    value =
+      value.slice(0, firstDotIndex + 1) +
+      value.slice(firstDotIndex + 1).replace(/\./g, '');
+  }
+
+  // убираем точку в конце (если есть)
+  value = value.replace(/\.$/, '');
+
+  item.dataset.uch = value;
+});
 
 /* ======================
    HELPERS
@@ -67,6 +91,9 @@ function getFilters() {
     areaMin: parseNumber(document.querySelector('[name="areaMin"]')?.value),
     areaMax: parseNumber(document.querySelector('[name="areaMax"]')?.value),
 
+    areaMinUch: parseNumber(document.querySelector('[name="areaMinUch"]')?.value),
+    areaMaxUch: parseNumber(document.querySelector('[name="areaMaxUch"]')?.value),
+
     spalni: getCheckedValues('spalni'),
     etazh: getCheckedValues('etazh'),
     project: getCheckedValues('project'),
@@ -105,6 +132,7 @@ function applyFilter() {
 
     const price = parseNumber(card.dataset.price);
     const area = parseNumber(card.dataset.area);
+    const areaUch = parseNumber(card.dataset.uch);
     const spalni = card.dataset.spalni;
     const etazh = card.dataset.etazh;
     const project = card.dataset.project;
@@ -117,6 +145,9 @@ function applyFilter() {
 
     if (f.areaMin !== null && area <= f.areaMin) visible = false;
     if (f.areaMax !== null && area >= f.areaMax) visible = false;
+
+    if (f.areaMinUch !== null && areaUch <= f.areaMinUch) visible = false;
+    if (f.areaMaxUch !== null && areaUch >= f.areaMaxUch) visible = false;
 
     // MULTI CHECKBOX (OR внутри группы)
     if (f.spalni.length && !f.spalni.includes(spalni)) visible = false;
