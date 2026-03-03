@@ -298,7 +298,6 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   loop: true,
   autoHeight: true,
 
-
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
@@ -344,6 +343,11 @@ const teamSlider = new Swiper('.team__slider', {
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
+  },
+
+  navigation: {
+    nextEl: '.team-next',
+    prevEl: '.team-prev',
   },
 
   breakpoints: {

@@ -68,21 +68,22 @@
 
   //.footer__nav
   &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
+    @media screen and (min-width: 578px) {
+      gap: 100px;
+    }
   }
 
   //.footer__list
   &__list {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
     gap: 13px 148px;
 
     a {
       color: rgba(255, 255, 255, 1);
-    }
-
-    @media screen and (max-width: 578px) {
-      grid-template-columns: 1fr;
     }
   }
 

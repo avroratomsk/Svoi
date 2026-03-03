@@ -386,7 +386,6 @@
   }
 
   &__slider {
-    padding-bottom: 25px;
   }
 
   &__wrapper {
@@ -431,6 +430,29 @@
   }
 
   &__position {}
+
+  .team-next,
+  .team-prev {
+    width: 40px;
+    height: 40px;
+    background: rgba(#FFFFFF, 1);
+    border: 1px solid #6e079e;
+    border-radius: 50%;
+    opacity: .5;
+
+    &::after {
+      color: #6e079e;
+      font-size: 16px;
+    }
+  }
+
+  .team-next {
+    right: 20px;
+  }
+
+  .team-prev {
+    left: 20px;
+  }
 
 
 }
