@@ -149,6 +149,12 @@
     font-size: 13px;
   }
 
+  &__author {
+    display: flex;
+    align-items: center;
+    color: #999;
+  }
+
 }
 
 .socials {

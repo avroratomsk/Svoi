@@ -1788,6 +1788,16 @@ template {
   font-size: 13px;
 }
 
+.footer__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
